@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: homesync
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build --workspace=client && cd database && npx knex migrate:latest --knexfile knexfile.js && npx knex seed:run --knexfile knexfile.js
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_PATH
+        value: /opt/render/project/src/database/homesync.db
+    disk:
+      name: homesync-db
+      mountPath: /opt/render/project/src/database
+      sizeGB: 1

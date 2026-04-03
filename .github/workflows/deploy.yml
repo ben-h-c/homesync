@@ -32,7 +32,7 @@ jobs:
         run: npm install --workspace=client
 
       - name: Build client
-        run: npm run build --workspace=client
+        run: npm run build --workspace=client -- --mode ghpages
 
       - uses: actions/configure-pages@v4
 

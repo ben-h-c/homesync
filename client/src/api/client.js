@@ -6,7 +6,7 @@ import activities from '../demo-data/activities.json';
 import dashboardStats from '../demo-data/dashboard-stats.json';
 import maintenanceForecasts from '../demo-data/maintenance-forecasts.json';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '/api' : 'http://localhost:3001/api');
 
 let _demoMode = false;
 const demoListeners = new Set();
