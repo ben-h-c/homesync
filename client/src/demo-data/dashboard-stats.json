@@ -1,21 +1,21 @@
 {
-  "totalProperties": 200,
-  "totalSubdivisions": 20,
+  "totalProperties": 580,
+  "totalSubdivisions": 48,
   "activeProjects": 0,
   "totalSignups": 0,
   "pipelineActive": 1,
   "hotSubdivisions": [
     {
-      "id": 12,
-      "name": "Brookwood",
-      "zip": "30041",
-      "total_homes": 150,
-      "year_built_min": 2001,
-      "year_built_max": 2005,
-      "year_built_mode": 2003,
-      "avg_square_footage": 3000,
-      "avg_assessed_value": 475000,
-      "hoa_name": "Brookwood HOA",
+      "id": 36,
+      "name": "Canterbury Farms",
+      "zip": "30040",
+      "total_homes": 60,
+      "year_built_min": 1991,
+      "year_built_max": 1993,
+      "year_built_mode": 1992,
+      "avg_square_footage": 2800,
+      "avg_assessed_value": 410000,
+      "hoa_name": "Canterbury Farms HOA",
       "hoa_management_company": null,
       "hoa_contact_name": null,
       "hoa_contact_email": null,
@@ -23,7 +23,7 @@
       "hoa_meeting_schedule": null,
       "hoa_website": null,
       "hoa_dues_monthly": null,
-      "maintenance_urgency_score": 99,
+      "maintenance_urgency_score": 100,
       "hvac_pct_due": 100,
       "roof_pct_due": 100,
       "water_heater_pct_due": 100,
@@ -31,20 +31,20 @@
       "pipeline_stage": "research",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 02:46:43",
-      "updated_at": "2026-04-03T02:49:49.851Z"
+      "created_at": "2026-04-03 11:01:27",
+      "updated_at": "2026-04-03T11:02:21.638Z"
     },
     {
-      "id": 10,
-      "name": "Bethelview Downs",
-      "zip": "30040",
-      "total_homes": 100,
-      "year_built_min": 2001,
-      "year_built_max": 2007,
-      "year_built_mode": 2004,
-      "avg_square_footage": 2900,
+      "id": 48,
+      "name": "Autumn Hills",
+      "zip": "30041",
+      "total_homes": 70,
+      "year_built_min": 2002,
+      "year_built_max": 2004,
+      "year_built_mode": 2003,
+      "avg_square_footage": 2600,
       "avg_assessed_value": 460000,
-      "hoa_name": "Bethelview Downs HOA",
+      "hoa_name": "Autumn Hills HOA",
       "hoa_management_company": null,
       "hoa_contact_name": null,
       "hoa_contact_email": null,
@@ -52,86 +52,28 @@
       "hoa_meeting_schedule": null,
       "hoa_website": null,
       "hoa_dues_monthly": null,
-      "maintenance_urgency_score": 98,
+      "maintenance_urgency_score": 100,
       "hvac_pct_due": 100,
-      "roof_pct_due": 97,
+      "roof_pct_due": 100,
       "water_heater_pct_due": 100,
       "paint_pct_due": 100,
       "pipeline_stage": "research",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 02:46:43",
-      "updated_at": "2026-04-03T02:49:49.849Z"
+      "created_at": "2026-04-03 11:01:27",
+      "updated_at": "2026-04-03T11:02:21.644Z"
     },
     {
-      "id": 19,
-      "name": "Brannon Oaks",
+      "id": 54,
+      "name": "Coventry",
       "zip": "30041",
-      "total_homes": 80,
-      "year_built_min": 2003,
-      "year_built_max": 2008,
-      "year_built_mode": 2005,
-      "avg_square_footage": 2900,
-      "avg_assessed_value": 465000,
-      "hoa_name": "Brannon Oaks HOA",
-      "hoa_management_company": null,
-      "hoa_contact_name": null,
-      "hoa_contact_email": null,
-      "hoa_contact_phone": null,
-      "hoa_meeting_schedule": null,
-      "hoa_website": null,
-      "hoa_dues_monthly": null,
-      "maintenance_urgency_score": 95,
-      "hvac_pct_due": 100,
-      "roof_pct_due": 64,
-      "water_heater_pct_due": 100,
-      "paint_pct_due": 100,
-      "pipeline_stage": "research",
-      "pipeline_notes": null,
-      "last_contacted": null,
-      "created_at": "2026-04-03 02:46:43",
-      "updated_at": "2026-04-03T02:49:49.854Z"
-    },
-    {
-      "id": 6,
-      "name": "Windermere",
-      "zip": "30040",
-      "total_homes": 500,
-      "year_built_min": 2000,
-      "year_built_max": 2012,
-      "year_built_mode": 2005,
-      "avg_square_footage": 3500,
-      "avg_assessed_value": 580000,
-      "hoa_name": "Windermere Community Association",
-      "hoa_management_company": null,
-      "hoa_contact_name": null,
-      "hoa_contact_email": null,
-      "hoa_contact_phone": null,
-      "hoa_meeting_schedule": null,
-      "hoa_website": null,
-      "hoa_dues_monthly": null,
-      "maintenance_urgency_score": 93,
-      "hvac_pct_due": 100,
-      "roof_pct_due": 60,
-      "water_heater_pct_due": 100,
-      "paint_pct_due": 100,
-      "pipeline_stage": "research",
-      "pipeline_notes": null,
-      "last_contacted": null,
-      "created_at": "2026-04-03 02:46:43",
-      "updated_at": "2026-04-03T02:49:49.844Z"
-    },
-    {
-      "id": 11,
-      "name": "Sharon Springs",
-      "zip": "30041",
-      "total_homes": 120,
-      "year_built_min": 2005,
-      "year_built_max": 2008,
-      "year_built_mode": 2006,
+      "total_homes": 60,
+      "year_built_min": 2002,
+      "year_built_max": 2003,
+      "year_built_mode": 2002,
       "avg_square_footage": 2700,
-      "avg_assessed_value": 440000,
-      "hoa_name": "Sharon Springs HOA",
+      "avg_assessed_value": 450000,
+      "hoa_name": "Coventry HOA",
       "hoa_management_company": null,
       "hoa_contact_name": null,
       "hoa_contact_email": null,
@@ -139,78 +81,176 @@
       "hoa_meeting_schedule": null,
       "hoa_website": null,
       "hoa_dues_monthly": null,
-      "maintenance_urgency_score": 93,
+      "maintenance_urgency_score": 100,
       "hvac_pct_due": 100,
-      "roof_pct_due": 56,
+      "roof_pct_due": 100,
       "water_heater_pct_due": 100,
       "paint_pct_due": 100,
       "pipeline_stage": "research",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 02:46:43",
-      "updated_at": "2026-04-03T02:49:49.850Z"
+      "created_at": "2026-04-03 11:01:27",
+      "updated_at": "2026-04-03T11:02:21.646Z"
+    },
+    {
+      "id": 58,
+      "name": "Barrett Downs",
+      "zip": "30041",
+      "total_homes": 70,
+      "year_built_min": 1996,
+      "year_built_max": 1999,
+      "year_built_mode": 1997,
+      "avg_square_footage": 2800,
+      "avg_assessed_value": 595000,
+      "hoa_name": "Barrett Downs HOA",
+      "hoa_management_company": null,
+      "hoa_contact_name": null,
+      "hoa_contact_email": null,
+      "hoa_contact_phone": null,
+      "hoa_meeting_schedule": null,
+      "hoa_website": null,
+      "hoa_dues_monthly": null,
+      "maintenance_urgency_score": 100,
+      "hvac_pct_due": 100,
+      "roof_pct_due": 100,
+      "water_heater_pct_due": 100,
+      "paint_pct_due": 100,
+      "pipeline_stage": "research",
+      "pipeline_notes": null,
+      "last_contacted": null,
+      "created_at": "2026-04-03 11:01:27",
+      "updated_at": "2026-04-03T11:02:21.648Z"
+    },
+    {
+      "id": 60,
+      "name": "Brighton Lake",
+      "zip": "30041",
+      "total_homes": 60,
+      "year_built_min": 1996,
+      "year_built_max": 1999,
+      "year_built_mode": 1997,
+      "avg_square_footage": 3200,
+      "avg_assessed_value": 750000,
+      "hoa_name": "Brighton Lake HOA",
+      "hoa_management_company": null,
+      "hoa_contact_name": null,
+      "hoa_contact_email": null,
+      "hoa_contact_phone": null,
+      "hoa_meeting_schedule": null,
+      "hoa_website": null,
+      "hoa_dues_monthly": null,
+      "maintenance_urgency_score": 100,
+      "hvac_pct_due": 100,
+      "roof_pct_due": 100,
+      "water_heater_pct_due": 100,
+      "paint_pct_due": 100,
+      "pipeline_stage": "research",
+      "pipeline_notes": null,
+      "last_contacted": null,
+      "created_at": "2026-04-03 11:01:27",
+      "updated_at": "2026-04-03T11:02:21.648Z"
     }
   ],
   "byYear": [
     {
-      "year_built": 2000,
-      "count": 4
+      "year_built": 1990,
+      "count": 1
     },
     {
-      "year_built": 2001,
-      "count": 17
+      "year_built": 1991,
+      "count": 5
     },
     {
-      "year_built": 2002,
-      "count": 16
-    },
-    {
-      "year_built": 2003,
-      "count": 15
-    },
-    {
-      "year_built": 2004,
-      "count": 17
-    },
-    {
-      "year_built": 2005,
-      "count": 25
-    },
-    {
-      "year_built": 2006,
-      "count": 23
-    },
-    {
-      "year_built": 2007,
-      "count": 11
-    },
-    {
-      "year_built": 2008,
-      "count": 18
-    },
-    {
-      "year_built": 2009,
+      "year_built": 1992,
       "count": 6
     },
     {
-      "year_built": 2010,
-      "count": 10
+      "year_built": 1993,
+      "count": 8
     },
     {
-      "year_built": 2011,
+      "year_built": 1994,
+      "count": 5
+    },
+    {
+      "year_built": 1995,
+      "count": 6
+    },
+    {
+      "year_built": 1996,
+      "count": 20
+    },
+    {
+      "year_built": 1997,
+      "count": 13
+    },
+    {
+      "year_built": 1998,
+      "count": 12
+    },
+    {
+      "year_built": 1999,
       "count": 9
     },
     {
+      "year_built": 2000,
+      "count": 9
+    },
+    {
+      "year_built": 2001,
+      "count": 35
+    },
+    {
+      "year_built": 2002,
+      "count": 46
+    },
+    {
+      "year_built": 2003,
+      "count": 47
+    },
+    {
+      "year_built": 2004,
+      "count": 56
+    },
+    {
+      "year_built": 2005,
+      "count": 60
+    },
+    {
+      "year_built": 2006,
+      "count": 46
+    },
+    {
+      "year_built": 2007,
+      "count": 49
+    },
+    {
+      "year_built": 2008,
+      "count": 31
+    },
+    {
+      "year_built": 2009,
+      "count": 24
+    },
+    {
+      "year_built": 2010,
+      "count": 28
+    },
+    {
+      "year_built": 2011,
+      "count": 13
+    },
+    {
       "year_built": 2012,
-      "count": 6
+      "count": 23
     },
     {
       "year_built": 2013,
-      "count": 2
+      "count": 7
     },
     {
       "year_built": 2014,
-      "count": 4
+      "count": 7
     },
     {
       "year_built": 2015,
@@ -218,15 +258,15 @@
     },
     {
       "year_built": 2016,
-      "count": 8
+      "count": 5
     },
     {
       "year_built": 2017,
-      "count": 3
+      "count": 1
     },
     {
       "year_built": 2018,
-      "count": 2
+      "count": 4
     }
   ],
   "pipelineDistribution": [
@@ -236,13 +276,13 @@
     },
     {
       "pipeline_stage": "research",
-      "count": 19
+      "count": 47
     }
   ],
   "recentActivities": [],
   "followUps": [
     {
-      "id": 8,
+      "id": 28,
       "name": "Bridgetown",
       "zip": "30041",
       "total_homes": 150,
@@ -260,15 +300,15 @@
       "hoa_website": null,
       "hoa_dues_monthly": null,
       "maintenance_urgency_score": 81,
-      "hvac_pct_due": 80,
-      "roof_pct_due": 20,
+      "hvac_pct_due": 90,
+      "roof_pct_due": 3,
       "water_heater_pct_due": 100,
       "paint_pct_due": 100,
       "pipeline_stage": "contacted",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 02:46:43",
-      "updated_at": "2026-04-03T02:49:49.846Z"
+      "created_at": "2026-04-03 11:01:27",
+      "updated_at": "2026-04-03T11:02:21.632Z"
     }
   ],
   "upcomingDeadlines": []

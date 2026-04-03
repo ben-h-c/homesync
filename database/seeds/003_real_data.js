@@ -33,6 +33,35 @@ export async function seed(knex) {
     { name: 'Polo Fields', zip: '30040', total_homes: 180, year_built_min: 2002, year_built_max: 2010, year_built_mode: 2006, avg_square_footage: 3400, avg_assessed_value: 560000, hoa_name: 'Polo Fields HOA', pipeline_stage: 'research' },
     { name: 'Concord Farms', zip: '30040', total_homes: 120, year_built_min: 2004, year_built_max: 2010, year_built_mode: 2006, avg_square_footage: 2800, avg_assessed_value: 430000, hoa_name: 'Concord Farms HOA', pipeline_stage: 'research' },
     { name: 'James Creek', zip: '30041', total_homes: 90, year_built_min: 2005, year_built_max: 2012, year_built_mode: 2008, avg_square_footage: 3100, avg_assessed_value: 510000, hoa_name: 'James Creek HOA', pipeline_stage: 'research' },
+    // ── Additional subdivisions from deep sweep ──
+    { name: 'Ashebrooke', zip: '30041', total_homes: 240, year_built_min: 2001, year_built_max: 2013, year_built_mode: 2005, avg_square_footage: 3600, avg_assessed_value: 811000, hoa_name: 'Ashebrooke HOA', pipeline_stage: 'research' },
+    { name: 'Avington', zip: '30041', total_homes: 100, year_built_min: 2004, year_built_max: 2014, year_built_mode: 2007, avg_square_footage: 3200, avg_assessed_value: 670000, hoa_name: 'Avington HOA', pipeline_stage: 'research' },
+    { name: 'Andover Glen', zip: '30041', total_homes: 80, year_built_min: 2005, year_built_max: 2007, year_built_mode: 2006, avg_square_footage: 2800, avg_assessed_value: 525000, hoa_name: 'Andover Glen HOA', pipeline_stage: 'research' },
+    { name: 'Autumn Cove', zip: '30041', total_homes: 90, year_built_min: 2006, year_built_max: 2017, year_built_mode: 2009, avg_square_footage: 2700, avg_assessed_value: 512000, hoa_name: 'Autumn Cove HOA', pipeline_stage: 'research' },
+    { name: 'Autumn Hills', zip: '30041', total_homes: 70, year_built_min: 2002, year_built_max: 2004, year_built_mode: 2003, avg_square_footage: 2600, avg_assessed_value: 460000, hoa_name: 'Autumn Hills HOA', pipeline_stage: 'research' },
+    { name: 'Brandon Hall', zip: '30041', total_homes: 60, year_built_min: 2005, year_built_max: 2010, year_built_mode: 2007, avg_square_footage: 3800, avg_assessed_value: 846000, hoa_name: 'Brandon Hall HOA', pipeline_stage: 'research' },
+    { name: 'Blackstock Mill', zip: '30041', total_homes: 75, year_built_min: 2005, year_built_max: 2010, year_built_mode: 2007, avg_square_footage: 3200, avg_assessed_value: 675000, hoa_name: 'Blackstock Mill HOA', pipeline_stage: 'research' },
+    { name: 'Big Creek Township', zip: '30041', total_homes: 100, year_built_min: 2005, year_built_max: 2013, year_built_mode: 2008, avg_square_footage: 2700, avg_assessed_value: 492000, hoa_name: 'Big Creek Township HOA', pipeline_stage: 'research' },
+    { name: 'Brookside', zip: '30041', total_homes: 60, year_built_min: 2006, year_built_max: 2014, year_built_mode: 2009, avg_square_footage: 2800, avg_assessed_value: 630000, hoa_name: 'Brookside HOA', pipeline_stage: 'research' },
+    { name: 'Old Atlanta Commons', zip: '30041', total_homes: 80, year_built_min: 2002, year_built_max: 2005, year_built_mode: 2003, avg_square_footage: 2900, avg_assessed_value: 480000, hoa_name: 'Old Atlanta Commons HOA', pipeline_stage: 'research' },
+    { name: 'Coventry', zip: '30041', total_homes: 60, year_built_min: 2002, year_built_max: 2003, year_built_mode: 2002, avg_square_footage: 2700, avg_assessed_value: 450000, hoa_name: 'Coventry HOA', pipeline_stage: 'research' },
+    { name: 'Arbor Meadows', zip: '30041', total_homes: 50, year_built_min: 2004, year_built_max: 2005, year_built_mode: 2004, avg_square_footage: 3000, avg_assessed_value: 520000, hoa_name: 'Arbor Meadows HOA', pipeline_stage: 'research' },
+    { name: 'Ansley at Pilgrim Mill', zip: '30041', total_homes: 90, year_built_min: 1986, year_built_max: 2014, year_built_mode: 2000, avg_square_footage: 2500, avg_assessed_value: 401000, hoa_name: 'Ansley at Pilgrim Mill HOA', pipeline_stage: 'research' },
+    { name: 'Arcanum Estates', zip: '30041', total_homes: 50, year_built_min: 2006, year_built_max: 2012, year_built_mode: 2008, avg_square_footage: 3100, avg_assessed_value: 550000, hoa_name: 'Arcanum Estates HOA', pipeline_stage: 'research' },
+    { name: 'Barrett Downs', zip: '30041', total_homes: 70, year_built_min: 1996, year_built_max: 1999, year_built_mode: 1997, avg_square_footage: 2800, avg_assessed_value: 595000, hoa_name: 'Barrett Downs HOA', pipeline_stage: 'research' },
+    { name: 'Bridlewood', zip: '30041', total_homes: 65, year_built_min: 2007, year_built_max: 2018, year_built_mode: 2010, avg_square_footage: 2900, avg_assessed_value: 615000, hoa_name: 'Bridlewood HOA', pipeline_stage: 'research' },
+    { name: 'Brighton Lake', zip: '30041', total_homes: 60, year_built_min: 1996, year_built_max: 1999, year_built_mode: 1997, avg_square_footage: 3200, avg_assessed_value: 750000, hoa_name: 'Brighton Lake HOA', pipeline_stage: 'research' },
+    { name: 'Bannister Park', zip: '30041', total_homes: 55, year_built_min: 1995, year_built_max: 1997, year_built_mode: 1996, avg_square_footage: 2600, avg_assessed_value: 390000, hoa_name: 'Bannister Park HOA', pipeline_stage: 'research' },
+    { name: 'Blackburn Ridge', zip: '30041', total_homes: 50, year_built_min: 2008, year_built_max: 2014, year_built_mode: 2010, avg_square_footage: 2600, avg_assessed_value: 500000, hoa_name: 'Blackburn Ridge HOA', pipeline_stage: 'research' },
+    { name: 'Bay Colony', zip: '30041', total_homes: 41, year_built_min: 1983, year_built_max: 2002, year_built_mode: 1995, avg_square_footage: 4000, avg_assessed_value: 1200000, hoa_name: 'Bay Colony HOA', pipeline_stage: 'research' },
+    { name: 'Shiloh Manor', zip: '30041', total_homes: 60, year_built_min: 2018, year_built_max: 2022, year_built_mode: 2020, avg_square_footage: 3000, avg_assessed_value: 580000, hoa_name: 'Shiloh Manor HOA', pipeline_stage: 'research' },
+    { name: 'Estates at Big Creek', zip: '30041', total_homes: 50, year_built_min: 2007, year_built_max: 2013, year_built_mode: 2009, avg_square_footage: 3500, avg_assessed_value: 620000, hoa_name: 'Estates at Big Creek HOA', pipeline_stage: 'research' },
+    { name: 'Barrett Landing', zip: '30041', total_homes: 85, year_built_min: 2014, year_built_max: 2018, year_built_mode: 2016, avg_square_footage: 2800, avg_assessed_value: 530000, hoa_name: 'Barrett Landing HOA', pipeline_stage: 'research' },
+    { name: 'Abbey Glen', zip: '30041', total_homes: 60, year_built_min: 2004, year_built_max: 2024, year_built_mode: 2008, avg_square_footage: 2900, avg_assessed_value: 564000, hoa_name: 'Abbey Glen HOA', pipeline_stage: 'research' },
+    { name: 'Avalon', zip: '30041', total_homes: 55, year_built_min: 2010, year_built_max: 2013, year_built_mode: 2011, avg_square_footage: 3100, avg_assessed_value: 625000, hoa_name: 'Avalon HOA', pipeline_stage: 'research' },
+    { name: 'Arden Greens at Windermere', zip: '30041', total_homes: 60, year_built_min: 2000, year_built_max: 2002, year_built_mode: 2001, avg_square_footage: 3400, avg_assessed_value: 691000, hoa_name: 'Arden Greens HOA', pipeline_stage: 'research' },
+    { name: 'Bennington at Windermere', zip: '30041', total_homes: 55, year_built_min: 2001, year_built_max: 2003, year_built_mode: 2002, avg_square_footage: 3300, avg_assessed_value: 770000, hoa_name: 'Bennington at Windermere HOA', pipeline_stage: 'research' },
+    { name: 'Caney Creek', zip: '30041', total_homes: 70, year_built_min: 1990, year_built_max: 2005, year_built_mode: 1998, avg_square_footage: 3000, avg_assessed_value: 801000, hoa_name: 'Caney Creek HOA', pipeline_stage: 'research' },
   ];
 
   for (const sub of subdivisions) {
@@ -87,6 +116,7 @@ export async function seed(knex) {
 
   // Generate properties for the 6 highest-priority subdivisions
   const propSubs = [
+    // Original 7
     { name: 'Bethelview Downs', count: 30, yearMin: 2001, yearMax: 2007 },
     { name: 'Brookwood', count: 30, yearMin: 2001, yearMax: 2005 },
     { name: 'Brannon Oaks', count: 25, yearMin: 2003, yearMax: 2008 },
@@ -94,6 +124,27 @@ export async function seed(knex) {
     { name: 'Sharon Springs', count: 25, yearMin: 2005, yearMax: 2008 },
     { name: 'Castleberry Heights', count: 30, yearMin: 2005, yearMax: 2018 },
     { name: 'Windermere', count: 30, yearMin: 2000, yearMax: 2012 },
+    // New high-priority subdivisions from deep sweep
+    { name: 'Ashebrooke', count: 25, yearMin: 2001, yearMax: 2013 },
+    { name: 'Avington', count: 20, yearMin: 2004, yearMax: 2014 },
+    { name: 'Andover Glen', count: 20, yearMin: 2005, yearMax: 2007 },
+    { name: 'Autumn Hills', count: 20, yearMin: 2002, yearMax: 2004 },
+    { name: 'Old Atlanta Commons', count: 20, yearMin: 2002, yearMax: 2005 },
+    { name: 'Coventry', count: 20, yearMin: 2002, yearMax: 2003 },
+    { name: 'Arbor Meadows', count: 15, yearMin: 2004, yearMax: 2005 },
+    { name: 'Arden Greens at Windermere', count: 15, yearMin: 2000, yearMax: 2002 },
+    { name: 'Bennington at Windermere', count: 15, yearMin: 2001, yearMax: 2003 },
+    { name: 'Barrett Downs', count: 20, yearMin: 1996, yearMax: 1999 },
+    { name: 'Bannister Park', count: 15, yearMin: 1995, yearMax: 1997 },
+    { name: 'Brighton Lake', count: 15, yearMin: 1996, yearMax: 1999 },
+    { name: 'Canterbury Farms', count: 15, yearMin: 1991, yearMax: 1993 },
+    { name: 'Legends at Settendown Creek', count: 20, yearMin: 1996, yearMax: 2009 },
+    { name: 'Sawnee Mountain', count: 20, yearMin: 2000, yearMax: 2010 },
+    { name: 'Polo Fields', count: 25, yearMin: 2002, yearMax: 2010 },
+    { name: 'Concord Farms', count: 20, yearMin: 2004, yearMax: 2010 },
+    { name: 'Hampton', count: 25, yearMin: 2004, yearMax: 2012 },
+    { name: 'Big Creek Township', count: 20, yearMin: 2005, yearMax: 2013 },
+    { name: 'Caney Creek', count: 15, yearMin: 1990, yearMax: 2005 },
   ];
 
   let parcelNum = 0;
