@@ -112,7 +112,12 @@ export default function SubdivisionDetail() {
             <FileText size={16} /> Generate Report
           </button>
           <button
-            onClick={() => navigate('/email/compose')}
+            onClick={() => {
+              const hoaContact = subContacts.find((c) => c.type === 'hoa_board');
+              const params = new URLSearchParams({ subdivision_id: id, template: 'hoa_intro_pitch' });
+              if (hoaContact) params.set('contact_id', hoaContact.id);
+              navigate(`/email/compose?${params.toString()}`);
+            }}
             className="flex items-center gap-1.5 px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90"
           >
             <Mail size={16} /> Send Pitch Email
@@ -235,7 +240,7 @@ export default function SubdivisionDetail() {
             <strong>Total savings potential: ${forecast.top_system_savings.toLocaleString()}</strong>
           </p>
           <button
-            onClick={() => navigate('/projects/new')}
+            onClick={() => navigate(`/projects/new?subdivision_id=${id}&service=${forecast.top_system || ''}`)}
             className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary/90"
           >
             Create Project for This →

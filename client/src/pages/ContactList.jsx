@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, Plus } from 'lucide-react';
+import { Search, Plus, Download } from 'lucide-react';
 import { fetchAPI } from '../api/client';
 
 const TYPE_LABELS = {
@@ -55,10 +55,16 @@ export default function ContactList() {
     <div>
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold">Contacts</h1>
-        <button onClick={() => navigate('/contacts/new')}
-          className="flex items-center gap-1.5 px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90">
-          <Plus size={16} /> Add Contact
-        </button>
+        <div className="flex gap-2">
+          <button onClick={() => { const h=['first_name','last_name','type','email','phone','company','subdivision']; const csv=[h.join(','),...contacts.map(c=>h.map(k=>`"${(c[k]??'').toString().replace(/"/g,'""')}"`).join(','))].join('\n'); const b=new Blob([csv],{type:'text/csv'}); const a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download='contacts.csv'; a.click(); }}
+            className="flex items-center gap-1.5 px-3 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-50">
+            <Download size={16} /> Export
+          </button>
+          <button onClick={() => navigate('/contacts/new')}
+            className="flex items-center gap-1.5 px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90">
+            <Plus size={16} /> Add Contact
+          </button>
+        </div>
       </div>
 
       <div className="bg-white rounded-lg shadow-sm p-4 mb-4">
