@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
+import MapView from './pages/MapView';
 import SubdivisionList from './pages/SubdivisionList';
 import SubdivisionDetail from './pages/SubdivisionDetail';
 import PropertyList from './pages/PropertyList';
@@ -26,6 +27,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/map" element={<MapView />} />
           <Route path="/subdivisions" element={<SubdivisionList />} />
           <Route path="/subdivisions/:id" element={<SubdivisionDetail />} />
           <Route path="/properties" element={<PropertyList />} />

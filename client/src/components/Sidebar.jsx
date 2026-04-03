@@ -3,6 +3,7 @@ import {
   LayoutDashboard,
   Home,
   Map,
+  MapPin,
   Users,
   GitBranch,
   FolderKanban,
@@ -16,6 +17,7 @@ import {
 
 const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/map', icon: MapPin, label: 'Map' },
   { to: '/subdivisions', icon: Map, label: 'Subdivisions' },
   { to: '/properties', icon: Home, label: 'Properties' },
   { to: '/contacts', icon: Users, label: 'Contacts' },
