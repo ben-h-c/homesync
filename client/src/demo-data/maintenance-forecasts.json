@@ -4,7 +4,7 @@
     "subdivision_id": 1,
     "total_homes": 25,
     "year_built_mode": 2008,
-    "urgency_score": 80,
+    "urgency_score": 85,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -13,10 +13,11 @@
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 6000,
-        "avg_cost_group": 4200,
-        "savings_per_home": 1800,
-        "total_savings_potential": 45000,
+        "avg_cost_retail": 9500,
+        "avg_cost_group": 6840,
+        "savings_per_home": 2660,
+        "total_savings_potential": 66500,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "water_heater": {
@@ -28,21 +29,23 @@
         "estimated_homes_needing_service": 25,
         "avg_cost_retail": 1850,
         "avg_cost_group": 1203,
-        "savings_per_home": 647,
-        "total_savings_potential": 16175,
+        "savings_per_home": 648,
+        "total_savings_potential": 16188,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
         "pct_critical": 0,
         "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 100,
+        "pct_upcoming": 100,
+        "pct_ok": 0,
         "estimated_homes_needing_service": 0,
         "avg_cost_retail": 14000,
-        "avg_cost_group": 10500,
-        "savings_per_home": 3500,
+        "avg_cost_group": 10920,
+        "savings_per_home": 3080,
         "total_savings_potential": 0,
+        "avg_urgency": 60,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -52,27 +55,28 @@
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 4500,
-        "avg_cost_group": 3150,
-        "savings_per_home": 1350,
-        "total_savings_potential": 33750,
-        "is_recurring": true
+        "avg_cost_retail": 5750,
+        "avg_cost_group": 4140,
+        "savings_per_home": 1610,
+        "total_savings_potential": 40250,
+        "avg_urgency": 100,
+        "is_recurring": false
       }
     },
-    "top_recommendation": "HVAC System replacement is critical for 25 homes. Group buying could save $1,800 per home.",
+    "top_recommendation": "HVAC System — 100% of homes (25 of 25) are at or past end-of-life",
     "top_system": "hvac",
     "top_system_display": "HVAC System",
     "top_system_homes": 25,
-    "top_system_savings": 45000,
-    "top_system_savings_per_home": 1800,
-    "estimated_total_savings": 94925
+    "top_system_savings": 66500,
+    "top_system_savings_per_home": 2660,
+    "estimated_total_savings": 122938
   },
   "2": {
     "subdivision": "Castleberry",
     "subdivision_id": 2,
     "total_homes": 25,
     "year_built_mode": 2005,
-    "urgency_score": 84,
+    "urgency_score": 91,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -81,10 +85,11 @@
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 6000,
-        "avg_cost_group": 4200,
-        "savings_per_home": 1800,
-        "total_savings_potential": 45000,
+        "avg_cost_retail": 9500,
+        "avg_cost_group": 6840,
+        "savings_per_home": 2660,
+        "total_savings_potential": 66500,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "water_heater": {
@@ -96,21 +101,23 @@
         "estimated_homes_needing_service": 25,
         "avg_cost_retail": 1850,
         "avg_cost_group": 1203,
-        "savings_per_home": 647,
-        "total_savings_potential": 16175,
+        "savings_per_home": 648,
+        "total_savings_potential": 16188,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 0,
-        "pct_due_now": 0,
-        "pct_upcoming": 20,
-        "pct_ok": 80,
-        "estimated_homes_needing_service": 0,
+        "pct_critical": 20,
+        "pct_due_now": 80,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
         "avg_cost_retail": 14000,
-        "avg_cost_group": 10500,
-        "savings_per_home": 3500,
-        "total_savings_potential": 0,
+        "avg_cost_group": 10920,
+        "savings_per_home": 3080,
+        "total_savings_potential": 77000,
+        "avg_urgency": 84,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -120,39 +127,41 @@
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 4500,
-        "avg_cost_group": 3150,
-        "savings_per_home": 1350,
-        "total_savings_potential": 33750,
-        "is_recurring": true
+        "avg_cost_retail": 5750,
+        "avg_cost_group": 4140,
+        "savings_per_home": 1610,
+        "total_savings_potential": 40250,
+        "avg_urgency": 100,
+        "is_recurring": false
       }
     },
-    "top_recommendation": "HVAC System replacement is critical for 25 homes. Group buying could save $1,800 per home.",
+    "top_recommendation": "HVAC System — 100% of homes (25 of 25) are at or past end-of-life",
     "top_system": "hvac",
     "top_system_display": "HVAC System",
     "top_system_homes": 25,
-    "top_system_savings": 45000,
-    "top_system_savings_per_home": 1800,
-    "estimated_total_savings": 94925
+    "top_system_savings": 66500,
+    "top_system_savings_per_home": 2660,
+    "estimated_total_savings": 199938
   },
   "3": {
     "subdivision": "Windermere",
     "subdivision_id": 3,
     "total_homes": 20,
     "year_built_mode": 2011,
-    "urgency_score": 70,
+    "urgency_score": 76,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
-        "pct_critical": 0,
-        "pct_due_now": 80,
-        "pct_upcoming": 20,
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
         "pct_ok": 0,
-        "estimated_homes_needing_service": 16,
-        "avg_cost_retail": 6000,
-        "avg_cost_group": 4200,
-        "savings_per_home": 1800,
-        "total_savings_potential": 28800,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 9500,
+        "avg_cost_group": 6840,
+        "savings_per_home": 2660,
+        "total_savings_potential": 53200,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "water_heater": {
@@ -164,8 +173,9 @@
         "estimated_homes_needing_service": 20,
         "avg_cost_retail": 1850,
         "avg_cost_group": 1203,
-        "savings_per_home": 647,
-        "total_savings_potential": 12940,
+        "savings_per_home": 648,
+        "total_savings_potential": 12950,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "roof": {
@@ -176,9 +186,10 @@
         "pct_ok": 100,
         "estimated_homes_needing_service": 0,
         "avg_cost_retail": 14000,
-        "avg_cost_group": 10500,
-        "savings_per_home": 3500,
+        "avg_cost_group": 10920,
+        "savings_per_home": 3080,
         "total_savings_potential": 0,
+        "avg_urgency": 25,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -188,27 +199,28 @@
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 4500,
-        "avg_cost_group": 3150,
-        "savings_per_home": 1350,
-        "total_savings_potential": 27000,
-        "is_recurring": true
+        "avg_cost_retail": 5750,
+        "avg_cost_group": 4140,
+        "savings_per_home": 1610,
+        "total_savings_potential": 32200,
+        "avg_urgency": 100,
+        "is_recurring": false
       }
     },
-    "top_recommendation": "Water Heater replacement is critical for 20 homes. Group buying could save $647 per home.",
-    "top_system": "water_heater",
-    "top_system_display": "Water Heater",
+    "top_recommendation": "HVAC System — 100% of homes (20 of 20) are at or past end-of-life",
+    "top_system": "hvac",
+    "top_system_display": "HVAC System",
     "top_system_homes": 20,
-    "top_system_savings": 12940,
-    "top_system_savings_per_home": 647,
-    "estimated_total_savings": 68740
+    "top_system_savings": 53200,
+    "top_system_savings_per_home": 2660,
+    "estimated_total_savings": 98350
   },
   "4": {
     "subdivision": "Sharon Springs",
     "subdivision_id": 4,
     "total_homes": 15,
     "year_built_mode": 2006,
-    "urgency_score": 82,
+    "urgency_score": 89,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -217,10 +229,11 @@
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 15,
-        "avg_cost_retail": 6000,
-        "avg_cost_group": 4200,
-        "savings_per_home": 1800,
-        "total_savings_potential": 27000,
+        "avg_cost_retail": 9500,
+        "avg_cost_group": 6840,
+        "savings_per_home": 2660,
+        "total_savings_potential": 39900,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "water_heater": {
@@ -232,21 +245,23 @@
         "estimated_homes_needing_service": 15,
         "avg_cost_retail": 1850,
         "avg_cost_group": 1203,
-        "savings_per_home": 647,
-        "total_savings_potential": 9705,
+        "savings_per_home": 648,
+        "total_savings_potential": 9713,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
         "pct_critical": 0,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 100,
-        "estimated_homes_needing_service": 0,
+        "pct_due_now": 80,
+        "pct_upcoming": 20,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 12,
         "avg_cost_retail": 14000,
-        "avg_cost_group": 10500,
-        "savings_per_home": 3500,
-        "total_savings_potential": 0,
+        "avg_cost_group": 10920,
+        "savings_per_home": 3080,
+        "total_savings_potential": 36960,
+        "avg_urgency": 76,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -256,39 +271,41 @@
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 15,
-        "avg_cost_retail": 4500,
-        "avg_cost_group": 3150,
-        "savings_per_home": 1350,
-        "total_savings_potential": 20250,
-        "is_recurring": true
+        "avg_cost_retail": 5750,
+        "avg_cost_group": 4140,
+        "savings_per_home": 1610,
+        "total_savings_potential": 24150,
+        "avg_urgency": 100,
+        "is_recurring": false
       }
     },
-    "top_recommendation": "HVAC System replacement is critical for 15 homes. Group buying could save $1,800 per home.",
+    "top_recommendation": "HVAC System — 100% of homes (15 of 15) are at or past end-of-life",
     "top_system": "hvac",
     "top_system_display": "HVAC System",
     "top_system_homes": 15,
-    "top_system_savings": 27000,
-    "top_system_savings_per_home": 1800,
-    "estimated_total_savings": 56955
+    "top_system_savings": 39900,
+    "top_system_savings_per_home": 2660,
+    "estimated_total_savings": 110723
   },
   "5": {
     "subdivision": "Lanier Springs",
     "subdivision_id": 5,
     "total_homes": 15,
     "year_built_mode": 2013,
-    "urgency_score": 58,
+    "urgency_score": 70,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
-        "pct_critical": 0,
-        "pct_due_now": 0,
-        "pct_upcoming": 80,
-        "pct_ok": 20,
-        "estimated_homes_needing_service": 0,
-        "avg_cost_retail": 6000,
-        "avg_cost_group": 4200,
-        "savings_per_home": 1800,
-        "total_savings_potential": 0,
+        "pct_critical": 20,
+        "pct_due_now": 80,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 15,
+        "avg_cost_retail": 9500,
+        "avg_cost_group": 6840,
+        "savings_per_home": 2660,
+        "total_savings_potential": 39900,
+        "avg_urgency": 84,
         "is_recurring": false
       },
       "water_heater": {
@@ -300,8 +317,9 @@
         "estimated_homes_needing_service": 15,
         "avg_cost_retail": 1850,
         "avg_cost_group": 1203,
-        "savings_per_home": 647,
-        "total_savings_potential": 9705,
+        "savings_per_home": 648,
+        "total_savings_potential": 9713,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "roof": {
@@ -312,9 +330,10 @@
         "pct_ok": 100,
         "estimated_homes_needing_service": 0,
         "avg_cost_retail": 14000,
-        "avg_cost_group": 10500,
-        "savings_per_home": 3500,
+        "avg_cost_group": 10920,
+        "savings_per_home": 3080,
         "total_savings_potential": 0,
+        "avg_urgency": 19,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -324,19 +343,20 @@
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 15,
-        "avg_cost_retail": 4500,
-        "avg_cost_group": 3150,
-        "savings_per_home": 1350,
-        "total_savings_potential": 20250,
-        "is_recurring": true
+        "avg_cost_retail": 5750,
+        "avg_cost_group": 4140,
+        "savings_per_home": 1610,
+        "total_savings_potential": 24150,
+        "avg_urgency": 100,
+        "is_recurring": false
       }
     },
-    "top_recommendation": "Water Heater replacement is critical for 15 homes. Group buying could save $647 per home.",
-    "top_system": "water_heater",
-    "top_system_display": "Water Heater",
+    "top_recommendation": "HVAC System — 100% of homes (15 of 15) are at or past end-of-life",
+    "top_system": "hvac",
+    "top_system_display": "HVAC System",
     "top_system_homes": 15,
-    "top_system_savings": 9705,
-    "top_system_savings_per_home": 647,
-    "estimated_total_savings": 29955
+    "top_system_savings": 39900,
+    "top_system_savings_per_home": 2660,
+    "estimated_total_savings": 73763
   }
 }

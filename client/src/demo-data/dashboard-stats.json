@@ -8,31 +8,58 @@
     {
       "id": 2,
       "name": "Castleberry",
-      "maintenance_urgency_score": 84,
+      "zip": "30041",
       "total_homes": 25,
+      "year_built_min": 2004,
+      "year_built_max": 2006,
+      "year_built_mode": 2005,
+      "avg_square_footage": 2892,
+      "avg_assessed_value": 445700,
+      "hoa_name": "Castleberry Homeowners Association",
+      "hoa_contact_name": "Priya Patel",
+      "hoa_contact_email": "priya.patel@castleberryhoa.org",
       "pipeline_stage": "pitched",
+      "maintenance_urgency_score": 91,
       "hvac_pct_due": 100,
-      "roof_pct_due": 20,
+      "roof_pct_due": 100,
       "water_heater_pct_due": 100,
       "paint_pct_due": 100
     },
     {
       "id": 4,
       "name": "Sharon Springs",
-      "maintenance_urgency_score": 82,
+      "zip": "30041",
       "total_homes": 15,
+      "year_built_min": 2005,
+      "year_built_max": 2007,
+      "year_built_mode": 2006,
+      "avg_square_footage": 2890,
+      "avg_assessed_value": 447483,
+      "hoa_name": "Sharon Springs HOA",
+      "hoa_contact_name": "Maria Garcia",
+      "hoa_contact_email": "maria.garcia@sharonspringshoa.org",
       "pipeline_stage": "research",
+      "maintenance_urgency_score": 89,
       "hvac_pct_due": 100,
-      "roof_pct_due": 0,
+      "roof_pct_due": 80,
       "water_heater_pct_due": 100,
       "paint_pct_due": 100
     },
     {
       "id": 1,
       "name": "Bridgetown",
-      "maintenance_urgency_score": 80,
+      "zip": "30041",
       "total_homes": 25,
+      "year_built_min": 2007,
+      "year_built_max": 2009,
+      "year_built_mode": 2008,
+      "avg_square_footage": 2924,
+      "avg_assessed_value": 449800,
+      "hoa_name": "Bridgetown HOA",
+      "hoa_contact_name": "David Mitchell",
+      "hoa_contact_email": "david.mitchell@bridgetownhoa.org",
       "pipeline_stage": "meeting_scheduled",
+      "maintenance_urgency_score": 85,
       "hvac_pct_due": 100,
       "roof_pct_due": 0,
       "water_heater_pct_due": 100,
@@ -41,10 +68,19 @@
     {
       "id": 3,
       "name": "Windermere",
-      "maintenance_urgency_score": 70,
+      "zip": "30041",
       "total_homes": 20,
+      "year_built_min": 2010,
+      "year_built_max": 2012,
+      "year_built_mode": 2011,
+      "avg_square_footage": 2977,
+      "avg_assessed_value": 489975,
+      "hoa_name": "Windermere Community Association",
+      "hoa_contact_name": "Robert Thompson",
+      "hoa_contact_email": "robert.thompson@windermerehoa.org",
       "pipeline_stage": "contacted",
-      "hvac_pct_due": 80,
+      "maintenance_urgency_score": 76,
+      "hvac_pct_due": 100,
       "roof_pct_due": 0,
       "water_heater_pct_due": 100,
       "paint_pct_due": 100
@@ -52,34 +88,91 @@
     {
       "id": 5,
       "name": "Lanier Springs",
-      "maintenance_urgency_score": 58,
+      "zip": "30041",
       "total_homes": 15,
+      "year_built_min": 2012,
+      "year_built_max": 2014,
+      "year_built_mode": 2013,
+      "avg_square_footage": 2977,
+      "avg_assessed_value": 496350,
+      "hoa_name": "Lanier Springs Property Owners Assoc.",
+      "hoa_contact_name": "Wei Chen",
+      "hoa_contact_email": "wei.chen@lanierspringshoa.org",
       "pipeline_stage": "approved",
-      "hvac_pct_due": 0,
+      "maintenance_urgency_score": 70,
+      "hvac_pct_due": 100,
       "roof_pct_due": 0,
       "water_heater_pct_due": 100,
       "paint_pct_due": 100
     }
   ],
   "byYear": [
-    {"year_built": 2004, "count": 5},
-    {"year_built": 2005, "count": 18},
-    {"year_built": 2006, "count": 14},
-    {"year_built": 2007, "count": 8},
-    {"year_built": 2008, "count": 15},
-    {"year_built": 2009, "count": 5},
-    {"year_built": 2010, "count": 4},
-    {"year_built": 2011, "count": 12},
-    {"year_built": 2012, "count": 7},
-    {"year_built": 2013, "count": 9},
-    {"year_built": 2014, "count": 3}
+    {
+      "year_built": 2004,
+      "count": 5
+    },
+    {
+      "year_built": 2005,
+      "count": 18
+    },
+    {
+      "year_built": 2006,
+      "count": 14
+    },
+    {
+      "year_built": 2007,
+      "count": 8
+    },
+    {
+      "year_built": 2008,
+      "count": 15
+    },
+    {
+      "year_built": 2009,
+      "count": 5
+    },
+    {
+      "year_built": 2010,
+      "count": 4
+    },
+    {
+      "year_built": 2011,
+      "count": 12
+    },
+    {
+      "year_built": 2012,
+      "count": 7
+    },
+    {
+      "year_built": 2013,
+      "count": 9
+    },
+    {
+      "year_built": 2014,
+      "count": 3
+    }
   ],
   "pipelineDistribution": [
-    {"pipeline_stage": "research", "count": 1},
-    {"pipeline_stage": "contacted", "count": 1},
-    {"pipeline_stage": "meeting_scheduled", "count": 1},
-    {"pipeline_stage": "pitched", "count": 1},
-    {"pipeline_stage": "approved", "count": 1}
+    {
+      "pipeline_stage": "research",
+      "count": 1
+    },
+    {
+      "pipeline_stage": "contacted",
+      "count": 1
+    },
+    {
+      "pipeline_stage": "meeting_scheduled",
+      "count": 1
+    },
+    {
+      "pipeline_stage": "pitched",
+      "count": 1
+    },
+    {
+      "pipeline_stage": "approved",
+      "count": 1
+    }
   ],
   "recentActivities": [
     {
