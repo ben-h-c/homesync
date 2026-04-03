@@ -42,9 +42,22 @@ router.get('/:id', async (req, res) => {
 // PUT /api/subdivisions/:id
 router.put('/:id', async (req, res) => {
   try {
+    const before = await db('subdivisions').where('id', req.params.id).first();
+    if (!before) return res.status(404).json({ error: 'Subdivision not found' });
+
     await db('subdivisions').where('id', req.params.id).update({ ...req.body, updated_at: new Date().toISOString() });
     const subdivision = await db('subdivisions').where('id', req.params.id).first();
-    if (!subdivision) return res.status(404).json({ error: 'Subdivision not found' });
+
+    // Auto-log pipeline stage changes
+    if (req.body.pipeline_stage && req.body.pipeline_stage !== before.pipeline_stage) {
+      await db('activities').insert({
+        subdivision_id: parseInt(req.params.id),
+        type: 'status_change',
+        subject: `Pipeline: ${(before.pipeline_stage || 'research').replace(/_/g, ' ')} → ${req.body.pipeline_stage.replace(/_/g, ' ')}`,
+        description: `${subdivision.name} moved from "${(before.pipeline_stage || 'research').replace(/_/g, ' ')}" to "${req.body.pipeline_stage.replace(/_/g, ' ')}"`,
+      });
+    }
+
     res.json(subdivision);
   } catch (err) {
     res.status(400).json({ error: err.message });

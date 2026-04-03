@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, FileText, Mail, Save, X, Users, Clock, Plus } from 'lucide-react';
+import { ArrowLeft, FileText, Mail, Save, X, Users, Clock, Plus, ChevronDown, Phone, Calendar, FolderKanban } from 'lucide-react';
 import { fetchAPI } from '../api/client';
 import UrgencyBadge from '../components/UrgencyBadge';
 import MaintenanceBar from '../components/MaintenanceBar';
@@ -43,6 +43,8 @@ export default function SubdivisionDetail() {
   const [hoaForm, setHoaForm] = useState({});
   const [saving, setSaving] = useState(false);
   const [showLogModal, setShowLogModal] = useState(false);
+  const [activityPreFill, setActivityPreFill] = useState({});
+  const [quickActionsOpen, setQuickActionsOpen] = useState(false);
 
   const loadData = () => {
     fetchAPI(`/subdivisions/${id}`).then((s) => { setSub(s); setHoaForm(s); }).catch(() => {});
@@ -122,6 +124,52 @@ export default function SubdivisionDetail() {
           >
             <Mail size={16} /> Send Pitch Email
           </button>
+
+          {/* Quick Actions dropdown */}
+          <div className="relative">
+            <button onClick={() => setQuickActionsOpen(!quickActionsOpen)}
+              className="flex items-center gap-1 px-3 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-50">
+              <Plus size={16} /> Quick Actions <ChevronDown size={14} />
+            </button>
+            {quickActionsOpen && (
+              <>
+                <div className="fixed inset-0 z-10" onClick={() => setQuickActionsOpen(false)} />
+                <div className="absolute right-0 mt-1 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-20 py-1">
+                  <button onClick={() => {
+                    setQuickActionsOpen(false);
+                    const hoaContact = subContacts.find((c) => c.type === 'hoa_board');
+                    setActivityPreFill({ type: 'phone_call', subject: `Call with ${sub.name} HOA` });
+                    setShowLogModal(true);
+                  }} className="w-full px-4 py-2 text-left text-sm hover:bg-teal-tint flex items-center gap-2">
+                    <Phone size={14} className="text-green-500" /> Log a Phone Call
+                  </button>
+                  <button onClick={() => {
+                    setQuickActionsOpen(false);
+                    setActivityPreFill({ type: 'meeting', subject: `Meeting with ${sub.name} board` });
+                    setShowLogModal(true);
+                  }} className="w-full px-4 py-2 text-left text-sm hover:bg-teal-tint flex items-center gap-2">
+                    <Calendar size={14} className="text-indigo-500" /> Schedule Meeting
+                  </button>
+                  <button onClick={() => {
+                    setQuickActionsOpen(false);
+                    const hoaContact = subContacts.find((c) => c.type === 'hoa_board');
+                    const params = new URLSearchParams({ subdivision_id: id, template: 'hoa_follow_up' });
+                    if (hoaContact) params.set('contact_id', hoaContact.id);
+                    navigate(`/email/compose?${params.toString()}`);
+                  }} className="w-full px-4 py-2 text-left text-sm hover:bg-teal-tint flex items-center gap-2">
+                    <Mail size={14} className="text-blue-500" /> Send Follow-Up Email
+                  </button>
+                  <div className="border-t border-gray-100 my-1" />
+                  <button onClick={() => {
+                    setQuickActionsOpen(false);
+                    navigate(`/projects/new?subdivision_id=${id}&service=${forecast?.top_system || ''}`);
+                  }} className="w-full px-4 py-2 text-left text-sm hover:bg-teal-tint flex items-center gap-2">
+                    <FolderKanban size={14} className="text-primary" /> Create Project
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </div>
 
@@ -291,7 +339,8 @@ export default function SubdivisionDetail() {
       {showLogModal && (
         <LogActivityModal
           subdivisionId={parseInt(id)}
-          onClose={() => setShowLogModal(false)}
+          preFill={activityPreFill}
+          onClose={() => { setShowLogModal(false); setActivityPreFill({}); }}
           onSaved={loadData}
         />
       )}

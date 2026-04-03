@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
+import GlobalSearch from './GlobalSearch';
 import { isDemoMode, onDemoModeChange } from '../api/client';
 import { X } from 'lucide-react';
 
@@ -29,12 +30,18 @@ export default function Layout() {
           </div>
         )}
 
-        {/* Mobile header */}
-        <div className="md:hidden bg-navy text-white px-4 py-3 flex items-center gap-3 shrink-0">
-          <button onClick={() => setSidebarOpen(true)} className="text-white">
+        {/* Top header with search */}
+        <div className="bg-navy px-4 py-2.5 flex items-center gap-3 shrink-0">
+          {/* Mobile hamburger */}
+          <button onClick={() => setSidebarOpen(true)} className="md:hidden text-white shrink-0">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
           </button>
-          <span className="font-bold"><span className="text-primary">Home</span>Sync</span>
+          <span className="md:hidden font-bold text-white shrink-0"><span className="text-primary">Home</span>Sync</span>
+
+          {/* Global search */}
+          <div className="flex-1 flex justify-center">
+            <GlobalSearch />
+          </div>
         </div>
 
         <main className="flex-1 overflow-y-auto p-4 md:p-6 bg-off-white">

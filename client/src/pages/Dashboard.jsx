@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Home, Map, FolderKanban, GitBranch, AlertTriangle } from 'lucide-react';
+import { Home, Map, FolderKanban, GitBranch, AlertTriangle, Rocket, CheckCircle, Circle } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
 import { fetchAPI } from '../api/client';
 import UrgencyBadge from '../components/UrgencyBadge';
@@ -72,6 +72,41 @@ export default function Dashboard() {
         <MetricCard icon={GitBranch} label="Pipeline Active" value={stats.pipelineActive}
           sub="HOAs in active stages" />
       </div>
+
+      {/* Getting Started checklist — shown until all items are done */}
+      {(() => {
+        const checks = [
+          { done: stats.totalProperties > 0, label: 'Import your first property data', link: '/import' },
+          { done: stats.totalProperties > 0 && stats.hotSubdivisions.length > 0, label: 'Review your hottest subdivision', link: stats.hotSubdivisions[0] ? `/subdivisions/${stats.hotSubdivisions[0].id}` : '/subdivisions' },
+          { done: (stats.recentActivities || []).some((a) => a.contact_id), label: 'Add your first HOA contact', link: '/contacts/new' },
+          { done: (stats.recentActivities || []).some((a) => a.type === 'email_sent'), label: 'Send your first pitch email', link: '/email/compose' },
+          { done: stats.activeProjects > 0, label: 'Create your first project', link: '/projects/new' },
+        ];
+        const allDone = checks.every((c) => c.done);
+        if (allDone) return null;
+        const doneCount = checks.filter((c) => c.done).length;
+        return (
+          <div className="bg-white rounded-lg shadow-sm p-5 mb-6 border-l-4 border-primary">
+            <div className="flex items-center gap-2 mb-3">
+              <Rocket size={18} className="text-primary" />
+              <h2 className="font-semibold">Getting Started</h2>
+              <span className="text-xs text-gray-400 ml-auto">{doneCount}/{checks.length} complete</span>
+            </div>
+            <div className="space-y-2">
+              {checks.map((item, i) => (
+                <div key={i} className={`flex items-center gap-2.5 text-sm ${item.done ? 'text-gray-400' : ''}`}>
+                  {item.done
+                    ? <CheckCircle size={16} className="text-success shrink-0" />
+                    : <Circle size={16} className="text-gray-300 shrink-0" />}
+                  {item.done
+                    ? <span className="line-through">{item.label}</span>
+                    : <span onClick={() => navigate(item.link)} className="text-primary hover:underline cursor-pointer">{item.label}</span>}
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Hot subdivisions */}
       {stats.hotSubdivisions.length > 0 && (

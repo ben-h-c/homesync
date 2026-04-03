@@ -19,11 +19,11 @@ const OUTCOMES = [
   { value: 'no_response', label: 'No Response' },
 ];
 
-export default function LogActivityModal({ contactId, subdivisionId, projectId, onClose, onSaved }) {
+export default function LogActivityModal({ contactId, subdivisionId, projectId, preFill = {}, onClose, onSaved }) {
   const [form, setForm] = useState({
-    type: 'note',
-    subject: '',
-    description: '',
+    type: preFill.type || 'note',
+    subject: preFill.subject || '',
+    description: preFill.description || '',
     outcome: '',
     contact_id: contactId || null,
     subdivision_id: subdivisionId || null,
