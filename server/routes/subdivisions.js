@@ -63,4 +63,30 @@ router.get('/:id/properties', async (req, res) => {
   }
 });
 
+// GET /api/subdivisions/:id/contacts
+router.get('/:id/contacts', async (req, res) => {
+  try {
+    const subdivision = await db('subdivisions').where('id', req.params.id).first();
+    if (!subdivision) return res.status(404).json({ error: 'Subdivision not found' });
+    const contacts = await db('contacts').where('subdivision', subdivision.name).where('status', '!=', 'inactive');
+    res.json(contacts);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/subdivisions/:id/timeline
+router.get('/:id/timeline', async (req, res) => {
+  try {
+    const activities = await db('activities')
+      .where('subdivision_id', req.params.id)
+      .orderBy('created_at', 'desc')
+      .orderBy('id', 'desc')
+      .limit(50);
+    res.json(activities);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 module.exports = router;

@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, FileText, Mail, Save, X, Users, Clock } from 'lucide-react';
+import { ArrowLeft, FileText, Mail, Save, X, Users, Clock, Plus } from 'lucide-react';
 import { fetchAPI } from '../api/client';
 import UrgencyBadge from '../components/UrgencyBadge';
 import MaintenanceBar from '../components/MaintenanceBar';
+import ActivityFeed from '../components/ActivityFeed';
+import LogActivityModal from '../components/LogActivityModal';
 
 const PIPELINE_COLORS = {
   research: 'bg-gray-100 text-gray-700',
@@ -35,14 +37,21 @@ export default function SubdivisionDetail() {
 
   const [sub, setSub] = useState(null);
   const [forecast, setForecast] = useState(null);
+  const [subContacts, setSubContacts] = useState([]);
+  const [activities, setActivities] = useState([]);
   const [editingHOA, setEditingHOA] = useState(false);
   const [hoaForm, setHoaForm] = useState({});
   const [saving, setSaving] = useState(false);
+  const [showLogModal, setShowLogModal] = useState(false);
 
-  useEffect(() => {
+  const loadData = () => {
     fetchAPI(`/subdivisions/${id}`).then((s) => { setSub(s); setHoaForm(s); }).catch(() => {});
     fetchAPI(`/maintenance/forecast/${id}`).then(setForecast).catch(() => {});
-  }, [id]);
+    fetchAPI(`/subdivisions/${id}/contacts`).then(setSubContacts).catch(() => {});
+    fetchAPI(`/subdivisions/${id}/timeline`).then(setActivities).catch(() => {});
+  };
+
+  useEffect(() => { loadData(); }, [id]);
 
   const handleSaveHOA = async () => {
     setSaving(true);
@@ -234,20 +243,53 @@ export default function SubdivisionDetail() {
         </div>
       )}
 
-      {/* Contacts placeholder */}
+      {/* Contacts section */}
       <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-lg font-semibold flex items-center gap-2"><Users size={18} /> HOA Contacts</h2>
-          <button onClick={() => navigate('/contacts/new')} className="px-3 py-1.5 border border-gray-300 rounded text-sm hover:bg-gray-50">+ Add Contact</button>
+          <button onClick={() => navigate('/contacts/new')} className="flex items-center gap-1 px-3 py-1.5 border border-gray-300 rounded text-sm hover:bg-gray-50"><Plus size={12} /> Add Contact</button>
         </div>
-        <p className="text-sm text-gray-400">No contacts linked to this subdivision yet.</p>
+        {subContacts.length === 0 ? (
+          <p className="text-sm text-gray-400">No contacts linked to this subdivision yet.</p>
+        ) : (
+          <div className="space-y-2">
+            {subContacts.map((c) => (
+              <div key={c.id} className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0 cursor-pointer hover:bg-gray-50 -mx-2 px-2 rounded" onClick={() => navigate(`/contacts/${c.id}`)}>
+                <div>
+                  <span className="font-medium text-sm">{c.first_name} {c.last_name}</span>
+                  {c.title && <span className="text-xs text-gray-500 ml-2">{c.title}</span>}
+                  <span className={`ml-2 inline-block px-2 py-0.5 rounded-full text-xs font-medium ${
+                    c.type === 'hoa_board' ? 'bg-indigo-100 text-indigo-700' :
+                    c.type === 'contractor' ? 'bg-orange-100 text-orange-700' :
+                    'bg-gray-100 text-gray-700'
+                  }`}>{c.type.replace(/_/g, ' ')}</span>
+                </div>
+                <div className="text-xs text-gray-500">{c.email || c.phone || ''}</div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* Activity timeline placeholder */}
+      {/* Activity timeline */}
       <div className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-lg font-semibold flex items-center gap-2 mb-3"><Clock size={18} /> Activity Timeline</h2>
-        <p className="text-sm text-gray-400">No activities recorded yet.</p>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-lg font-semibold flex items-center gap-2"><Clock size={18} /> Activity Timeline</h2>
+          <button onClick={() => setShowLogModal(true)}
+            className="flex items-center gap-1 px-3 py-1.5 border border-gray-300 rounded text-xs hover:bg-gray-50">
+            <Plus size={12} /> Log Activity
+          </button>
+        </div>
+        <ActivityFeed activities={activities} />
       </div>
+
+      {showLogModal && (
+        <LogActivityModal
+          subdivisionId={parseInt(id)}
+          onClose={() => setShowLogModal(false)}
+          onSaved={loadData}
+        />
+      )}
     </div>
   );
 }

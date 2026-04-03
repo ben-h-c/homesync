@@ -21,6 +21,8 @@ app.use('/api/properties', require('./routes/properties'));
 app.use('/api/subdivisions', require('./routes/subdivisions'));
 app.use('/api/import', require('./routes/import'));
 app.use('/api/maintenance', require('./routes/maintenance'));
+app.use('/api/contacts', require('./routes/contacts'));
+app.use('/api/activities', require('./routes/activities'));
 
 app.listen(PORT, () => {
   console.log(`HomeSync server running on http://localhost:${PORT}`);
