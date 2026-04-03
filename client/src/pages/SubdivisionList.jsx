@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { fetchAPI } from '../api/client';
+import UrgencyBadge from '../components/UrgencyBadge';
 
 const PIPELINE_COLORS = {
   research: 'bg-gray-100 text-gray-700',
@@ -23,25 +24,13 @@ function PipelineBadge({ stage }) {
   );
 }
 
-function UrgencyBadge({ score }) {
-  const s = score || 0;
-  let color = 'bg-green-500 text-white';
-  if (s >= 80) color = 'bg-red-600 text-white';
-  else if (s >= 60) color = 'bg-orange-500 text-white';
-  else if (s >= 40) color = 'bg-yellow-400 text-gray-900';
-  return (
-    <span className={`inline-block w-10 text-center px-2 py-0.5 rounded-full text-xs font-bold ${color}`}>
-      {Math.round(s)}
-    </span>
-  );
-}
 
 export default function SubdivisionList() {
   const navigate = useNavigate();
   const [subdivisions, setSubdivisions] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [sort, setSort] = useState('name');
-  const [order, setOrder] = useState('asc');
+  const [sort, setSort] = useState('maintenance_urgency_score');
+  const [order, setOrder] = useState('desc');
 
   useEffect(() => {
     load();
@@ -119,7 +108,7 @@ export default function SubdivisionList() {
                   <td className="px-4 py-3">{sub.total_homes}</td>
                   <td className="px-4 py-3">{sub.year_built_mode || '—'}</td>
                   <td className="px-4 py-3">{sub.avg_assessed_value ? `$${sub.avg_assessed_value.toLocaleString()}` : '—'}</td>
-                  <td className="px-4 py-3"><UrgencyBadge score={sub.maintenance_urgency_score} /></td>
+                  <td className="px-4 py-3"><UrgencyBadge score={sub.maintenance_urgency_score} size="sm" /></td>
                   <td className="px-4 py-3"><PipelineBadge stage={sub.pipeline_stage} /></td>
                 </tr>
               ))
