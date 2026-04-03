@@ -2,11 +2,9 @@ import { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, CircleMarker, Popup, Tooltip, useMap } from 'react-leaflet';
 import { fetchAPI } from '../api/client';
-import UrgencyBadge from '../components/UrgencyBadge';
 import 'leaflet/dist/leaflet.css';
 
-// Approximate coordinates for subdivisions — spread across real Forsyth County / N. Atlanta geography
-// Centered on Cumming, GA: 34.20, -84.14
+// Approximate coordinates for subdivisions spread across real geography
 const SUBDIVISION_COORDS = {
   // Forsyth 30041 (east/south Forsyth)
   'Creekstone Estates': [34.185, -84.095],
@@ -60,32 +58,32 @@ const SUBDIVISION_COORDS = {
   'Legends at Settendown Creek': [34.255, -84.165],
   'Sawnee Mountain': [34.270, -84.150],
   'Churchill Crossing': [34.248, -84.140],
-  // North Fulton — Alpharetta / Milton
+  // North Fulton
   'Windward': [34.095, -84.275],
   'White Columns': [34.130, -84.300],
   'Kimball Farms': [34.085, -84.260],
   'Mayfair': [34.040, -84.195],
-  // Gwinnett — Suwanee / Duluth / Buford
+  // Gwinnett
   'River Club': [34.060, -84.080],
   'Laurel Springs': [34.055, -84.070],
   'Morning View': [34.065, -84.060],
   'Huntington West': [34.100, -84.020],
   'Sugarloaf Country Club': [34.000, -84.100],
-  // Cherokee — Canton / Woodstock
+  // Cherokee
   'BridgeMill': [34.235, -84.465],
   'Towne Mill': [34.245, -84.480],
   'Eagle Watch': [34.115, -84.500],
   'Starr Lake': [34.075, -84.620],
-  // Hall — Flowery Branch
+  // Hall
   'Sterling on the Lake': [34.185, -83.920],
   'Traditions of Braselton': [34.105, -83.810],
 };
 
 function getUrgencyColor(score) {
-  if (score >= 80) return '#C0392B'; // red
-  if (score >= 60) return '#E67E22'; // orange
-  if (score >= 40) return '#F1C40F'; // yellow
-  return '#27AE60'; // green
+  if (score >= 80) return '#C0392B';
+  if (score >= 60) return '#E67E22';
+  if (score >= 40) return '#F1C40F';
+  return '#27AE60';
 }
 
 function getMarkerRadius(homes) {
@@ -96,7 +94,6 @@ function getMarkerRadius(homes) {
   return 7;
 }
 
-// Auto-fit map to markers
 function FitBounds({ positions }) {
   const map = useMap();
   useEffect(() => {
@@ -108,21 +105,15 @@ function FitBounds({ positions }) {
 }
 
 const PIPELINE_LABELS = {
-  research: 'Research',
-  contacted: 'Contacted',
-  meeting_scheduled: 'Meeting Scheduled',
-  pitched: 'Pitched',
-  approved: 'Approved',
-  active: 'Active',
-  completed: 'Completed',
-  declined: 'Declined',
+  research: 'Research', contacted: 'Contacted', meeting_scheduled: 'Meeting Scheduled',
+  pitched: 'Pitched', approved: 'Approved', active: 'Active', completed: 'Completed', declined: 'Declined',
 };
 
 export default function MapView() {
   const navigate = useNavigate();
   const [subdivisions, setSubdivisions] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState('all'); // all, critical, high, medium, low
+  const [filter, setFilter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
@@ -159,55 +150,58 @@ export default function MapView() {
     return { total: markers.length, totalHomes, critical };
   }, [markers]);
 
-  if (loading) return <div className="text-gray-500">Loading map...</div>;
+  if (loading) return <div className="p-6 text-gray-500">Loading map...</div>;
 
   return (
-    <div className="h-full flex flex-col -m-4 md:-m-6">
+    <div style={{ height: 'calc(100vh - 52px)', margin: '-1rem', display: 'flex', flexDirection: 'column' }}>
       {/* Header bar */}
-      <div className="bg-white border-b border-gray-200 px-4 py-3 flex flex-wrap items-center gap-3 shrink-0 z-[1000]">
-        <h1 className="text-lg font-bold mr-2">Subdivision Map</h1>
+      <div style={{ background: 'white', borderBottom: '1px solid #e5e7eb', padding: '10px 16px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '10px', zIndex: 1000, position: 'relative' }}>
+        <h1 style={{ fontSize: '18px', fontWeight: 'bold', marginRight: '8px' }}>Subdivision Map</h1>
 
         <input
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search subdivisions..."
-          className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm w-48 focus:outline-none focus:ring-2 focus:ring-primary/30"
+          style={{ border: '1px solid #d1d5db', borderRadius: '8px', padding: '6px 12px', fontSize: '13px', width: '180px' }}
         />
 
-        <div className="flex gap-1">
+        <div style={{ display: 'flex', gap: '4px' }}>
           {[
-            { key: 'all', label: 'All', color: 'bg-gray-100 text-gray-700' },
-            { key: 'critical', label: 'Critical (80+)', color: 'bg-red-100 text-red-700' },
-            { key: 'high', label: 'High (60+)', color: 'bg-orange-100 text-orange-700' },
-            { key: 'medium', label: 'Medium (40+)', color: 'bg-yellow-100 text-yellow-700' },
-            { key: 'low', label: 'OK (<40)', color: 'bg-green-100 text-green-700' },
-          ].map(({ key, label, color }) => (
+            { key: 'all', label: 'All', bg: '#f3f4f6' },
+            { key: 'critical', label: 'Critical', bg: '#fee2e2' },
+            { key: 'high', label: 'High', bg: '#ffedd5' },
+            { key: 'medium', label: 'Medium', bg: '#fef9c3' },
+            { key: 'low', label: 'OK', bg: '#dcfce7' },
+          ].map(({ key, label, bg }) => (
             <button
               key={key}
               onClick={() => setFilter(key)}
-              className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
-                filter === key ? color + ' ring-2 ring-offset-1 ring-gray-400' : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
-              }`}
+              style={{
+                padding: '4px 12px', borderRadius: '999px', fontSize: '12px', fontWeight: 500,
+                background: filter === key ? bg : '#f9fafb',
+                border: filter === key ? '2px solid #9ca3af' : '1px solid #e5e7eb',
+                cursor: 'pointer',
+              }}
             >
               {label}
             </button>
           ))}
         </div>
 
-        <div className="ml-auto flex gap-4 text-xs text-gray-500">
-          <span><strong className="text-near-black">{stats.total}</strong> subdivisions</span>
-          <span><strong className="text-near-black">{stats.totalHomes.toLocaleString()}</strong> homes</span>
-          <span><strong className="text-red-600">{stats.critical}</strong> critical</span>
+        <div style={{ marginLeft: 'auto', display: 'flex', gap: '16px', fontSize: '12px', color: '#6b7280' }}>
+          <span><strong style={{ color: '#1a1a2e' }}>{stats.total}</strong> subdivisions</span>
+          <span><strong style={{ color: '#1a1a2e' }}>{stats.totalHomes.toLocaleString()}</strong> homes</span>
+          <span><strong style={{ color: '#C0392B' }}>{stats.critical}</strong> critical</span>
         </div>
       </div>
 
-      {/* Map */}
-      <div className="flex-1 relative">
+      {/* Map container — takes remaining height */}
+      <div style={{ flex: 1, position: 'relative' }}>
         <MapContainer
           center={[34.17, -84.14]}
           zoom={11}
-          style={{ height: '100%', width: '100%' }}
+          style={{ height: '100%', width: '100%', position: 'absolute', top: 0, left: 0 }}
           zoomControl={true}
         >
           <TileLayer
@@ -238,65 +232,52 @@ export default function MapView() {
                 }}
               >
                 <Tooltip direction="top" offset={[0, -radius]} opacity={0.95} className="custom-tooltip">
-                  <div className="min-w-[200px]">
-                    <div className="font-bold text-sm mb-1">{sub.name}</div>
-                    <div className="text-xs text-gray-600 space-y-0.5">
-                      <div className="flex justify-between">
-                        <span>Homes:</span>
-                        <strong>{sub.total_homes?.toLocaleString()}</strong>
+                  <div style={{ minWidth: '200px' }}>
+                    <div style={{ fontWeight: 'bold', fontSize: '13px', marginBottom: '4px' }}>{sub.name}</div>
+                    <div style={{ fontSize: '11px', color: '#4b5563' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>Homes:</span><strong>{sub.total_homes?.toLocaleString()}</strong>
                       </div>
-                      <div className="flex justify-between">
-                        <span>Built:</span>
-                        <strong>{sub.year_built_min}–{sub.year_built_max} (mode {sub.year_built_mode})</strong>
+                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>Built:</span><strong>{sub.year_built_min}–{sub.year_built_max}</strong>
                       </div>
-                      <div className="flex justify-between">
-                        <span>Avg Value:</span>
-                        <strong>${sub.avg_assessed_value?.toLocaleString()}</strong>
+                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>Avg Value:</span><strong>${sub.avg_assessed_value?.toLocaleString()}</strong>
                       </div>
-                      <div className="flex justify-between">
-                        <span>Urgency:</span>
-                        <strong style={{ color }}>{score}/100</strong>
+                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>Urgency:</span><strong style={{ color }}>{score}/100</strong>
                       </div>
-                      <div className="flex justify-between">
-                        <span>Pipeline:</span>
-                        <strong className="capitalize">{PIPELINE_LABELS[sub.pipeline_stage] || sub.pipeline_stage}</strong>
+                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>Pipeline:</span><strong>{PIPELINE_LABELS[sub.pipeline_stage] || sub.pipeline_stage}</strong>
                       </div>
                       {sub.hvac_pct_due > 0 && (
-                        <div className="flex justify-between">
-                          <span>HVAC Due:</span>
-                          <strong className="text-red-600">{sub.hvac_pct_due}%</strong>
-                        </div>
-                      )}
-                      {sub.roof_pct_due > 0 && (
-                        <div className="flex justify-between">
-                          <span>Roof Due:</span>
-                          <strong className="text-red-600">{sub.roof_pct_due}%</strong>
+                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                          <span>HVAC Due:</span><strong style={{ color: '#C0392B' }}>{sub.hvac_pct_due}%</strong>
                         </div>
                       )}
                     </div>
-                    <div className="text-[10px] text-gray-400 mt-1.5 border-t border-gray-200 pt-1">Click to view details</div>
+                    <div style={{ fontSize: '9px', color: '#9ca3af', marginTop: '4px', borderTop: '1px solid #e5e7eb', paddingTop: '3px' }}>Click to view details</div>
                   </div>
                 </Tooltip>
 
                 <Popup>
-                  <div className="min-w-[220px]">
-                    <h3 className="font-bold text-base mb-2">{sub.name}</h3>
-                    <table className="text-xs w-full">
+                  <div style={{ minWidth: '220px' }}>
+                    <h3 style={{ fontWeight: 'bold', fontSize: '15px', marginBottom: '8px' }}>{sub.name}</h3>
+                    <table style={{ fontSize: '12px', width: '100%' }}>
                       <tbody>
-                        <tr><td className="text-gray-500 pr-3 py-0.5">Homes</td><td className="font-medium">{sub.total_homes?.toLocaleString()}</td></tr>
-                        <tr><td className="text-gray-500 pr-3 py-0.5">Built</td><td className="font-medium">{sub.year_built_min}–{sub.year_built_max}</td></tr>
-                        <tr><td className="text-gray-500 pr-3 py-0.5">Avg Value</td><td className="font-medium">${sub.avg_assessed_value?.toLocaleString()}</td></tr>
-                        <tr><td className="text-gray-500 pr-3 py-0.5">Urgency</td><td className="font-bold" style={{ color }}>{score}/100</td></tr>
-                        <tr><td className="text-gray-500 pr-3 py-0.5">ZIP</td><td className="font-medium">{sub.zip}</td></tr>
-                        {sub.hoa_name && <tr><td className="text-gray-500 pr-3 py-0.5">HOA</td><td className="font-medium">{sub.hoa_name}</td></tr>}
+                        <tr><td style={{ color: '#6b7280', paddingRight: '12px', paddingBottom: '2px' }}>Homes</td><td style={{ fontWeight: 500 }}>{sub.total_homes?.toLocaleString()}</td></tr>
+                        <tr><td style={{ color: '#6b7280', paddingRight: '12px', paddingBottom: '2px' }}>Built</td><td style={{ fontWeight: 500 }}>{sub.year_built_min}–{sub.year_built_max} (mode {sub.year_built_mode})</td></tr>
+                        <tr><td style={{ color: '#6b7280', paddingRight: '12px', paddingBottom: '2px' }}>Avg Value</td><td style={{ fontWeight: 500 }}>${sub.avg_assessed_value?.toLocaleString()}</td></tr>
+                        <tr><td style={{ color: '#6b7280', paddingRight: '12px', paddingBottom: '2px' }}>Urgency</td><td style={{ fontWeight: 'bold', color }}>{score}/100</td></tr>
+                        <tr><td style={{ color: '#6b7280', paddingRight: '12px', paddingBottom: '2px' }}>ZIP</td><td style={{ fontWeight: 500 }}>{sub.zip}</td></tr>
+                        {sub.hoa_name && <tr><td style={{ color: '#6b7280', paddingRight: '12px', paddingBottom: '2px' }}>HOA</td><td style={{ fontWeight: 500 }}>{sub.hoa_name}</td></tr>}
                       </tbody>
                     </table>
                     <button
                       onClick={() => navigate(`/subdivisions/${sub.id}`)}
-                      style={{ backgroundColor: '#0E7C7B' }}
-                      className="mt-2 w-full text-white text-xs py-1.5 rounded font-medium hover:opacity-90"
+                      style={{ marginTop: '8px', width: '100%', background: '#0E7C7B', color: 'white', fontSize: '12px', padding: '6px 0', borderRadius: '6px', fontWeight: 500, border: 'none', cursor: 'pointer' }}
                     >
-                      View Subdivision →
+                      View Subdivision Details →
                     </button>
                   </div>
                 </Popup>
@@ -306,20 +287,25 @@ export default function MapView() {
         </MapContainer>
 
         {/* Legend */}
-        <div className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-3 z-[1000] text-xs">
-          <div className="font-semibold mb-1.5">Urgency</div>
-          <div className="space-y-1">
-            <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-red-600" /> Critical (80+)</div>
-            <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-orange-500" /> High (60-79)</div>
-            <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-yellow-400" /> Medium (40-59)</div>
-            <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-green-500" /> OK (&lt;40)</div>
-          </div>
-          <div className="font-semibold mt-2 mb-1">Size = Home Count</div>
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-gray-400" />
-            <span className="w-3 h-3 rounded-full bg-gray-400" />
-            <span className="w-4 h-4 rounded-full bg-gray-400" />
-            <span className="text-gray-500">50 → 500 → 2,500+</span>
+        <div style={{ position: 'absolute', bottom: '16px', left: '16px', background: 'white', borderRadius: '10px', boxShadow: '0 2px 12px rgba(0,0,0,0.15)', padding: '12px 14px', zIndex: 1000, fontSize: '11px' }}>
+          <div style={{ fontWeight: 600, marginBottom: '6px' }}>Urgency</div>
+          {[
+            { color: '#C0392B', label: 'Critical (80+)' },
+            { color: '#E67E22', label: 'High (60-79)' },
+            { color: '#F1C40F', label: 'Medium (40-59)' },
+            { color: '#27AE60', label: 'OK (<40)' },
+          ].map(({ color, label }) => (
+            <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '2px' }}>
+              <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: color, display: 'inline-block' }} />
+              {label}
+            </div>
+          ))}
+          <div style={{ fontWeight: 600, marginTop: '8px', marginBottom: '4px' }}>Size = Home Count</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+            <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#9ca3af', display: 'inline-block' }} />
+            <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#9ca3af', display: 'inline-block' }} />
+            <span style={{ width: '14px', height: '14px', borderRadius: '50%', background: '#9ca3af', display: 'inline-block' }} />
+            <span style={{ color: '#6b7280', marginLeft: '4px' }}>50 → 500 → 2,500+</span>
           </div>
         </div>
       </div>
