@@ -11,6 +11,7 @@ import {
   FileText,
   Upload,
   Settings,
+  X,
 } from 'lucide-react';
 
 const navItems = [
@@ -27,14 +28,23 @@ const navItems = [
   { to: '/settings', icon: Settings, label: 'Settings' },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ open, onClose }) {
   return (
-    <aside className="w-60 bg-navy text-white flex flex-col shrink-0">
-      <div className="px-5 py-6 border-b border-white/10">
-        <h1 className="text-xl font-bold tracking-tight">
-          <span className="text-primary">Home</span>Sync
-        </h1>
-        <p className="text-xs text-white/50 mt-0.5">Predictive Maintenance</p>
+    <aside className={`
+      w-60 bg-navy text-white flex flex-col shrink-0 print:hidden
+      fixed inset-y-0 left-0 z-40 transition-transform md:relative md:translate-x-0
+      ${open ? 'translate-x-0' : '-translate-x-full'}
+    `}>
+      <div className="px-5 py-6 border-b border-white/10 flex items-center justify-between">
+        <div>
+          <h1 className="text-xl font-bold tracking-tight">
+            <span className="text-primary">Home</span>Sync
+          </h1>
+          <p className="text-xs text-white/50 mt-0.5">Predictive Maintenance</p>
+        </div>
+        <button onClick={onClose} className="md:hidden text-white/50 hover:text-white">
+          <X size={20} />
+        </button>
       </div>
       <nav className="flex-1 py-3 overflow-y-auto">
         {navItems.map(({ to, icon: Icon, label }) => (
@@ -42,6 +52,7 @@ export default function Sidebar() {
             key={to}
             to={to}
             end={to === '/'}
+            onClick={onClose}
             className={({ isActive }) =>
               `flex items-center gap-3 px-5 py-2.5 text-sm transition-colors ${
                 isActive

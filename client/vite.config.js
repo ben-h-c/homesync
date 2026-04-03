@@ -6,5 +6,8 @@ export default defineConfig({
   base: '/homesync/',
   server: {
     port: 5173
+  },
+  json: {
+    stringify: true
   }
 });
