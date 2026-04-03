@@ -1,0 +1,15 @@
+export async function seed(knex) {
+  await knex('maintenance_rules').del();
+  await knex('maintenance_rules').insert([
+    { system_name: 'hvac', display_name: 'HVAC System', avg_lifespan_years: 15, warning_years_before: 2, critical_years_after: 2, avg_replacement_cost_low: 4000, avg_replacement_cost_high: 8000, group_discount_typical: 0.30, service_type: 'hvac_replacement', is_recurring: false },
+    { system_name: 'water_heater', display_name: 'Water Heater', avg_lifespan_years: 10, warning_years_before: 2, critical_years_after: 2, avg_replacement_cost_low: 1200, avg_replacement_cost_high: 2500, group_discount_typical: 0.35, service_type: 'water_heater', is_recurring: false },
+    { system_name: 'roof', display_name: 'Roof (Asphalt Shingle)', avg_lifespan_years: 25, warning_years_before: 3, critical_years_after: 2, avg_replacement_cost_low: 8000, avg_replacement_cost_high: 20000, group_discount_typical: 0.25, service_type: 'roof_inspection', is_recurring: false },
+    { system_name: 'exterior_paint', display_name: 'Exterior Paint', avg_lifespan_years: 8, warning_years_before: 1, critical_years_after: 2, avg_replacement_cost_low: 3000, avg_replacement_cost_high: 6000, group_discount_typical: 0.30, service_type: 'exterior_paint', is_recurring: false },
+    { system_name: 'driveway_sealing', display_name: 'Driveway Sealing', avg_lifespan_years: 4, warning_years_before: 1, critical_years_after: 2, avg_replacement_cost_low: 300, avg_replacement_cost_high: 600, group_discount_typical: 0.35, service_type: 'driveway_sealing', is_recurring: false },
+    { system_name: 'deck_staining', display_name: 'Deck Stain/Seal', avg_lifespan_years: 3, warning_years_before: 1, critical_years_after: 2, avg_replacement_cost_low: 400, avg_replacement_cost_high: 1000, group_discount_typical: 0.30, service_type: 'deck_staining', is_recurring: false },
+    { system_name: 'garage_door', display_name: 'Garage Door/Opener', avg_lifespan_years: 12, warning_years_before: 2, critical_years_after: 2, avg_replacement_cost_low: 800, avg_replacement_cost_high: 2500, group_discount_typical: 0.20, service_type: 'garage_door', is_recurring: false },
+    { system_name: 'gutter_cleaning', display_name: 'Gutter Cleaning', avg_lifespan_years: 1, warning_years_before: 0, critical_years_after: 2, avg_replacement_cost_low: 150, avg_replacement_cost_high: 300, group_discount_typical: 0.40, service_type: 'gutter_cleaning', is_recurring: true, recurrence_months: 12 },
+    { system_name: 'pressure_washing', display_name: 'Pressure Washing', avg_lifespan_years: 1, warning_years_before: 0, critical_years_after: 2, avg_replacement_cost_low: 200, avg_replacement_cost_high: 400, group_discount_typical: 0.40, service_type: 'pressure_washing', is_recurring: true, recurrence_months: 12 },
+    { system_name: 'water_heater_flush', display_name: 'Water Heater Flush', avg_lifespan_years: 1, warning_years_before: 0, critical_years_after: 2, avg_replacement_cost_low: 100, avg_replacement_cost_high: 200, group_discount_typical: 0.40, service_type: 'water_heater_flush', is_recurring: true, recurrence_months: 12 },
+  ]);
+}
