@@ -1,301 +1,275 @@
 {
-  "totalProperties": 100,
-  "totalSubdivisions": 5,
-  "activeProjects": 1,
-  "totalSignups": 12,
-  "pipelineActive": 4,
+  "totalProperties": 200,
+  "totalSubdivisions": 20,
+  "activeProjects": 0,
+  "totalSignups": 0,
+  "pipelineActive": 1,
   "hotSubdivisions": [
     {
-      "id": 2,
-      "name": "Castleberry",
+      "id": 12,
+      "name": "Brookwood",
       "zip": "30041",
-      "total_homes": 25,
-      "year_built_min": 2004,
-      "year_built_max": 2006,
-      "year_built_mode": 2005,
-      "avg_square_footage": 2892,
-      "avg_assessed_value": 445700,
-      "hoa_name": "Castleberry Homeowners Association",
-      "hoa_contact_name": "Priya Patel",
-      "hoa_contact_email": "priya.patel@castleberryhoa.org",
-      "pipeline_stage": "pitched",
-      "maintenance_urgency_score": 91,
+      "total_homes": 150,
+      "year_built_min": 2001,
+      "year_built_max": 2005,
+      "year_built_mode": 2003,
+      "avg_square_footage": 3000,
+      "avg_assessed_value": 475000,
+      "hoa_name": "Brookwood HOA",
+      "hoa_management_company": null,
+      "hoa_contact_name": null,
+      "hoa_contact_email": null,
+      "hoa_contact_phone": null,
+      "hoa_meeting_schedule": null,
+      "hoa_website": null,
+      "hoa_dues_monthly": null,
+      "maintenance_urgency_score": 99,
       "hvac_pct_due": 100,
       "roof_pct_due": 100,
       "water_heater_pct_due": 100,
-      "paint_pct_due": 100
+      "paint_pct_due": 100,
+      "pipeline_stage": "research",
+      "pipeline_notes": null,
+      "last_contacted": null,
+      "created_at": "2026-04-03 02:46:43",
+      "updated_at": "2026-04-03T02:49:49.851Z"
     },
     {
-      "id": 4,
+      "id": 10,
+      "name": "Bethelview Downs",
+      "zip": "30040",
+      "total_homes": 100,
+      "year_built_min": 2001,
+      "year_built_max": 2007,
+      "year_built_mode": 2004,
+      "avg_square_footage": 2900,
+      "avg_assessed_value": 460000,
+      "hoa_name": "Bethelview Downs HOA",
+      "hoa_management_company": null,
+      "hoa_contact_name": null,
+      "hoa_contact_email": null,
+      "hoa_contact_phone": null,
+      "hoa_meeting_schedule": null,
+      "hoa_website": null,
+      "hoa_dues_monthly": null,
+      "maintenance_urgency_score": 98,
+      "hvac_pct_due": 100,
+      "roof_pct_due": 97,
+      "water_heater_pct_due": 100,
+      "paint_pct_due": 100,
+      "pipeline_stage": "research",
+      "pipeline_notes": null,
+      "last_contacted": null,
+      "created_at": "2026-04-03 02:46:43",
+      "updated_at": "2026-04-03T02:49:49.849Z"
+    },
+    {
+      "id": 19,
+      "name": "Brannon Oaks",
+      "zip": "30041",
+      "total_homes": 80,
+      "year_built_min": 2003,
+      "year_built_max": 2008,
+      "year_built_mode": 2005,
+      "avg_square_footage": 2900,
+      "avg_assessed_value": 465000,
+      "hoa_name": "Brannon Oaks HOA",
+      "hoa_management_company": null,
+      "hoa_contact_name": null,
+      "hoa_contact_email": null,
+      "hoa_contact_phone": null,
+      "hoa_meeting_schedule": null,
+      "hoa_website": null,
+      "hoa_dues_monthly": null,
+      "maintenance_urgency_score": 95,
+      "hvac_pct_due": 100,
+      "roof_pct_due": 64,
+      "water_heater_pct_due": 100,
+      "paint_pct_due": 100,
+      "pipeline_stage": "research",
+      "pipeline_notes": null,
+      "last_contacted": null,
+      "created_at": "2026-04-03 02:46:43",
+      "updated_at": "2026-04-03T02:49:49.854Z"
+    },
+    {
+      "id": 6,
+      "name": "Windermere",
+      "zip": "30040",
+      "total_homes": 500,
+      "year_built_min": 2000,
+      "year_built_max": 2012,
+      "year_built_mode": 2005,
+      "avg_square_footage": 3500,
+      "avg_assessed_value": 580000,
+      "hoa_name": "Windermere Community Association",
+      "hoa_management_company": null,
+      "hoa_contact_name": null,
+      "hoa_contact_email": null,
+      "hoa_contact_phone": null,
+      "hoa_meeting_schedule": null,
+      "hoa_website": null,
+      "hoa_dues_monthly": null,
+      "maintenance_urgency_score": 93,
+      "hvac_pct_due": 100,
+      "roof_pct_due": 60,
+      "water_heater_pct_due": 100,
+      "paint_pct_due": 100,
+      "pipeline_stage": "research",
+      "pipeline_notes": null,
+      "last_contacted": null,
+      "created_at": "2026-04-03 02:46:43",
+      "updated_at": "2026-04-03T02:49:49.844Z"
+    },
+    {
+      "id": 11,
       "name": "Sharon Springs",
       "zip": "30041",
-      "total_homes": 15,
+      "total_homes": 120,
       "year_built_min": 2005,
-      "year_built_max": 2007,
+      "year_built_max": 2008,
       "year_built_mode": 2006,
-      "avg_square_footage": 2890,
-      "avg_assessed_value": 447483,
+      "avg_square_footage": 2700,
+      "avg_assessed_value": 440000,
       "hoa_name": "Sharon Springs HOA",
-      "hoa_contact_name": "Maria Garcia",
-      "hoa_contact_email": "maria.garcia@sharonspringshoa.org",
+      "hoa_management_company": null,
+      "hoa_contact_name": null,
+      "hoa_contact_email": null,
+      "hoa_contact_phone": null,
+      "hoa_meeting_schedule": null,
+      "hoa_website": null,
+      "hoa_dues_monthly": null,
+      "maintenance_urgency_score": 93,
+      "hvac_pct_due": 100,
+      "roof_pct_due": 56,
+      "water_heater_pct_due": 100,
+      "paint_pct_due": 100,
       "pipeline_stage": "research",
-      "maintenance_urgency_score": 89,
-      "hvac_pct_due": 100,
-      "roof_pct_due": 80,
-      "water_heater_pct_due": 100,
-      "paint_pct_due": 100
-    },
-    {
-      "id": 1,
-      "name": "Bridgetown",
-      "zip": "30041",
-      "total_homes": 25,
-      "year_built_min": 2007,
-      "year_built_max": 2009,
-      "year_built_mode": 2008,
-      "avg_square_footage": 2924,
-      "avg_assessed_value": 449800,
-      "hoa_name": "Bridgetown HOA",
-      "hoa_contact_name": "David Mitchell",
-      "hoa_contact_email": "david.mitchell@bridgetownhoa.org",
-      "pipeline_stage": "meeting_scheduled",
-      "maintenance_urgency_score": 85,
-      "hvac_pct_due": 100,
-      "roof_pct_due": 0,
-      "water_heater_pct_due": 100,
-      "paint_pct_due": 100
-    },
-    {
-      "id": 3,
-      "name": "Windermere",
-      "zip": "30041",
-      "total_homes": 20,
-      "year_built_min": 2010,
-      "year_built_max": 2012,
-      "year_built_mode": 2011,
-      "avg_square_footage": 2977,
-      "avg_assessed_value": 489975,
-      "hoa_name": "Windermere Community Association",
-      "hoa_contact_name": "Robert Thompson",
-      "hoa_contact_email": "robert.thompson@windermerehoa.org",
-      "pipeline_stage": "contacted",
-      "maintenance_urgency_score": 76,
-      "hvac_pct_due": 100,
-      "roof_pct_due": 0,
-      "water_heater_pct_due": 100,
-      "paint_pct_due": 100
-    },
-    {
-      "id": 5,
-      "name": "Lanier Springs",
-      "zip": "30041",
-      "total_homes": 15,
-      "year_built_min": 2012,
-      "year_built_max": 2014,
-      "year_built_mode": 2013,
-      "avg_square_footage": 2977,
-      "avg_assessed_value": 496350,
-      "hoa_name": "Lanier Springs Property Owners Assoc.",
-      "hoa_contact_name": "Wei Chen",
-      "hoa_contact_email": "wei.chen@lanierspringshoa.org",
-      "pipeline_stage": "approved",
-      "maintenance_urgency_score": 70,
-      "hvac_pct_due": 100,
-      "roof_pct_due": 0,
-      "water_heater_pct_due": 100,
-      "paint_pct_due": 100
+      "pipeline_notes": null,
+      "last_contacted": null,
+      "created_at": "2026-04-03 02:46:43",
+      "updated_at": "2026-04-03T02:49:49.850Z"
     }
   ],
   "byYear": [
     {
-      "year_built": 2004,
-      "count": 5
-    },
-    {
-      "year_built": 2005,
-      "count": 18
-    },
-    {
-      "year_built": 2006,
-      "count": 14
-    },
-    {
-      "year_built": 2007,
-      "count": 8
-    },
-    {
-      "year_built": 2008,
-      "count": 15
-    },
-    {
-      "year_built": 2009,
-      "count": 5
-    },
-    {
-      "year_built": 2010,
+      "year_built": 2000,
       "count": 4
     },
     {
+      "year_built": 2001,
+      "count": 17
+    },
+    {
+      "year_built": 2002,
+      "count": 16
+    },
+    {
+      "year_built": 2003,
+      "count": 15
+    },
+    {
+      "year_built": 2004,
+      "count": 17
+    },
+    {
+      "year_built": 2005,
+      "count": 25
+    },
+    {
+      "year_built": 2006,
+      "count": 23
+    },
+    {
+      "year_built": 2007,
+      "count": 11
+    },
+    {
+      "year_built": 2008,
+      "count": 18
+    },
+    {
+      "year_built": 2009,
+      "count": 6
+    },
+    {
+      "year_built": 2010,
+      "count": 10
+    },
+    {
       "year_built": 2011,
-      "count": 12
-    },
-    {
-      "year_built": 2012,
-      "count": 7
-    },
-    {
-      "year_built": 2013,
       "count": 9
     },
     {
+      "year_built": 2012,
+      "count": 6
+    },
+    {
+      "year_built": 2013,
+      "count": 2
+    },
+    {
       "year_built": 2014,
+      "count": 4
+    },
+    {
+      "year_built": 2015,
+      "count": 4
+    },
+    {
+      "year_built": 2016,
+      "count": 8
+    },
+    {
+      "year_built": 2017,
       "count": 3
+    },
+    {
+      "year_built": 2018,
+      "count": 2
     }
   ],
   "pipelineDistribution": [
-    {
-      "pipeline_stage": "research",
-      "count": 1
-    },
     {
       "pipeline_stage": "contacted",
       "count": 1
     },
     {
-      "pipeline_stage": "meeting_scheduled",
-      "count": 1
-    },
-    {
-      "pipeline_stage": "pitched",
-      "count": 1
-    },
-    {
-      "pipeline_stage": "approved",
-      "count": 1
+      "pipeline_stage": "research",
+      "count": 19
     }
   ],
-  "recentActivities": [
+  "recentActivities": [],
+  "followUps": [
     {
-      "id": 25,
-      "contact_id": 13,
-      "subdivision_id": 3,
-      "project_id": null,
-      "type": "follow_up",
-      "subject": "Windermere homeowner interest check",
-      "description": "Ashley Walker mentioned at neighborhood gathering that several Windermere homeowners are interested in group maintenance. Suggested organizing an info session at the clubhouse.",
-      "outcome": "info_session_suggested",
-      "created_at": "2026-04-01T15:00:00Z"
-    },
-    {
-      "id": 24,
-      "contact_id": 7,
-      "subdivision_id": 4,
-      "project_id": null,
-      "type": "phone_call",
-      "subject": "Plumbing contractor for Sharon Springs water heaters",
-      "description": "Spoke with Carlos Ramirez about potential water heater replacement project for Sharon Springs. He quoted $1,203 per unit for groups of 10+. Available starting Q3 2026.",
-      "outcome": "quote_received",
-      "created_at": "2026-04-01T09:30:00Z"
-    },
-    {
-      "id": 23,
-      "contact_id": 1,
-      "subdivision_id": 1,
-      "project_id": null,
-      "type": "follow_up",
-      "subject": "Bridgetown proposal follow-up",
-      "description": "Called David Mitchell to follow up on the HVAC proposal. Board is reviewing and will vote at their April 10 meeting. He is personally supportive and optimistic about approval.",
-      "outcome": "pending_board_vote",
-      "created_at": "2026-03-31T11:00:00Z"
-    },
-    {
-      "id": 22,
-      "contact_id": 15,
-      "subdivision_id": 5,
-      "project_id": null,
-      "type": "email_sent",
-      "subject": "Lanier Springs welcome packet",
-      "description": "Sent welcome packet to Kenji Tanaka and other Lanier Springs homeowners introducing HomeSync services. Included maintenance timeline showing their homes will need water heaters in 2-3 years.",
-      "outcome": "delivered",
-      "created_at": "2026-03-30T10:00:00Z"
-    },
-    {
-      "id": 21,
-      "contact_id": 2,
-      "subdivision_id": 2,
-      "project_id": 1,
-      "type": "status_change",
-      "subject": "Castleberry HVAC sign-ups at 12",
-      "description": "Updated project status: 12 homes signed up for Castleberry HVAC replacement. 13 more eligible. Push for additional sign-ups before April 15 deadline.",
-      "outcome": "on_track",
-      "created_at": "2026-03-29T08:00:00Z"
-    },
-    {
-      "id": 20,
-      "contact_id": 4,
-      "subdivision_id": 4,
-      "project_id": null,
-      "type": "meeting",
-      "subject": "Sharon Springs HVAC planning meeting",
-      "description": "Met with Maria Garcia to discuss HVAC replacement as next project after successful pressure washing. She will survey homeowners about interest level at next monthly meeting.",
-      "outcome": "survey_planned",
-      "created_at": "2026-03-28T17:00:00Z"
-    },
-    {
-      "id": 19,
-      "contact_id": 10,
-      "subdivision_id": 1,
-      "project_id": null,
-      "type": "phone_call",
-      "subject": "Painting contractor quote for Bridgetown",
-      "description": "Called Fernando Torres at Precision Paint Georgia to discuss potential exterior painting group project for Bridgetown. Got preliminary quote of $3,150 per home for groups of 10+.",
-      "outcome": "quote_received",
-      "created_at": "2026-03-27T14:30:00Z"
-    },
-    {
-      "id": 18,
-      "contact_id": 6,
-      "subdivision_id": 2,
-      "project_id": 1,
-      "type": "meeting",
-      "subject": "Contractor site visit - Castleberry",
-      "description": "Accompanied Billy Harper on site visits to 3 Castleberry homes for pre-installation assessments. All standard installations, no complications expected.",
-      "outcome": "assessments_complete",
-      "created_at": "2026-03-26T10:00:00Z"
-    },
-    {
-      "id": 17,
-      "contact_id": 1,
-      "subdivision_id": 1,
-      "project_id": null,
-      "type": "email_sent",
-      "subject": "Bridgetown HVAC proposal document",
-      "description": "Sent formal proposal to David Mitchell for Bridgetown HVAC group replacement program. Includes contractor qualifications, timeline, pricing, and homeowner agreement template.",
-      "outcome": "delivered",
-      "created_at": "2026-03-25T09:30:00Z"
-    },
-    {
-      "id": 16,
-      "contact_id": 5,
-      "subdivision_id": 5,
-      "project_id": null,
-      "type": "meeting",
-      "subject": "Lanier Springs HOA approval meeting",
-      "description": "Met with Wei Chen and Lanier Springs board. They approved HomeSync as preferred group maintenance coordinator. Younger neighborhood but proactive approach appreciated.",
-      "outcome": "approved",
-      "created_at": "2026-03-22T18:00:00Z"
+      "id": 8,
+      "name": "Bridgetown",
+      "zip": "30041",
+      "total_homes": 150,
+      "year_built_min": 2005,
+      "year_built_max": 2016,
+      "year_built_mode": 2007,
+      "avg_square_footage": 2800,
+      "avg_assessed_value": 490000,
+      "hoa_name": "Bridgetown HOA",
+      "hoa_management_company": null,
+      "hoa_contact_name": null,
+      "hoa_contact_email": null,
+      "hoa_contact_phone": null,
+      "hoa_meeting_schedule": null,
+      "hoa_website": null,
+      "hoa_dues_monthly": null,
+      "maintenance_urgency_score": 81,
+      "hvac_pct_due": 80,
+      "roof_pct_due": 20,
+      "water_heater_pct_due": 100,
+      "paint_pct_due": 100,
+      "pipeline_stage": "contacted",
+      "pipeline_notes": null,
+      "last_contacted": null,
+      "created_at": "2026-04-03 02:46:43",
+      "updated_at": "2026-04-03T02:49:49.846Z"
     }
   ],
-  "followUps": [],
-  "upcomingDeadlines": [
-    {
-      "id": 1,
-      "name": "Castleberry HVAC Replacement Spring 2026",
-      "sign_up_deadline": "2026-04-15",
-      "service_start_date": "2026-05-01",
-      "homes_signed_up": 12,
-      "total_eligible_homes": 25,
-      "status": "sign_ups_open"
-    }
-  ]
+  "upcomingDeadlines": []
 }
