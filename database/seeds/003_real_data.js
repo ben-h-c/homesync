@@ -62,6 +62,27 @@ export async function seed(knex) {
     { name: 'Arden Greens at Windermere', zip: '30041', total_homes: 60, year_built_min: 2000, year_built_max: 2002, year_built_mode: 2001, avg_square_footage: 3400, avg_assessed_value: 691000, hoa_name: 'Arden Greens HOA', pipeline_stage: 'research' },
     { name: 'Bennington at Windermere', zip: '30041', total_homes: 55, year_built_min: 2001, year_built_max: 2003, year_built_mode: 2002, avg_square_footage: 3300, avg_assessed_value: 770000, hoa_name: 'Bennington at Windermere HOA', pipeline_stage: 'research' },
     { name: 'Caney Creek', zip: '30041', total_homes: 70, year_built_min: 1990, year_built_max: 2005, year_built_mode: 1998, avg_square_footage: 3000, avg_assessed_value: 801000, hoa_name: 'Caney Creek HOA', pipeline_stage: 'research' },
+    // ── EXPANSION: Forsyth 30040/30028 ──
+    { name: 'Fieldstone', zip: '30040', total_homes: 200, year_built_min: 2003, year_built_max: 2012, year_built_mode: 2006, avg_square_footage: 2800, avg_assessed_value: 480000, hoa_name: 'Fieldstone HOA', pipeline_stage: 'research' },
+    // ── EXPANSION: North Fulton (Alpharetta/Roswell/Johns Creek/Milton) ──
+    { name: 'Windward', zip: '30005', total_homes: 2500, year_built_min: 1992, year_built_max: 2005, year_built_mode: 1998, avg_square_footage: 3500, avg_assessed_value: 750000, hoa_name: 'Windward Community Association', pipeline_stage: 'research' },
+    { name: 'White Columns', zip: '30004', total_homes: 400, year_built_min: 1995, year_built_max: 2008, year_built_mode: 2001, avg_square_footage: 3800, avg_assessed_value: 850000, hoa_name: 'White Columns HOA', pipeline_stage: 'research' },
+    { name: 'Kimball Farms', zip: '30005', total_homes: 150, year_built_min: 1995, year_built_max: 2005, year_built_mode: 2000, avg_square_footage: 3600, avg_assessed_value: 720000, hoa_name: 'Kimball Farms HOA', pipeline_stage: 'research' },
+    { name: 'Mayfair', zip: '30097', total_homes: 200, year_built_min: 1996, year_built_max: 2006, year_built_mode: 2001, avg_square_footage: 3400, avg_assessed_value: 680000, hoa_name: 'Mayfair HOA', pipeline_stage: 'research' },
+    // ── EXPANSION: Gwinnett County (Suwanee/Duluth/Buford) ──
+    { name: 'River Club', zip: '30024', total_homes: 800, year_built_min: 1996, year_built_max: 2008, year_built_mode: 2002, avg_square_footage: 4200, avg_assessed_value: 1050000, hoa_name: 'River Club HOA', pipeline_stage: 'research' },
+    { name: 'Laurel Springs', zip: '30024', total_homes: 600, year_built_min: 2001, year_built_max: 2010, year_built_mode: 2005, avg_square_footage: 3800, avg_assessed_value: 850000, hoa_name: 'Laurel Springs HOA', pipeline_stage: 'research' },
+    { name: 'Morning View', zip: '30024', total_homes: 300, year_built_min: 1997, year_built_max: 2002, year_built_mode: 2000, avg_square_footage: 3200, avg_assessed_value: 650000, hoa_name: 'Morning View HOA', pipeline_stage: 'research' },
+    { name: 'Huntington West', zip: '30518', total_homes: 232, year_built_min: 2002, year_built_max: 2008, year_built_mode: 2005, avg_square_footage: 2800, avg_assessed_value: 480000, hoa_name: 'Huntington West HOA', pipeline_stage: 'research' },
+    { name: 'Sugarloaf Country Club', zip: '30097', total_homes: 1000, year_built_min: 1995, year_built_max: 2008, year_built_mode: 2001, avg_square_footage: 4500, avg_assessed_value: 950000, hoa_name: 'Sugarloaf Country Club HOA', pipeline_stage: 'research' },
+    // ── EXPANSION: Cherokee County (Canton/Woodstock) ──
+    { name: 'BridgeMill', zip: '30114', total_homes: 2800, year_built_min: 1998, year_built_max: 2020, year_built_mode: 2005, avg_square_footage: 3200, avg_assessed_value: 520000, hoa_name: 'BridgeMill Community Association', pipeline_stage: 'research' },
+    { name: 'Towne Mill', zip: '30114', total_homes: 300, year_built_min: 2006, year_built_max: 2022, year_built_mode: 2012, avg_square_footage: 2800, avg_assessed_value: 480000, hoa_name: 'Towne Mill HOA', pipeline_stage: 'research' },
+    { name: 'Eagle Watch', zip: '30189', total_homes: 1200, year_built_min: 1993, year_built_max: 2005, year_built_mode: 2000, avg_square_footage: 3400, avg_assessed_value: 580000, hoa_name: 'Eagle Watch HOA', pipeline_stage: 'research' },
+    { name: 'Starr Lake', zip: '30101', total_homes: 200, year_built_min: 2001, year_built_max: 2005, year_built_mode: 2003, avg_square_footage: 2600, avg_assessed_value: 420000, hoa_name: 'Starr Lake HOA', pipeline_stage: 'research' },
+    // ── EXPANSION: Hall County (Flowery Branch) ──
+    { name: 'Sterling on the Lake', zip: '30542', total_homes: 1500, year_built_min: 2004, year_built_max: 2022, year_built_mode: 2010, avg_square_footage: 3000, avg_assessed_value: 550000, hoa_name: 'Sterling on the Lake HOA', pipeline_stage: 'research' },
+    { name: 'Traditions of Braselton', zip: '30517', total_homes: 1000, year_built_min: 2004, year_built_max: 2020, year_built_mode: 2010, avg_square_footage: 3200, avg_assessed_value: 580000, hoa_name: 'Traditions of Braselton HOA', pipeline_stage: 'research' },
   ];
 
   for (const sub of subdivisions) {

@@ -1,10 +1,10 @@
 {
-  "26": {
+  "74": {
     "subdivision": "Windermere",
-    "subdivision_id": 26,
+    "subdivision_id": 74,
     "total_homes": 30,
     "year_built_mode": 2005,
-    "urgency_score": 93,
+    "urgency_score": 92,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -36,16 +36,16 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 40,
-        "pct_due_now": 17,
-        "pct_upcoming": 23,
-        "pct_ok": 20,
-        "estimated_homes_needing_service": 17,
+        "pct_critical": 37,
+        "pct_due_now": 10,
+        "pct_upcoming": 30,
+        "pct_ok": 23,
+        "estimated_homes_needing_service": 14,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
-        "total_savings_potential": 52360,
-        "avg_urgency": 72,
+        "total_savings_potential": 43120,
+        "avg_urgency": 69,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -153,33 +153,33 @@
     "top_system_homes": 30,
     "top_system_savings": 79800,
     "top_system_savings_per_home": 2660,
-    "estimated_total_savings": 223480
+    "estimated_total_savings": 214240
   },
-  "28": {
+  "76": {
     "subdivision": "Bridgetown",
-    "subdivision_id": 28,
+    "subdivision_id": 76,
     "total_homes": 30,
     "year_built_mode": 2007,
-    "urgency_score": 81,
+    "urgency_score": 80,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
-        "pct_critical": 67,
-        "pct_due_now": 23,
-        "pct_upcoming": 10,
+        "pct_critical": 63,
+        "pct_due_now": 20,
+        "pct_upcoming": 17,
         "pct_ok": 0,
-        "estimated_homes_needing_service": 27,
+        "estimated_homes_needing_service": 25,
         "avg_cost_retail": 9500,
         "avg_cost_group": 6840,
         "savings_per_home": 2660,
-        "total_savings_potential": 71820,
-        "avg_urgency": 91,
+        "total_savings_potential": 66500,
+        "avg_urgency": 89,
         "is_recurring": false
       },
       "water_heater": {
         "display_name": "Water Heater",
-        "pct_critical": 90,
-        "pct_due_now": 10,
+        "pct_critical": 83,
+        "pct_due_now": 17,
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 30,
@@ -187,21 +187,21 @@
         "avg_cost_group": 1203,
         "savings_per_home": 648,
         "total_savings_potential": 19425,
-        "avg_urgency": 98,
+        "avg_urgency": 97,
         "is_recurring": false
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
         "pct_critical": 0,
-        "pct_due_now": 3,
-        "pct_upcoming": 40,
-        "pct_ok": 57,
-        "estimated_homes_needing_service": 1,
+        "pct_due_now": 17,
+        "pct_upcoming": 20,
+        "pct_ok": 63,
+        "estimated_homes_needing_service": 5,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
-        "total_savings_potential": 3080,
-        "avg_urgency": 38,
+        "total_savings_potential": 15400,
+        "avg_urgency": 37,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -248,16 +248,16 @@
       },
       "garage_door": {
         "display_name": "Garage Door/Opener",
-        "pct_critical": 67,
-        "pct_due_now": 23,
-        "pct_upcoming": 10,
+        "pct_critical": 63,
+        "pct_due_now": 20,
+        "pct_upcoming": 17,
         "pct_ok": 0,
-        "estimated_homes_needing_service": 27,
+        "estimated_homes_needing_service": 25,
         "avg_cost_retail": 1550,
         "avg_cost_group": 1240,
         "savings_per_home": 310,
-        "total_savings_potential": 8370,
-        "avg_urgency": 91,
+        "total_savings_potential": 7750,
+        "avg_urgency": 89,
         "is_recurring": false
       },
       "gutter_cleaning": {
@@ -309,61 +309,61 @@
     "top_system_homes": 30,
     "top_system_savings": 19425,
     "top_system_savings_per_home": 648,
-    "estimated_total_savings": 165290
+    "estimated_total_savings": 171670
   },
-  "29": {
+  "77": {
     "subdivision": "Castleberry Heights",
-    "subdivision_id": 29,
+    "subdivision_id": 77,
     "total_homes": 30,
     "year_built_mode": 2008,
     "urgency_score": 73,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
-        "pct_critical": 60,
-        "pct_due_now": 3,
-        "pct_upcoming": 20,
-        "pct_ok": 17,
-        "estimated_homes_needing_service": 19,
+        "pct_critical": 40,
+        "pct_due_now": 27,
+        "pct_upcoming": 23,
+        "pct_ok": 10,
+        "estimated_homes_needing_service": 20,
         "avg_cost_retail": 9500,
         "avg_cost_group": 6840,
         "savings_per_home": 2660,
-        "total_savings_potential": 50540,
-        "avg_urgency": 79,
+        "total_savings_potential": 53200,
+        "avg_urgency": 78,
         "is_recurring": false
       },
       "water_heater": {
         "display_name": "Water Heater",
-        "pct_critical": 63,
-        "pct_due_now": 20,
-        "pct_upcoming": 17,
+        "pct_critical": 67,
+        "pct_due_now": 23,
+        "pct_upcoming": 10,
         "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
+        "estimated_homes_needing_service": 27,
         "avg_cost_retail": 1850,
         "avg_cost_group": 1203,
         "savings_per_home": 648,
-        "total_savings_potential": 16188,
-        "avg_urgency": 89,
+        "total_savings_potential": 17483,
+        "avg_urgency": 91,
         "is_recurring": false
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
         "pct_critical": 0,
-        "pct_due_now": 7,
-        "pct_upcoming": 23,
-        "pct_ok": 70,
-        "estimated_homes_needing_service": 2,
+        "pct_due_now": 10,
+        "pct_upcoming": 13,
+        "pct_ok": 77,
+        "estimated_homes_needing_service": 3,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
-        "total_savings_potential": 6160,
-        "avg_urgency": 30,
+        "total_savings_potential": 9240,
+        "avg_urgency": 28,
         "is_recurring": false
       },
       "exterior_paint": {
         "display_name": "Exterior Paint",
-        "pct_critical": 87,
-        "pct_due_now": 13,
+        "pct_critical": 97,
+        "pct_due_now": 3,
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 30,
@@ -371,7 +371,7 @@
         "avg_cost_group": 4140,
         "savings_per_home": 1610,
         "total_savings_potential": 48300,
-        "avg_urgency": 97,
+        "avg_urgency": 99,
         "is_recurring": false
       },
       "driveway_sealing": {
@@ -404,16 +404,16 @@
       },
       "garage_door": {
         "display_name": "Garage Door/Opener",
-        "pct_critical": 60,
-        "pct_due_now": 3,
-        "pct_upcoming": 20,
-        "pct_ok": 17,
-        "estimated_homes_needing_service": 19,
+        "pct_critical": 40,
+        "pct_due_now": 27,
+        "pct_upcoming": 23,
+        "pct_ok": 10,
+        "estimated_homes_needing_service": 20,
         "avg_cost_retail": 1550,
         "avg_cost_group": 1240,
         "savings_per_home": 310,
-        "total_savings_potential": 5890,
-        "avg_urgency": 79,
+        "total_savings_potential": 6200,
+        "avg_urgency": 78,
         "is_recurring": false
       },
       "gutter_cleaning": {
@@ -465,14 +465,14 @@
     "top_system_homes": 30,
     "top_system_savings": 48300,
     "top_system_savings_per_home": 1610,
-    "estimated_total_savings": 141373
+    "estimated_total_savings": 148718
   },
-  "30": {
+  "78": {
     "subdivision": "Bethelview Downs",
-    "subdivision_id": 30,
+    "subdivision_id": 78,
     "total_homes": 30,
     "year_built_mode": 2004,
-    "urgency_score": 98,
+    "urgency_score": 97,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -504,16 +504,16 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 60,
-        "pct_due_now": 33,
-        "pct_upcoming": 7,
+        "pct_critical": 57,
+        "pct_due_now": 17,
+        "pct_upcoming": 27,
         "pct_ok": 0,
-        "estimated_homes_needing_service": 28,
+        "estimated_homes_needing_service": 22,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
-        "total_savings_potential": 86240,
-        "avg_urgency": 91,
+        "total_savings_potential": 67760,
+        "avg_urgency": 86,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -621,14 +621,14 @@
     "top_system_homes": 30,
     "top_system_savings": 79800,
     "top_system_savings_per_home": 2660,
-    "estimated_total_savings": 257360
+    "estimated_total_savings": 238880
   },
-  "31": {
+  "79": {
     "subdivision": "Sharon Springs",
-    "subdivision_id": 31,
+    "subdivision_id": 79,
     "total_homes": 25,
     "year_built_mode": 2006,
-    "urgency_score": 93,
+    "urgency_score": 92,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -661,15 +661,15 @@
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
         "pct_critical": 0,
-        "pct_due_now": 52,
-        "pct_upcoming": 48,
+        "pct_due_now": 40,
+        "pct_upcoming": 60,
         "pct_ok": 0,
-        "estimated_homes_needing_service": 13,
+        "estimated_homes_needing_service": 10,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
-        "total_savings_potential": 40040,
-        "avg_urgency": 70,
+        "total_savings_potential": 30800,
+        "avg_urgency": 68,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -777,11 +777,11 @@
     "top_system_homes": 25,
     "top_system_savings": 66500,
     "top_system_savings_per_home": 2660,
-    "estimated_total_savings": 182642
+    "estimated_total_savings": 173402
   },
-  "32": {
+  "80": {
     "subdivision": "Brookwood",
-    "subdivision_id": 32,
+    "subdivision_id": 80,
     "total_homes": 30,
     "year_built_mode": 2003,
     "urgency_score": 99,
@@ -816,8 +816,8 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 80,
-        "pct_due_now": 20,
+        "pct_critical": 73,
+        "pct_due_now": 27,
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 30,
@@ -825,7 +825,7 @@
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
         "total_savings_potential": 92400,
-        "avg_urgency": 96,
+        "avg_urgency": 95,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -935,12 +935,12 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 263520
   },
-  "33": {
+  "81": {
     "subdivision": "Legends at Settendown Creek",
-    "subdivision_id": 33,
+    "subdivision_id": 81,
     "total_homes": 20,
     "year_built_mode": 2003,
-    "urgency_score": 98,
+    "urgency_score": 97,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -972,16 +972,16 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 70,
+        "pct_critical": 60,
         "pct_due_now": 10,
-        "pct_upcoming": 20,
+        "pct_upcoming": 30,
         "pct_ok": 0,
-        "estimated_homes_needing_service": 16,
+        "estimated_homes_needing_service": 14,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
-        "total_savings_potential": 49280,
-        "avg_urgency": 90,
+        "total_savings_potential": 43120,
+        "avg_urgency": 86,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -1089,14 +1089,14 @@
     "top_system_homes": 20,
     "top_system_savings": 53200,
     "top_system_savings_per_home": 2660,
-    "estimated_total_savings": 163360
+    "estimated_total_savings": 157200
   },
-  "34": {
+  "82": {
     "subdivision": "Sawnee Mountain",
-    "subdivision_id": 34,
+    "subdivision_id": 82,
     "total_homes": 20,
     "year_built_mode": 2005,
-    "urgency_score": 93,
+    "urgency_score": 92,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -1128,16 +1128,16 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 35,
-        "pct_due_now": 25,
-        "pct_upcoming": 20,
+        "pct_critical": 30,
+        "pct_due_now": 10,
+        "pct_upcoming": 40,
         "pct_ok": 20,
-        "estimated_homes_needing_service": 12,
+        "estimated_homes_needing_service": 8,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
-        "total_savings_potential": 36960,
-        "avg_urgency": 73,
+        "total_savings_potential": 24640,
+        "avg_urgency": 68,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -1245,11 +1245,11 @@
     "top_system_homes": 20,
     "top_system_savings": 53200,
     "top_system_savings_per_home": 2660,
-    "estimated_total_savings": 151040
+    "estimated_total_savings": 138720
   },
-  "36": {
+  "84": {
     "subdivision": "Canterbury Farms",
-    "subdivision_id": 36,
+    "subdivision_id": 84,
     "total_homes": 15,
     "year_built_mode": 1992,
     "urgency_score": 100,
@@ -1403,9 +1403,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 131762
   },
-  "39": {
+  "87": {
     "subdivision": "Brannon Oaks",
-    "subdivision_id": 39,
+    "subdivision_id": 87,
     "total_homes": 25,
     "year_built_mode": 2005,
     "urgency_score": 95,
@@ -1440,8 +1440,8 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 24,
-        "pct_due_now": 40,
+        "pct_critical": 28,
+        "pct_due_now": 36,
         "pct_upcoming": 36,
         "pct_ok": 0,
         "estimated_homes_needing_service": 16,
@@ -1559,12 +1559,12 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 191882
   },
-  "40": {
+  "88": {
     "subdivision": "Hampton",
-    "subdivision_id": 40,
+    "subdivision_id": 88,
     "total_homes": 25,
     "year_built_mode": 2007,
-    "urgency_score": 89,
+    "urgency_score": 90,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -1596,16 +1596,172 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 16,
-        "pct_due_now": 28,
-        "pct_upcoming": 12,
-        "pct_ok": 44,
+        "pct_critical": 12,
+        "pct_due_now": 24,
+        "pct_upcoming": 36,
+        "pct_ok": 28,
+        "estimated_homes_needing_service": 9,
+        "avg_cost_retail": 14000,
+        "avg_cost_group": 10920,
+        "savings_per_home": 3080,
+        "total_savings_potential": 27720,
+        "avg_urgency": 59,
+        "is_recurring": false
+      },
+      "exterior_paint": {
+        "display_name": "Exterior Paint",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 5750,
+        "avg_cost_group": 4140,
+        "savings_per_home": 1610,
+        "total_savings_potential": 40250,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "driveway_sealing": {
+        "display_name": "Driveway Sealing",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 310,
+        "avg_cost_group": 202,
+        "savings_per_home": 109,
+        "total_savings_potential": 2713,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "deck_staining": {
+        "display_name": "Deck Stain/Seal",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 385,
+        "avg_cost_group": 270,
+        "savings_per_home": 116,
+        "total_savings_potential": 2888,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "garage_door": {
+        "display_name": "Garage Door/Opener",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 1550,
+        "avg_cost_group": 1240,
+        "savings_per_home": 310,
+        "total_savings_potential": 7750,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "gutter_cleaning": {
+        "display_name": "Gutter Cleaning",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 150,
+        "avg_cost_group": 98,
+        "savings_per_home": 53,
+        "total_savings_potential": 1313,
+        "avg_urgency": 100,
+        "is_recurring": true
+      },
+      "pressure_washing": {
+        "display_name": "Pressure Washing",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 400,
+        "avg_cost_group": 260,
+        "savings_per_home": 140,
+        "total_savings_potential": 3500,
+        "avg_urgency": 100,
+        "is_recurring": true
+      },
+      "water_heater_flush": {
+        "display_name": "Water Heater Flush",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 150,
+        "avg_cost_group": 90,
+        "savings_per_home": 60,
+        "total_savings_potential": 1500,
+        "avg_urgency": 100,
+        "is_recurring": true
+      }
+    },
+    "top_recommendation": "HVAC System — 100% of homes (25 of 25) are at or past end-of-life",
+    "top_system": "hvac",
+    "top_system_display": "HVAC System",
+    "top_system_homes": 25,
+    "top_system_savings": 66500,
+    "top_system_savings_per_home": 2660,
+    "estimated_total_savings": 170322
+  },
+  "89": {
+    "subdivision": "Polo Fields",
+    "subdivision_id": 89,
+    "total_homes": 25,
+    "year_built_mode": 2006,
+    "urgency_score": 93,
+    "systems": {
+      "hvac": {
+        "display_name": "HVAC System",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 9500,
+        "avg_cost_group": 6840,
+        "savings_per_home": 2660,
+        "total_savings_potential": 66500,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "water_heater": {
+        "display_name": "Water Heater",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 1850,
+        "avg_cost_group": 1203,
+        "savings_per_home": 648,
+        "total_savings_potential": 16188,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "roof": {
+        "display_name": "Roof (Asphalt Shingle)",
+        "pct_critical": 28,
+        "pct_due_now": 16,
+        "pct_upcoming": 44,
+        "pct_ok": 12,
         "estimated_homes_needing_service": 11,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
         "total_savings_potential": 33880,
-        "avg_urgency": 56,
+        "avg_urgency": 71,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -1715,168 +1871,12 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 176482
   },
-  "41": {
-    "subdivision": "Polo Fields",
-    "subdivision_id": 41,
-    "total_homes": 25,
-    "year_built_mode": 2006,
-    "urgency_score": 93,
-    "systems": {
-      "hvac": {
-        "display_name": "HVAC System",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 9500,
-        "avg_cost_group": 6840,
-        "savings_per_home": 2660,
-        "total_savings_potential": 66500,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "water_heater": {
-        "display_name": "Water Heater",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 1850,
-        "avg_cost_group": 1203,
-        "savings_per_home": 648,
-        "total_savings_potential": 16188,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "roof": {
-        "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 40,
-        "pct_due_now": 8,
-        "pct_upcoming": 36,
-        "pct_ok": 16,
-        "estimated_homes_needing_service": 12,
-        "avg_cost_retail": 14000,
-        "avg_cost_group": 10920,
-        "savings_per_home": 3080,
-        "total_savings_potential": 36960,
-        "avg_urgency": 72,
-        "is_recurring": false
-      },
-      "exterior_paint": {
-        "display_name": "Exterior Paint",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 5750,
-        "avg_cost_group": 4140,
-        "savings_per_home": 1610,
-        "total_savings_potential": 40250,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "driveway_sealing": {
-        "display_name": "Driveway Sealing",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 310,
-        "avg_cost_group": 202,
-        "savings_per_home": 109,
-        "total_savings_potential": 2713,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "deck_staining": {
-        "display_name": "Deck Stain/Seal",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 385,
-        "avg_cost_group": 270,
-        "savings_per_home": 116,
-        "total_savings_potential": 2888,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "garage_door": {
-        "display_name": "Garage Door/Opener",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 1550,
-        "avg_cost_group": 1240,
-        "savings_per_home": 310,
-        "total_savings_potential": 7750,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "gutter_cleaning": {
-        "display_name": "Gutter Cleaning",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 150,
-        "avg_cost_group": 98,
-        "savings_per_home": 53,
-        "total_savings_potential": 1313,
-        "avg_urgency": 100,
-        "is_recurring": true
-      },
-      "pressure_washing": {
-        "display_name": "Pressure Washing",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 400,
-        "avg_cost_group": 260,
-        "savings_per_home": 140,
-        "total_savings_potential": 3500,
-        "avg_urgency": 100,
-        "is_recurring": true
-      },
-      "water_heater_flush": {
-        "display_name": "Water Heater Flush",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 150,
-        "avg_cost_group": 90,
-        "savings_per_home": 60,
-        "total_savings_potential": 1500,
-        "avg_urgency": 100,
-        "is_recurring": true
-      }
-    },
-    "top_recommendation": "HVAC System — 100% of homes (25 of 25) are at or past end-of-life",
-    "top_system": "hvac",
-    "top_system_display": "HVAC System",
-    "top_system_homes": 25,
-    "top_system_savings": 66500,
-    "top_system_savings_per_home": 2660,
-    "estimated_total_savings": 179562
-  },
-  "42": {
+  "90": {
     "subdivision": "Concord Farms",
-    "subdivision_id": 42,
+    "subdivision_id": 90,
     "total_homes": 20,
     "year_built_mode": 2006,
-    "urgency_score": 92,
+    "urgency_score": 93,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -1908,16 +1908,16 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 10,
-        "pct_due_now": 35,
-        "pct_upcoming": 40,
-        "pct_ok": 15,
-        "estimated_homes_needing_service": 9,
+        "pct_critical": 20,
+        "pct_due_now": 30,
+        "pct_upcoming": 45,
+        "pct_ok": 5,
+        "estimated_homes_needing_service": 10,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
-        "total_savings_potential": 27720,
-        "avg_urgency": 66,
+        "total_savings_potential": 30800,
+        "avg_urgency": 72,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -1974,6 +1974,318 @@
         "savings_per_home": 310,
         "total_savings_potential": 6200,
         "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "gutter_cleaning": {
+        "display_name": "Gutter Cleaning",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 150,
+        "avg_cost_group": 98,
+        "savings_per_home": 53,
+        "total_savings_potential": 1050,
+        "avg_urgency": 100,
+        "is_recurring": true
+      },
+      "pressure_washing": {
+        "display_name": "Pressure Washing",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 400,
+        "avg_cost_group": 260,
+        "savings_per_home": 140,
+        "total_savings_potential": 2800,
+        "avg_urgency": 100,
+        "is_recurring": true
+      },
+      "water_heater_flush": {
+        "display_name": "Water Heater Flush",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 150,
+        "avg_cost_group": 90,
+        "savings_per_home": 60,
+        "total_savings_potential": 1200,
+        "avg_urgency": 100,
+        "is_recurring": true
+      }
+    },
+    "top_recommendation": "HVAC System — 100% of homes (20 of 20) are at or past end-of-life",
+    "top_system": "hvac",
+    "top_system_display": "HVAC System",
+    "top_system_homes": 20,
+    "top_system_savings": 53200,
+    "top_system_savings_per_home": 2660,
+    "estimated_total_savings": 144880
+  },
+  "92": {
+    "subdivision": "Ashebrooke",
+    "subdivision_id": 92,
+    "total_homes": 25,
+    "year_built_mode": 2005,
+    "urgency_score": 92,
+    "systems": {
+      "hvac": {
+        "display_name": "HVAC System",
+        "pct_critical": 96,
+        "pct_due_now": 4,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 9500,
+        "avg_cost_group": 6840,
+        "savings_per_home": 2660,
+        "total_savings_potential": 66500,
+        "avg_urgency": 99,
+        "is_recurring": false
+      },
+      "water_heater": {
+        "display_name": "Water Heater",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 1850,
+        "avg_cost_group": 1203,
+        "savings_per_home": 648,
+        "total_savings_potential": 16188,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "roof": {
+        "display_name": "Roof (Asphalt Shingle)",
+        "pct_critical": 20,
+        "pct_due_now": 36,
+        "pct_upcoming": 32,
+        "pct_ok": 12,
+        "estimated_homes_needing_service": 14,
+        "avg_cost_retail": 14000,
+        "avg_cost_group": 10920,
+        "savings_per_home": 3080,
+        "total_savings_potential": 43120,
+        "avg_urgency": 71,
+        "is_recurring": false
+      },
+      "exterior_paint": {
+        "display_name": "Exterior Paint",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 5750,
+        "avg_cost_group": 4140,
+        "savings_per_home": 1610,
+        "total_savings_potential": 40250,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "driveway_sealing": {
+        "display_name": "Driveway Sealing",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 310,
+        "avg_cost_group": 202,
+        "savings_per_home": 109,
+        "total_savings_potential": 2713,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "deck_staining": {
+        "display_name": "Deck Stain/Seal",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 385,
+        "avg_cost_group": 270,
+        "savings_per_home": 116,
+        "total_savings_potential": 2888,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "garage_door": {
+        "display_name": "Garage Door/Opener",
+        "pct_critical": 96,
+        "pct_due_now": 4,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 1550,
+        "avg_cost_group": 1240,
+        "savings_per_home": 310,
+        "total_savings_potential": 7750,
+        "avg_urgency": 99,
+        "is_recurring": false
+      },
+      "gutter_cleaning": {
+        "display_name": "Gutter Cleaning",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 150,
+        "avg_cost_group": 98,
+        "savings_per_home": 53,
+        "total_savings_potential": 1313,
+        "avg_urgency": 100,
+        "is_recurring": true
+      },
+      "pressure_washing": {
+        "display_name": "Pressure Washing",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 400,
+        "avg_cost_group": 260,
+        "savings_per_home": 140,
+        "total_savings_potential": 3500,
+        "avg_urgency": 100,
+        "is_recurring": true
+      },
+      "water_heater_flush": {
+        "display_name": "Water Heater Flush",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 25,
+        "avg_cost_retail": 150,
+        "avg_cost_group": 90,
+        "savings_per_home": 60,
+        "total_savings_potential": 1500,
+        "avg_urgency": 100,
+        "is_recurring": true
+      }
+    },
+    "top_recommendation": "HVAC System — 100% of homes (25 of 25) are at or past end-of-life",
+    "top_system": "hvac",
+    "top_system_display": "HVAC System",
+    "top_system_homes": 25,
+    "top_system_savings": 66500,
+    "top_system_savings_per_home": 2660,
+    "estimated_total_savings": 185722
+  },
+  "93": {
+    "subdivision": "Avington",
+    "subdivision_id": 93,
+    "total_homes": 20,
+    "year_built_mode": 2007,
+    "urgency_score": 87,
+    "systems": {
+      "hvac": {
+        "display_name": "HVAC System",
+        "pct_critical": 75,
+        "pct_due_now": 25,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 9500,
+        "avg_cost_group": 6840,
+        "savings_per_home": 2660,
+        "total_savings_potential": 53200,
+        "avg_urgency": 95,
+        "is_recurring": false
+      },
+      "water_heater": {
+        "display_name": "Water Heater",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 1850,
+        "avg_cost_group": 1203,
+        "savings_per_home": 648,
+        "total_savings_potential": 12950,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "roof": {
+        "display_name": "Roof (Asphalt Shingle)",
+        "pct_critical": 10,
+        "pct_due_now": 35,
+        "pct_upcoming": 10,
+        "pct_ok": 45,
+        "estimated_homes_needing_service": 9,
+        "avg_cost_retail": 14000,
+        "avg_cost_group": 10920,
+        "savings_per_home": 3080,
+        "total_savings_potential": 27720,
+        "avg_urgency": 54,
+        "is_recurring": false
+      },
+      "exterior_paint": {
+        "display_name": "Exterior Paint",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 5750,
+        "avg_cost_group": 4140,
+        "savings_per_home": 1610,
+        "total_savings_potential": 32200,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "driveway_sealing": {
+        "display_name": "Driveway Sealing",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 310,
+        "avg_cost_group": 202,
+        "savings_per_home": 109,
+        "total_savings_potential": 2170,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "deck_staining": {
+        "display_name": "Deck Stain/Seal",
+        "pct_critical": 100,
+        "pct_due_now": 0,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 385,
+        "avg_cost_group": 270,
+        "savings_per_home": 116,
+        "total_savings_potential": 2310,
+        "avg_urgency": 100,
+        "is_recurring": false
+      },
+      "garage_door": {
+        "display_name": "Garage Door/Opener",
+        "pct_critical": 75,
+        "pct_due_now": 25,
+        "pct_upcoming": 0,
+        "pct_ok": 0,
+        "estimated_homes_needing_service": 20,
+        "avg_cost_retail": 1550,
+        "avg_cost_group": 1240,
+        "savings_per_home": 310,
+        "total_savings_potential": 6200,
+        "avg_urgency": 95,
         "is_recurring": false
       },
       "gutter_cleaning": {
@@ -2027,321 +2339,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 141800
   },
-  "44": {
-    "subdivision": "Ashebrooke",
-    "subdivision_id": 44,
-    "total_homes": 25,
-    "year_built_mode": 2005,
-    "urgency_score": 92,
-    "systems": {
-      "hvac": {
-        "display_name": "HVAC System",
-        "pct_critical": 96,
-        "pct_due_now": 4,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 9500,
-        "avg_cost_group": 6840,
-        "savings_per_home": 2660,
-        "total_savings_potential": 66500,
-        "avg_urgency": 99,
-        "is_recurring": false
-      },
-      "water_heater": {
-        "display_name": "Water Heater",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 1850,
-        "avg_cost_group": 1203,
-        "savings_per_home": 648,
-        "total_savings_potential": 16188,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "roof": {
-        "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 36,
-        "pct_due_now": 16,
-        "pct_upcoming": 24,
-        "pct_ok": 24,
-        "estimated_homes_needing_service": 13,
-        "avg_cost_retail": 14000,
-        "avg_cost_group": 10920,
-        "savings_per_home": 3080,
-        "total_savings_potential": 40040,
-        "avg_urgency": 69,
-        "is_recurring": false
-      },
-      "exterior_paint": {
-        "display_name": "Exterior Paint",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 5750,
-        "avg_cost_group": 4140,
-        "savings_per_home": 1610,
-        "total_savings_potential": 40250,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "driveway_sealing": {
-        "display_name": "Driveway Sealing",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 310,
-        "avg_cost_group": 202,
-        "savings_per_home": 109,
-        "total_savings_potential": 2713,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "deck_staining": {
-        "display_name": "Deck Stain/Seal",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 385,
-        "avg_cost_group": 270,
-        "savings_per_home": 116,
-        "total_savings_potential": 2888,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "garage_door": {
-        "display_name": "Garage Door/Opener",
-        "pct_critical": 96,
-        "pct_due_now": 4,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 1550,
-        "avg_cost_group": 1240,
-        "savings_per_home": 310,
-        "total_savings_potential": 7750,
-        "avg_urgency": 99,
-        "is_recurring": false
-      },
-      "gutter_cleaning": {
-        "display_name": "Gutter Cleaning",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 150,
-        "avg_cost_group": 98,
-        "savings_per_home": 53,
-        "total_savings_potential": 1313,
-        "avg_urgency": 100,
-        "is_recurring": true
-      },
-      "pressure_washing": {
-        "display_name": "Pressure Washing",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 400,
-        "avg_cost_group": 260,
-        "savings_per_home": 140,
-        "total_savings_potential": 3500,
-        "avg_urgency": 100,
-        "is_recurring": true
-      },
-      "water_heater_flush": {
-        "display_name": "Water Heater Flush",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 25,
-        "avg_cost_retail": 150,
-        "avg_cost_group": 90,
-        "savings_per_home": 60,
-        "total_savings_potential": 1500,
-        "avg_urgency": 100,
-        "is_recurring": true
-      }
-    },
-    "top_recommendation": "HVAC System — 100% of homes (25 of 25) are at or past end-of-life",
-    "top_system": "hvac",
-    "top_system_display": "HVAC System",
-    "top_system_homes": 25,
-    "top_system_savings": 66500,
-    "top_system_savings_per_home": 2660,
-    "estimated_total_savings": 182642
-  },
-  "45": {
-    "subdivision": "Avington",
-    "subdivision_id": 45,
-    "total_homes": 20,
-    "year_built_mode": 2007,
-    "urgency_score": 87,
-    "systems": {
-      "hvac": {
-        "display_name": "HVAC System",
-        "pct_critical": 90,
-        "pct_due_now": 10,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 9500,
-        "avg_cost_group": 6840,
-        "savings_per_home": 2660,
-        "total_savings_potential": 53200,
-        "avg_urgency": 98,
-        "is_recurring": false
-      },
-      "water_heater": {
-        "display_name": "Water Heater",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 1850,
-        "avg_cost_group": 1203,
-        "savings_per_home": 648,
-        "total_savings_potential": 12950,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "roof": {
-        "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 0,
-        "pct_due_now": 25,
-        "pct_upcoming": 35,
-        "pct_ok": 40,
-        "estimated_homes_needing_service": 5,
-        "avg_cost_retail": 14000,
-        "avg_cost_group": 10920,
-        "savings_per_home": 3080,
-        "total_savings_potential": 15400,
-        "avg_urgency": 50,
-        "is_recurring": false
-      },
-      "exterior_paint": {
-        "display_name": "Exterior Paint",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 5750,
-        "avg_cost_group": 4140,
-        "savings_per_home": 1610,
-        "total_savings_potential": 32200,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "driveway_sealing": {
-        "display_name": "Driveway Sealing",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 310,
-        "avg_cost_group": 202,
-        "savings_per_home": 109,
-        "total_savings_potential": 2170,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "deck_staining": {
-        "display_name": "Deck Stain/Seal",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 385,
-        "avg_cost_group": 270,
-        "savings_per_home": 116,
-        "total_savings_potential": 2310,
-        "avg_urgency": 100,
-        "is_recurring": false
-      },
-      "garage_door": {
-        "display_name": "Garage Door/Opener",
-        "pct_critical": 90,
-        "pct_due_now": 10,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 1550,
-        "avg_cost_group": 1240,
-        "savings_per_home": 310,
-        "total_savings_potential": 6200,
-        "avg_urgency": 98,
-        "is_recurring": false
-      },
-      "gutter_cleaning": {
-        "display_name": "Gutter Cleaning",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 150,
-        "avg_cost_group": 98,
-        "savings_per_home": 53,
-        "total_savings_potential": 1050,
-        "avg_urgency": 100,
-        "is_recurring": true
-      },
-      "pressure_washing": {
-        "display_name": "Pressure Washing",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 400,
-        "avg_cost_group": 260,
-        "savings_per_home": 140,
-        "total_savings_potential": 2800,
-        "avg_urgency": 100,
-        "is_recurring": true
-      },
-      "water_heater_flush": {
-        "display_name": "Water Heater Flush",
-        "pct_critical": 100,
-        "pct_due_now": 0,
-        "pct_upcoming": 0,
-        "pct_ok": 0,
-        "estimated_homes_needing_service": 20,
-        "avg_cost_retail": 150,
-        "avg_cost_group": 90,
-        "savings_per_home": 60,
-        "total_savings_potential": 1200,
-        "avg_urgency": 100,
-        "is_recurring": true
-      }
-    },
-    "top_recommendation": "HVAC System — 100% of homes (20 of 20) are at or past end-of-life",
-    "top_system": "hvac",
-    "top_system_display": "HVAC System",
-    "top_system_homes": 20,
-    "top_system_savings": 53200,
-    "top_system_savings_per_home": 2660,
-    "estimated_total_savings": 129480
-  },
-  "46": {
+  "94": {
     "subdivision": "Andover Glen",
-    "subdivision_id": 46,
+    "subdivision_id": 94,
     "total_homes": 20,
     "year_built_mode": 2006,
     "urgency_score": 93,
@@ -2377,15 +2377,15 @@
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
         "pct_critical": 0,
-        "pct_due_now": 55,
-        "pct_upcoming": 45,
+        "pct_due_now": 65,
+        "pct_upcoming": 35,
         "pct_ok": 0,
-        "estimated_homes_needing_service": 11,
+        "estimated_homes_needing_service": 13,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
-        "total_savings_potential": 33880,
-        "avg_urgency": 71,
+        "total_savings_potential": 40040,
+        "avg_urgency": 73,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -2493,11 +2493,11 @@
     "top_system_homes": 20,
     "top_system_savings": 53200,
     "top_system_savings_per_home": 2660,
-    "estimated_total_savings": 147960
+    "estimated_total_savings": 154120
   },
-  "48": {
+  "96": {
     "subdivision": "Autumn Hills",
-    "subdivision_id": 48,
+    "subdivision_id": 96,
     "total_homes": 20,
     "year_built_mode": 2003,
     "urgency_score": 100,
@@ -2651,17 +2651,17 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 175680
   },
-  "51": {
+  "99": {
     "subdivision": "Big Creek Township",
-    "subdivision_id": 51,
+    "subdivision_id": 99,
     "total_homes": 20,
     "year_built_mode": 2008,
     "urgency_score": 84,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
-        "pct_critical": 85,
-        "pct_due_now": 15,
+        "pct_critical": 70,
+        "pct_due_now": 30,
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 20,
@@ -2669,7 +2669,7 @@
         "avg_cost_group": 6840,
         "savings_per_home": 2660,
         "total_savings_potential": 53200,
-        "avg_urgency": 97,
+        "avg_urgency": 94,
         "is_recurring": false
       },
       "water_heater": {
@@ -2690,14 +2690,14 @@
         "display_name": "Roof (Asphalt Shingle)",
         "pct_critical": 0,
         "pct_due_now": 15,
-        "pct_upcoming": 25,
-        "pct_ok": 60,
+        "pct_upcoming": 35,
+        "pct_ok": 50,
         "estimated_homes_needing_service": 3,
         "avg_cost_retail": 14000,
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
         "total_savings_potential": 9240,
-        "avg_urgency": 41,
+        "avg_urgency": 44,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -2744,8 +2744,8 @@
       },
       "garage_door": {
         "display_name": "Garage Door/Opener",
-        "pct_critical": 85,
-        "pct_due_now": 15,
+        "pct_critical": 70,
+        "pct_due_now": 30,
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 20,
@@ -2753,7 +2753,7 @@
         "avg_cost_group": 1240,
         "savings_per_home": 310,
         "total_savings_potential": 6200,
-        "avg_urgency": 97,
+        "avg_urgency": 94,
         "is_recurring": false
       },
       "gutter_cleaning": {
@@ -2807,9 +2807,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 123320
   },
-  "53": {
+  "101": {
     "subdivision": "Old Atlanta Commons",
-    "subdivision_id": 53,
+    "subdivision_id": 101,
     "total_homes": 20,
     "year_built_mode": 2003,
     "urgency_score": 99,
@@ -2844,8 +2844,8 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 85,
-        "pct_due_now": 15,
+        "pct_critical": 80,
+        "pct_due_now": 20,
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 20,
@@ -2853,7 +2853,7 @@
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
         "total_savings_potential": 61600,
-        "avg_urgency": 97,
+        "avg_urgency": 96,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -2963,9 +2963,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 175680
   },
-  "54": {
+  "102": {
     "subdivision": "Coventry",
-    "subdivision_id": 54,
+    "subdivision_id": 102,
     "total_homes": 20,
     "year_built_mode": 2002,
     "urgency_score": 100,
@@ -3119,12 +3119,12 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 175680
   },
-  "55": {
+  "103": {
     "subdivision": "Arbor Meadows",
-    "subdivision_id": 55,
+    "subdivision_id": 103,
     "total_homes": 15,
     "year_built_mode": 2004,
-    "urgency_score": 97,
+    "urgency_score": 98,
     "systems": {
       "hvac": {
         "display_name": "HVAC System",
@@ -3156,8 +3156,8 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 40,
-        "pct_due_now": 60,
+        "pct_critical": 53,
+        "pct_due_now": 47,
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 15,
@@ -3165,7 +3165,7 @@
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
         "total_savings_potential": 46200,
-        "avg_urgency": 88,
+        "avg_urgency": 91,
         "is_recurring": false
       },
       "exterior_paint": {
@@ -3275,9 +3275,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 131762
   },
-  "58": {
+  "106": {
     "subdivision": "Barrett Downs",
-    "subdivision_id": 58,
+    "subdivision_id": 106,
     "total_homes": 20,
     "year_built_mode": 1997,
     "urgency_score": 100,
@@ -3431,9 +3431,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 175680
   },
-  "60": {
+  "108": {
     "subdivision": "Brighton Lake",
-    "subdivision_id": 60,
+    "subdivision_id": 108,
     "total_homes": 15,
     "year_built_mode": 1997,
     "urgency_score": 100,
@@ -3587,9 +3587,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 131762
   },
-  "61": {
+  "109": {
     "subdivision": "Bannister Park",
-    "subdivision_id": 61,
+    "subdivision_id": 109,
     "total_homes": 15,
     "year_built_mode": 1996,
     "urgency_score": 100,
@@ -3743,9 +3743,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 131762
   },
-  "69": {
+  "117": {
     "subdivision": "Arden Greens at Windermere",
-    "subdivision_id": 69,
+    "subdivision_id": 117,
     "total_homes": 15,
     "year_built_mode": 2001,
     "urgency_score": 100,
@@ -3899,9 +3899,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 131762
   },
-  "70": {
+  "118": {
     "subdivision": "Bennington at Windermere",
-    "subdivision_id": 70,
+    "subdivision_id": 118,
     "total_homes": 15,
     "year_built_mode": 2002,
     "urgency_score": 100,
@@ -4055,9 +4055,9 @@
     "top_system_savings_per_home": 2660,
     "estimated_total_savings": 131762
   },
-  "71": {
+  "119": {
     "subdivision": "Caney Creek",
-    "subdivision_id": 71,
+    "subdivision_id": 119,
     "total_homes": 15,
     "year_built_mode": 1998,
     "urgency_score": 100,
@@ -4092,8 +4092,8 @@
       },
       "roof": {
         "display_name": "Roof (Asphalt Shingle)",
-        "pct_critical": 93,
-        "pct_due_now": 7,
+        "pct_critical": 100,
+        "pct_due_now": 0,
         "pct_upcoming": 0,
         "pct_ok": 0,
         "estimated_homes_needing_service": 15,
@@ -4101,7 +4101,7 @@
         "avg_cost_group": 10920,
         "savings_per_home": 3080,
         "total_savings_potential": 46200,
-        "avg_urgency": 99,
+        "avg_urgency": 100,
         "is_recurring": false
       },
       "exterior_paint": {

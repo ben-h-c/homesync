@@ -325,6 +325,96 @@ This doesn't account for repeat business (recurring services annually) or expans
 
 ---
 
+## 9. ATLANTA METRO EXPANSION — SUBDIVISION DATA
+
+### Overview
+Beyond Forsyth County (30041/30040/30028), the north Atlanta metro has thousands of HOA subdivisions
+with the same maintenance urgency patterns. Key expansion corridors along GA-400 and I-85.
+
+### Mega-Communities (1,000+ homes)
+| Community | Location | Homes | Built | Price Range | Notes |
+|-----------|----------|-------|-------|-------------|-------|
+| **Windward** | Alpharetta (Fulton) | ~2,500 | 1990s | $300K-$3.8M | 3,400-acre master plan, 36-hole golf, 200-acre lake. 20 sub-neighborhoods. |
+| **BridgeMill** | Canton (Cherokee) | ~2,800 | 1998-2020 | $350K-$800K+ | 1,500 acres, 18-hole championship golf. Established 1999. |
+| **Sterling on the Lake** | Flowery Branch (Hall) | ~1,500+ | 2004+ | $400K-$1.1M | 8 diverse sections including 55+. Newland Communities. |
+| **Traditions of Braselton** | Jefferson (Jackson) | ~1,000+ | 2004+ | $400K-$1M+ | 18-hole golf, Jr Olympic pool, water slides, tennis. |
+
+### North Fulton County (Alpharetta, Roswell, Milton, Johns Creek)
+| Subdivision | City | Homes | Built | Notes |
+|-------------|------|-------|-------|-------|
+| **Windward** (all villages) | Alpharetta | ~2,500 | 1990s | See above |
+| **Kimball Farms** | Alpharetta | ~150 | 1990s-2000s | Swim/tennis, 1/3 to 1 acre lots, 4-sides brick |
+| **Chatham Park** | Roswell | 35 | 2000s | Gated, 3/4 acre, 6,000-8,000 sqft |
+| **White Columns** | Milton | ~400 | 1990s-2000s | Golf/country club, lake, swim/tennis |
+| **Laurelbrook** | Roswell | ~40 | 2000s | Gated, 7,000-8,000 sqft stucco homes |
+| **Mayfair** | Johns Creek | ~200 | 1990s-2000s | Swim/tennis, 1/3 to 3/4 acre lots |
+| **Citadella** | Johns Creek | ~60 | 2000s | Gated, 1+ acre, 7,000-9,000 sqft |
+| **Ashebury** | Roswell | ~80 | 2021-2024 | Townhouses, ~$656K avg |
+
+*Roswell alone has 386 identified subdivisions (Homes by Marco data).*
+
+### Gwinnett County (Suwanee, Buford, Duluth, Lawrenceville)
+| Subdivision | City | Homes | Built | Notes |
+|-------------|------|-------|-------|-------|
+| **River Club** | Suwanee | ~800 | 1990s-2000s | Gated luxury, golf, highest-end |
+| **Laurel Springs** | Suwanee | ~600 | 2000s | Prestigious, clubhouse, fitness |
+| **Three Bridges** | Suwanee | ~200 | 2010s | Gated, townhomes + SF |
+| **Sugarloaf Country Club** | Duluth | ~1,000+ | 1990s-2000s | TPC golf, luxury |
+| **Huntington West** | Buford | 232 | 2000s | HOA community |
+| **Morning View** | Suwanee | ~300 | 1997-2002 | Resort-style, multiple pools |
+| **Settles Bridge** | Suwanee | ~150 | 2000s | Near Settles Bridge Park |
+
+### Cherokee County (Canton, Woodstock, Holly Springs)
+| Subdivision | City | Homes | Built | Notes |
+|-------------|------|-------|-------|-------|
+| **BridgeMill** | Canton | ~2,800 | 1998-2020 | See mega-communities above |
+| **Towne Mill** | Canton | ~300 | 2006-2022 | New and established homes |
+| **Governors Preserve** | Canton | ~200 | 2020s | New construction |
+| **Starr Lake** | Acworth | ~200 | 2001-2005 | Clubhouse, lake, pool, tennis. $225K-$599K |
+| **Eagle Watch** | Woodstock | ~1,200 | 1990s-2000s | Golf community |
+
+### Hall County (Flowery Branch, Gainesville)
+| Subdivision | City | Homes | Built | Notes |
+|-------------|------|-------|-------|-------|
+| **Sterling on the Lake** | Flowery Branch | ~1,500+ | 2004+ | See mega-communities above |
+| **Quailwood** | Flowery Branch | ~50 | 2005-2013 | Estate homes, 4,400-4,900 sqft |
+| **Royal Lakes** | Flowery Branch | ~400 | 1990s-2000s | Golf/country club |
+
+### Cobb County (Marietta, Kennesaw, Acworth)
+| Subdivision | City | Homes | Built | Notes |
+|-------------|------|-------|-------|-------|
+| **Starr Lake** | Acworth | ~200 | 2001-2005 | Pool, tennis, lake. $225K-$599K |
+| **West Cobb subdivisions** | Marietta | 1000s | Various | Established suburban, pine forests |
+| **Kennesaw Mountain area** | Kennesaw | 1000s | Various | Near national battlefield park |
+
+### Fayette County (Peachtree City)
+| Subdivision | City | Homes | Built | Notes |
+|-------------|------|-------|-------|-------|
+| **Pinegate** | Peachtree City | ~200 | 1974-2003 | Established community |
+| **The Estates** | Peachtree City | ~60 | 1990-1993 | Older homes |
+| **Everton** | Peachtree City | ~100 | 2016-2024 | Newer construction |
+| **Lake Peachtree** | Peachtree City | ~150 | 1968-2001 | Lakefront, some very old |
+
+### Expansion Priority by County
+1. **Forsyth (current)**: 155,000 housing units, 500+ subdivisions — deepest opportunity
+2. **North Fulton (Alpharetta/Roswell)**: Wealthy, 1990s-2000s construction wave, premium pricing
+3. **Gwinnett (Suwanee/Duluth)**: Massive housing stock, diverse price points, many 2000-2010 builds
+4. **Cherokee (Canton/Woodstock)**: Fast-growing, BridgeMill alone = 2,800 homes
+5. **Hall (Flowery Branch)**: Sterling on the Lake + surrounding communities, Lake Lanier corridor
+6. **Cobb (Marietta/Kennesaw)**: Enormous market but more competitive, further from base
+
+### Total Addressable Market (Estimated)
+| County | Housing Units | HOA Communities (est.) | Built 2000-2015 (est.) |
+|--------|-------------|----------------------|----------------------|
+| Forsyth | ~155,000 | 500+ | ~45,000 |
+| North Fulton | ~120,000 | 400+ | ~30,000 |
+| Gwinnett (north) | ~100,000 | 350+ | ~35,000 |
+| Cherokee | ~90,000 | 300+ | ~30,000 |
+| Hall | ~85,000 | 200+ | ~25,000 |
+| **Total** | **~550,000** | **~1,750+** | **~165,000** |
+
+---
+
 ## Sources
 
 - [North Atlanta Home Team — Cumming Guide](https://www.northatlantahometeam.com/guide/cumming/)
