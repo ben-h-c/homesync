@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors({ origin: 'http://localhost:5173' }));
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
 
 app.get('/api/health', (req, res) => {
   res.json({
@@ -16,6 +16,10 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date().toISOString()
   });
 });
+
+app.use('/api/properties', require('./routes/properties'));
+app.use('/api/subdivisions', require('./routes/subdivisions'));
+app.use('/api/import', require('./routes/import'));
 
 app.listen(PORT, () => {
   console.log(`HomeSync server running on http://localhost:${PORT}`);

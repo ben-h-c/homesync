@@ -1,0 +1,66 @@
+const express = require('express');
+const router = express.Router();
+const db = require('../db');
+const { aggregateAll } = require('../services/subdivisionAggregator');
+
+// GET /api/subdivisions — list all, sortable
+router.get('/', async (req, res) => {
+  try {
+    const { sort = 'name', order = 'asc' } = req.query;
+    const allowedSorts = ['name', 'total_homes', 'year_built_mode', 'maintenance_urgency_score', 'pipeline_stage', 'avg_assessed_value'];
+    const sortField = allowedSorts.includes(sort) ? sort : 'name';
+    const sortOrder = order === 'desc' ? 'desc' : 'asc';
+
+    const subdivisions = await db('subdivisions').orderBy(sortField, sortOrder);
+    res.json(subdivisions);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/subdivisions/recalculate
+router.post('/recalculate', async (req, res) => {
+  try {
+    const results = await aggregateAll();
+    res.json({ updated: results.length, subdivisions: results });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/subdivisions/:id
+router.get('/:id', async (req, res) => {
+  try {
+    const subdivision = await db('subdivisions').where('id', req.params.id).first();
+    if (!subdivision) return res.status(404).json({ error: 'Subdivision not found' });
+    res.json(subdivision);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// PUT /api/subdivisions/:id
+router.put('/:id', async (req, res) => {
+  try {
+    await db('subdivisions').where('id', req.params.id).update({ ...req.body, updated_at: new Date().toISOString() });
+    const subdivision = await db('subdivisions').where('id', req.params.id).first();
+    if (!subdivision) return res.status(404).json({ error: 'Subdivision not found' });
+    res.json(subdivision);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
+// GET /api/subdivisions/:id/properties
+router.get('/:id/properties', async (req, res) => {
+  try {
+    const subdivision = await db('subdivisions').where('id', req.params.id).first();
+    if (!subdivision) return res.status(404).json({ error: 'Subdivision not found' });
+    const properties = await db('properties').where('subdivision', subdivision.name);
+    res.json(properties);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+module.exports = router;
