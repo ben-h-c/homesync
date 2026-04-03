@@ -1,6 +1,6 @@
 [
   {
-    "id": 84,
+    "id": 148,
     "name": "Canterbury Farms",
     "zip": "30040",
     "total_homes": 60,
@@ -25,11 +25,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.380Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.656Z"
   },
   {
-    "id": 96,
+    "id": 160,
     "name": "Autumn Hills",
     "zip": "30041",
     "total_homes": 70,
@@ -54,11 +54,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.386Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.661Z"
   },
   {
-    "id": 102,
+    "id": 166,
     "name": "Coventry",
     "zip": "30041",
     "total_homes": 60,
@@ -83,11 +83,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.388Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.663Z"
   },
   {
-    "id": 106,
+    "id": 170,
     "name": "Barrett Downs",
     "zip": "30041",
     "total_homes": 70,
@@ -112,11 +112,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.389Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.664Z"
   },
   {
-    "id": 108,
+    "id": 172,
     "name": "Brighton Lake",
     "zip": "30041",
     "total_homes": 60,
@@ -141,11 +141,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.390Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.665Z"
   },
   {
-    "id": 109,
+    "id": 173,
     "name": "Bannister Park",
     "zip": "30041",
     "total_homes": 55,
@@ -170,11 +170,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.390Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.666Z"
   },
   {
-    "id": 117,
+    "id": 181,
     "name": "Arden Greens at Windermere",
     "zip": "30041",
     "total_homes": 60,
@@ -199,11 +199,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.392Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.667Z"
   },
   {
-    "id": 118,
+    "id": 182,
     "name": "Bennington at Windermere",
     "zip": "30041",
     "total_homes": 55,
@@ -228,11 +228,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.393Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.668Z"
   },
   {
-    "id": 119,
+    "id": 183,
     "name": "Caney Creek",
     "zip": "30041",
     "total_homes": 70,
@@ -257,11 +257,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.394Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.668Z"
   },
   {
-    "id": 80,
+    "id": 144,
     "name": "Brookwood",
     "zip": "30041",
     "total_homes": 150,
@@ -286,11 +286,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.377Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.654Z"
   },
   {
-    "id": 101,
+    "id": 165,
     "name": "Old Atlanta Commons",
     "zip": "30041",
     "total_homes": 80,
@@ -315,40 +315,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.387Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.662Z"
   },
   {
-    "id": 103,
-    "name": "Arbor Meadows",
-    "zip": "30041",
-    "total_homes": 50,
-    "year_built_min": 2004,
-    "year_built_max": 2005,
-    "year_built_mode": 2004,
-    "avg_square_footage": 3000,
-    "avg_assessed_value": 520000,
-    "hoa_name": "Arbor Meadows HOA",
-    "hoa_management_company": null,
-    "hoa_contact_name": null,
-    "hoa_contact_email": null,
-    "hoa_contact_phone": null,
-    "hoa_meeting_schedule": null,
-    "hoa_website": null,
-    "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 98,
-    "hvac_pct_due": 100,
-    "roof_pct_due": 100,
-    "water_heater_pct_due": 100,
-    "paint_pct_due": 100,
-    "pipeline_stage": "research",
-    "pipeline_notes": null,
-    "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.388Z"
-  },
-  {
-    "id": 78,
+    "id": 142,
     "name": "Bethelview Downs",
     "zip": "30040",
     "total_homes": 100,
@@ -367,17 +338,17 @@
     "hoa_dues_monthly": null,
     "maintenance_urgency_score": 97,
     "hvac_pct_due": 100,
-    "roof_pct_due": 74,
+    "roof_pct_due": 80,
     "water_heater_pct_due": 100,
     "paint_pct_due": 100,
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.376Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.652Z"
   },
   {
-    "id": 81,
+    "id": 145,
     "name": "Legends at Settendown Creek",
     "zip": "30028",
     "total_homes": 143,
@@ -396,17 +367,46 @@
     "hoa_dues_monthly": null,
     "maintenance_urgency_score": 97,
     "hvac_pct_due": 100,
-    "roof_pct_due": 70,
+    "roof_pct_due": 80,
     "water_heater_pct_due": 100,
     "paint_pct_due": 100,
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.378Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.654Z"
   },
   {
-    "id": 87,
+    "id": 167,
+    "name": "Arbor Meadows",
+    "zip": "30041",
+    "total_homes": 50,
+    "year_built_min": 2004,
+    "year_built_max": 2005,
+    "year_built_mode": 2004,
+    "avg_square_footage": 3000,
+    "avg_assessed_value": 520000,
+    "hoa_name": "Arbor Meadows HOA",
+    "hoa_management_company": null,
+    "hoa_contact_name": null,
+    "hoa_contact_email": null,
+    "hoa_contact_phone": null,
+    "hoa_meeting_schedule": null,
+    "hoa_website": null,
+    "hoa_dues_monthly": null,
+    "maintenance_urgency_score": 96,
+    "hvac_pct_due": 100,
+    "roof_pct_due": 100,
+    "water_heater_pct_due": 100,
+    "paint_pct_due": 100,
+    "pipeline_stage": "research",
+    "pipeline_notes": null,
+    "last_contacted": null,
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.663Z"
+  },
+  {
+    "id": 151,
     "name": "Brannon Oaks",
     "zip": "30041",
     "total_homes": 80,
@@ -425,17 +425,104 @@
     "hoa_dues_monthly": null,
     "maintenance_urgency_score": 95,
     "hvac_pct_due": 100,
-    "roof_pct_due": 64,
+    "roof_pct_due": 68,
     "water_heater_pct_due": 100,
     "paint_pct_due": 100,
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.381Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.657Z"
   },
   {
-    "id": 89,
+    "id": 146,
+    "name": "Sawnee Mountain",
+    "zip": "30028",
+    "total_homes": 100,
+    "year_built_min": 2000,
+    "year_built_max": 2010,
+    "year_built_mode": 2005,
+    "avg_square_footage": 3400,
+    "avg_assessed_value": 540000,
+    "hoa_name": "Sawnee Mountain HOA",
+    "hoa_management_company": null,
+    "hoa_contact_name": null,
+    "hoa_contact_email": null,
+    "hoa_contact_phone": null,
+    "hoa_meeting_schedule": null,
+    "hoa_website": null,
+    "hoa_dues_monthly": null,
+    "maintenance_urgency_score": 94,
+    "hvac_pct_due": 100,
+    "roof_pct_due": 60,
+    "water_heater_pct_due": 100,
+    "paint_pct_due": 100,
+    "pipeline_stage": "research",
+    "pipeline_notes": null,
+    "last_contacted": null,
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.655Z"
+  },
+  {
+    "id": 158,
+    "name": "Andover Glen",
+    "zip": "30041",
+    "total_homes": 80,
+    "year_built_min": 2005,
+    "year_built_max": 2007,
+    "year_built_mode": 2006,
+    "avg_square_footage": 2800,
+    "avg_assessed_value": 525000,
+    "hoa_name": "Andover Glen HOA",
+    "hoa_management_company": null,
+    "hoa_contact_name": null,
+    "hoa_contact_email": null,
+    "hoa_contact_phone": null,
+    "hoa_meeting_schedule": null,
+    "hoa_website": null,
+    "hoa_dues_monthly": null,
+    "maintenance_urgency_score": 94,
+    "hvac_pct_due": 100,
+    "roof_pct_due": 70,
+    "water_heater_pct_due": 100,
+    "paint_pct_due": 100,
+    "pipeline_stage": "research",
+    "pipeline_notes": null,
+    "last_contacted": null,
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.660Z"
+  },
+  {
+    "id": 143,
+    "name": "Sharon Springs",
+    "zip": "30041",
+    "total_homes": 120,
+    "year_built_min": 2005,
+    "year_built_max": 2008,
+    "year_built_mode": 2006,
+    "avg_square_footage": 2700,
+    "avg_assessed_value": 440000,
+    "hoa_name": "Sharon Springs HOA",
+    "hoa_management_company": null,
+    "hoa_contact_name": null,
+    "hoa_contact_email": null,
+    "hoa_contact_phone": null,
+    "hoa_meeting_schedule": null,
+    "hoa_website": null,
+    "hoa_dues_monthly": null,
+    "maintenance_urgency_score": 93,
+    "hvac_pct_due": 100,
+    "roof_pct_due": 56,
+    "water_heater_pct_due": 100,
+    "paint_pct_due": 100,
+    "pipeline_stage": "research",
+    "pipeline_notes": null,
+    "last_contacted": null,
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.653Z"
+  },
+  {
+    "id": 153,
     "name": "Polo Fields",
     "zip": "30040",
     "total_homes": 180,
@@ -454,75 +541,17 @@
     "hoa_dues_monthly": null,
     "maintenance_urgency_score": 93,
     "hvac_pct_due": 100,
-    "roof_pct_due": 44,
+    "roof_pct_due": 40,
     "water_heater_pct_due": 100,
     "paint_pct_due": 100,
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.383Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.658Z"
   },
   {
-    "id": 90,
-    "name": "Concord Farms",
-    "zip": "30040",
-    "total_homes": 120,
-    "year_built_min": 2004,
-    "year_built_max": 2010,
-    "year_built_mode": 2006,
-    "avg_square_footage": 2800,
-    "avg_assessed_value": 430000,
-    "hoa_name": "Concord Farms HOA",
-    "hoa_management_company": null,
-    "hoa_contact_name": null,
-    "hoa_contact_email": null,
-    "hoa_contact_phone": null,
-    "hoa_meeting_schedule": null,
-    "hoa_website": null,
-    "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 93,
-    "hvac_pct_due": 100,
-    "roof_pct_due": 50,
-    "water_heater_pct_due": 100,
-    "paint_pct_due": 100,
-    "pipeline_stage": "research",
-    "pipeline_notes": null,
-    "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.383Z"
-  },
-  {
-    "id": 94,
-    "name": "Andover Glen",
-    "zip": "30041",
-    "total_homes": 80,
-    "year_built_min": 2005,
-    "year_built_max": 2007,
-    "year_built_mode": 2006,
-    "avg_square_footage": 2800,
-    "avg_assessed_value": 525000,
-    "hoa_name": "Andover Glen HOA",
-    "hoa_management_company": null,
-    "hoa_contact_name": null,
-    "hoa_contact_email": null,
-    "hoa_contact_phone": null,
-    "hoa_meeting_schedule": null,
-    "hoa_website": null,
-    "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 93,
-    "hvac_pct_due": 100,
-    "roof_pct_due": 65,
-    "water_heater_pct_due": 100,
-    "paint_pct_due": 100,
-    "pipeline_stage": "research",
-    "pipeline_notes": null,
-    "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.385Z"
-  },
-  {
-    "id": 74,
+    "id": 138,
     "name": "Windermere",
     "zip": "30040",
     "total_homes": 500,
@@ -541,55 +570,26 @@
     "hoa_dues_monthly": null,
     "maintenance_urgency_score": 92,
     "hvac_pct_due": 100,
-    "roof_pct_due": 47,
+    "roof_pct_due": 50,
     "water_heater_pct_due": 100,
     "paint_pct_due": 100,
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.370Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.647Z"
   },
   {
-    "id": 79,
-    "name": "Sharon Springs",
-    "zip": "30041",
+    "id": 154,
+    "name": "Concord Farms",
+    "zip": "30040",
     "total_homes": 120,
-    "year_built_min": 2005,
-    "year_built_max": 2008,
-    "year_built_mode": 2006,
-    "avg_square_footage": 2700,
-    "avg_assessed_value": 440000,
-    "hoa_name": "Sharon Springs HOA",
-    "hoa_management_company": null,
-    "hoa_contact_name": null,
-    "hoa_contact_email": null,
-    "hoa_contact_phone": null,
-    "hoa_meeting_schedule": null,
-    "hoa_website": null,
-    "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 92,
-    "hvac_pct_due": 100,
-    "roof_pct_due": 40,
-    "water_heater_pct_due": 100,
-    "paint_pct_due": 100,
-    "pipeline_stage": "research",
-    "pipeline_notes": null,
-    "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.377Z"
-  },
-  {
-    "id": 82,
-    "name": "Sawnee Mountain",
-    "zip": "30028",
-    "total_homes": 100,
-    "year_built_min": 2000,
+    "year_built_min": 2004,
     "year_built_max": 2010,
-    "year_built_mode": 2005,
-    "avg_square_footage": 3400,
-    "avg_assessed_value": 540000,
-    "hoa_name": "Sawnee Mountain HOA",
+    "year_built_mode": 2006,
+    "avg_square_footage": 2800,
+    "avg_assessed_value": 430000,
+    "hoa_name": "Concord Farms HOA",
     "hoa_management_company": null,
     "hoa_contact_name": null,
     "hoa_contact_email": null,
@@ -597,7 +597,7 @@
     "hoa_meeting_schedule": null,
     "hoa_website": null,
     "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 92,
+    "maintenance_urgency_score": 91,
     "hvac_pct_due": 100,
     "roof_pct_due": 40,
     "water_heater_pct_due": 100,
@@ -605,40 +605,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.379Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.658Z"
   },
   {
-    "id": 92,
-    "name": "Ashebrooke",
-    "zip": "30041",
-    "total_homes": 240,
-    "year_built_min": 2001,
-    "year_built_max": 2013,
-    "year_built_mode": 2005,
-    "avg_square_footage": 3600,
-    "avg_assessed_value": 811000,
-    "hoa_name": "Ashebrooke HOA",
-    "hoa_management_company": null,
-    "hoa_contact_name": null,
-    "hoa_contact_email": null,
-    "hoa_contact_phone": null,
-    "hoa_meeting_schedule": null,
-    "hoa_website": null,
-    "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 92,
-    "hvac_pct_due": 100,
-    "roof_pct_due": 56,
-    "water_heater_pct_due": 100,
-    "paint_pct_due": 100,
-    "pipeline_stage": "research",
-    "pipeline_notes": null,
-    "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.384Z"
-  },
-  {
-    "id": 88,
+    "id": 152,
     "name": "Hampton",
     "zip": "30041",
     "total_homes": 200,
@@ -655,19 +626,48 @@
     "hoa_meeting_schedule": null,
     "hoa_website": null,
     "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 90,
+    "maintenance_urgency_score": 89,
     "hvac_pct_due": 100,
-    "roof_pct_due": 36,
+    "roof_pct_due": 28,
     "water_heater_pct_due": 100,
     "paint_pct_due": 100,
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.382Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.657Z"
   },
   {
-    "id": 93,
+    "id": 156,
+    "name": "Ashebrooke",
+    "zip": "30041",
+    "total_homes": 240,
+    "year_built_min": 2001,
+    "year_built_max": 2013,
+    "year_built_mode": 2005,
+    "avg_square_footage": 3600,
+    "avg_assessed_value": 811000,
+    "hoa_name": "Ashebrooke HOA",
+    "hoa_management_company": null,
+    "hoa_contact_name": null,
+    "hoa_contact_email": null,
+    "hoa_contact_phone": null,
+    "hoa_meeting_schedule": null,
+    "hoa_website": null,
+    "hoa_dues_monthly": null,
+    "maintenance_urgency_score": 88,
+    "hvac_pct_due": 100,
+    "roof_pct_due": 40,
+    "water_heater_pct_due": 100,
+    "paint_pct_due": 100,
+    "pipeline_stage": "research",
+    "pipeline_notes": null,
+    "last_contacted": null,
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.659Z"
+  },
+  {
+    "id": 157,
     "name": "Avington",
     "zip": "30041",
     "total_homes": 100,
@@ -684,19 +684,19 @@
     "hoa_meeting_schedule": null,
     "hoa_website": null,
     "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 87,
+    "maintenance_urgency_score": 86,
     "hvac_pct_due": 100,
-    "roof_pct_due": 45,
+    "roof_pct_due": 25,
     "water_heater_pct_due": 100,
     "paint_pct_due": 100,
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.385Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.660Z"
   },
   {
-    "id": 99,
+    "id": 163,
     "name": "Big Creek Township",
     "zip": "30041",
     "total_homes": 100,
@@ -713,19 +713,19 @@
     "hoa_meeting_schedule": null,
     "hoa_website": null,
     "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 84,
+    "maintenance_urgency_score": 86,
     "hvac_pct_due": 100,
-    "roof_pct_due": 15,
+    "roof_pct_due": 25,
     "water_heater_pct_due": 100,
     "paint_pct_due": 100,
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.387Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.661Z"
   },
   {
-    "id": 76,
+    "id": 140,
     "name": "Bridgetown",
     "zip": "30041",
     "total_homes": 150,
@@ -742,19 +742,19 @@
     "hoa_meeting_schedule": null,
     "hoa_website": null,
     "hoa_dues_monthly": null,
-    "maintenance_urgency_score": 80,
-    "hvac_pct_due": 83,
+    "maintenance_urgency_score": 83,
+    "hvac_pct_due": 94,
     "roof_pct_due": 17,
     "water_heater_pct_due": 100,
     "paint_pct_due": 100,
     "pipeline_stage": "contacted",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.374Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.650Z"
   },
   {
-    "id": 77,
+    "id": 141,
     "name": "Castleberry Heights",
     "zip": "30040",
     "total_homes": 300,
@@ -772,18 +772,18 @@
     "hoa_website": null,
     "hoa_dues_monthly": null,
     "maintenance_urgency_score": 73,
-    "hvac_pct_due": 67,
-    "roof_pct_due": 10,
-    "water_heater_pct_due": 90,
+    "hvac_pct_due": 63,
+    "roof_pct_due": 13,
+    "water_heater_pct_due": 80,
     "paint_pct_due": 100,
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03T11:11:31.375Z"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03T11:17:53.651Z"
   },
   {
-    "id": 72,
+    "id": 136,
     "name": "Creekstone Estates",
     "zip": "30041",
     "total_homes": 370,
@@ -808,11 +808,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 73,
+    "id": 137,
     "name": "Three Chimneys Farm",
     "zip": "30041",
     "total_homes": 500,
@@ -837,11 +837,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 75,
+    "id": 139,
     "name": "Vickery",
     "zip": "30040",
     "total_homes": 200,
@@ -866,11 +866,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 83,
+    "id": 147,
     "name": "Hopewell Manor",
     "zip": "30041",
     "total_homes": 100,
@@ -895,11 +895,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 85,
+    "id": 149,
     "name": "Churchill Crossing",
     "zip": "30028",
     "total_homes": 80,
@@ -924,11 +924,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 86,
+    "id": 150,
     "name": "Bentley Ridge",
     "zip": "30040",
     "total_homes": 48,
@@ -953,11 +953,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 91,
+    "id": 155,
     "name": "James Creek",
     "zip": "30041",
     "total_homes": 90,
@@ -982,11 +982,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 95,
+    "id": 159,
     "name": "Autumn Cove",
     "zip": "30041",
     "total_homes": 90,
@@ -1011,11 +1011,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 97,
+    "id": 161,
     "name": "Brandon Hall",
     "zip": "30041",
     "total_homes": 60,
@@ -1040,11 +1040,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 98,
+    "id": 162,
     "name": "Blackstock Mill",
     "zip": "30041",
     "total_homes": 75,
@@ -1069,11 +1069,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 100,
+    "id": 164,
     "name": "Brookside",
     "zip": "30041",
     "total_homes": 60,
@@ -1098,11 +1098,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 104,
+    "id": 168,
     "name": "Ansley at Pilgrim Mill",
     "zip": "30041",
     "total_homes": 90,
@@ -1127,11 +1127,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 105,
+    "id": 169,
     "name": "Arcanum Estates",
     "zip": "30041",
     "total_homes": 50,
@@ -1156,11 +1156,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 107,
+    "id": 171,
     "name": "Bridlewood",
     "zip": "30041",
     "total_homes": 65,
@@ -1185,11 +1185,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 110,
+    "id": 174,
     "name": "Blackburn Ridge",
     "zip": "30041",
     "total_homes": 50,
@@ -1214,11 +1214,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 111,
+    "id": 175,
     "name": "Bay Colony",
     "zip": "30041",
     "total_homes": 41,
@@ -1243,11 +1243,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 112,
+    "id": 176,
     "name": "Shiloh Manor",
     "zip": "30041",
     "total_homes": 60,
@@ -1272,11 +1272,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 113,
+    "id": 177,
     "name": "Estates at Big Creek",
     "zip": "30041",
     "total_homes": 50,
@@ -1301,11 +1301,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 114,
+    "id": 178,
     "name": "Barrett Landing",
     "zip": "30041",
     "total_homes": 85,
@@ -1330,11 +1330,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 115,
+    "id": 179,
     "name": "Abbey Glen",
     "zip": "30041",
     "total_homes": 60,
@@ -1359,11 +1359,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 116,
+    "id": 180,
     "name": "Avalon",
     "zip": "30041",
     "total_homes": 55,
@@ -1388,11 +1388,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 120,
+    "id": 184,
     "name": "Fieldstone",
     "zip": "30040",
     "total_homes": 200,
@@ -1417,11 +1417,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 121,
+    "id": 185,
     "name": "Windward",
     "zip": "30005",
     "total_homes": 2500,
@@ -1446,11 +1446,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 122,
+    "id": 186,
     "name": "White Columns",
     "zip": "30004",
     "total_homes": 400,
@@ -1475,11 +1475,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 123,
+    "id": 187,
     "name": "Kimball Farms",
     "zip": "30005",
     "total_homes": 150,
@@ -1504,11 +1504,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 124,
+    "id": 188,
     "name": "Mayfair",
     "zip": "30097",
     "total_homes": 200,
@@ -1533,11 +1533,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 125,
+    "id": 189,
     "name": "River Club",
     "zip": "30024",
     "total_homes": 800,
@@ -1562,11 +1562,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 126,
+    "id": 190,
     "name": "Laurel Springs",
     "zip": "30024",
     "total_homes": 600,
@@ -1591,11 +1591,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 127,
+    "id": 191,
     "name": "Morning View",
     "zip": "30024",
     "total_homes": 300,
@@ -1620,11 +1620,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 128,
+    "id": 192,
     "name": "Huntington West",
     "zip": "30518",
     "total_homes": 232,
@@ -1649,11 +1649,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 129,
+    "id": 193,
     "name": "Sugarloaf Country Club",
     "zip": "30097",
     "total_homes": 1000,
@@ -1678,11 +1678,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 130,
+    "id": 194,
     "name": "BridgeMill",
     "zip": "30114",
     "total_homes": 2800,
@@ -1707,11 +1707,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 131,
+    "id": 195,
     "name": "Towne Mill",
     "zip": "30114",
     "total_homes": 300,
@@ -1736,11 +1736,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 132,
+    "id": 196,
     "name": "Eagle Watch",
     "zip": "30189",
     "total_homes": 1200,
@@ -1765,11 +1765,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 133,
+    "id": 197,
     "name": "Starr Lake",
     "zip": "30101",
     "total_homes": 200,
@@ -1794,11 +1794,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 134,
+    "id": 198,
     "name": "Sterling on the Lake",
     "zip": "30542",
     "total_homes": 1500,
@@ -1823,11 +1823,11 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   },
   {
-    "id": 135,
+    "id": 199,
     "name": "Traditions of Braselton",
     "zip": "30517",
     "total_homes": 1000,
@@ -1852,7 +1852,7 @@
     "pipeline_stage": "research",
     "pipeline_notes": null,
     "last_contacted": null,
-    "created_at": "2026-04-03 11:10:54",
-    "updated_at": "2026-04-03 11:10:54"
+    "created_at": "2026-04-03 11:17:15",
+    "updated_at": "2026-04-03 11:17:15"
   }
 ]

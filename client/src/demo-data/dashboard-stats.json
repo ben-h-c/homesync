@@ -6,7 +6,7 @@
   "pipelineActive": 1,
   "hotSubdivisions": [
     {
-      "id": 84,
+      "id": 148,
       "name": "Canterbury Farms",
       "zip": "30040",
       "total_homes": 60,
@@ -31,11 +31,11 @@
       "pipeline_stage": "research",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 11:10:54",
-      "updated_at": "2026-04-03T11:11:31.380Z"
+      "created_at": "2026-04-03 11:17:15",
+      "updated_at": "2026-04-03T11:17:53.656Z"
     },
     {
-      "id": 96,
+      "id": 160,
       "name": "Autumn Hills",
       "zip": "30041",
       "total_homes": 70,
@@ -60,11 +60,11 @@
       "pipeline_stage": "research",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 11:10:54",
-      "updated_at": "2026-04-03T11:11:31.386Z"
+      "created_at": "2026-04-03 11:17:15",
+      "updated_at": "2026-04-03T11:17:53.661Z"
     },
     {
-      "id": 102,
+      "id": 166,
       "name": "Coventry",
       "zip": "30041",
       "total_homes": 60,
@@ -89,11 +89,11 @@
       "pipeline_stage": "research",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 11:10:54",
-      "updated_at": "2026-04-03T11:11:31.388Z"
+      "created_at": "2026-04-03 11:17:15",
+      "updated_at": "2026-04-03T11:17:53.663Z"
     },
     {
-      "id": 106,
+      "id": 170,
       "name": "Barrett Downs",
       "zip": "30041",
       "total_homes": 70,
@@ -118,11 +118,11 @@
       "pipeline_stage": "research",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 11:10:54",
-      "updated_at": "2026-04-03T11:11:31.389Z"
+      "created_at": "2026-04-03 11:17:15",
+      "updated_at": "2026-04-03T11:17:53.664Z"
     },
     {
-      "id": 108,
+      "id": 172,
       "name": "Brighton Lake",
       "zip": "30041",
       "total_homes": 60,
@@ -147,74 +147,74 @@
       "pipeline_stage": "research",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 11:10:54",
-      "updated_at": "2026-04-03T11:11:31.390Z"
+      "created_at": "2026-04-03 11:17:15",
+      "updated_at": "2026-04-03T11:17:53.665Z"
     }
   ],
   "byYear": [
     {
       "year_built": 1991,
-      "count": 9
+      "count": 4
     },
     {
       "year_built": 1992,
-      "count": 8
+      "count": 4
     },
     {
       "year_built": 1993,
-      "count": 5
+      "count": 10
     },
     {
       "year_built": 1994,
-      "count": 1
+      "count": 2
     },
     {
       "year_built": 1995,
-      "count": 5
+      "count": 7
     },
     {
       "year_built": 1996,
-      "count": 13
+      "count": 11
     },
     {
       "year_built": 1997,
-      "count": 14
+      "count": 12
     },
     {
       "year_built": 1998,
-      "count": 8
+      "count": 16
     },
     {
       "year_built": 1999,
-      "count": 17
+      "count": 11
     },
     {
       "year_built": 2000,
-      "count": 13
+      "count": 11
     },
     {
       "year_built": 2001,
-      "count": 18
+      "count": 31
     },
     {
       "year_built": 2002,
-      "count": 58
+      "count": 54
     },
     {
       "year_built": 2003,
-      "count": 51
+      "count": 43
     },
     {
       "year_built": 2004,
-      "count": 50
+      "count": 45
     },
     {
       "year_built": 2005,
-      "count": 59
+      "count": 67
     },
     {
       "year_built": 2006,
-      "count": 47
+      "count": 53
     },
     {
       "year_built": 2007,
@@ -222,23 +222,23 @@
     },
     {
       "year_built": 2008,
-      "count": 44
+      "count": 37
     },
     {
       "year_built": 2009,
-      "count": 27
+      "count": 28
     },
     {
       "year_built": 2010,
-      "count": 19
+      "count": 22
     },
     {
       "year_built": 2011,
-      "count": 19
+      "count": 13
     },
     {
       "year_built": 2012,
-      "count": 7
+      "count": 18
     },
     {
       "year_built": 2013,
@@ -246,23 +246,23 @@
     },
     {
       "year_built": 2014,
-      "count": 11
+      "count": 6
     },
     {
       "year_built": 2015,
-      "count": 8
+      "count": 6
     },
     {
       "year_built": 2016,
-      "count": 4
+      "count": 1
     },
     {
       "year_built": 2017,
-      "count": 2
+      "count": 3
     },
     {
       "year_built": 2018,
-      "count": 1
+      "count": 3
     }
   ],
   "pipelineDistribution": [
@@ -278,7 +278,7 @@
   "recentActivities": [],
   "followUps": [
     {
-      "id": 76,
+      "id": 140,
       "name": "Bridgetown",
       "zip": "30041",
       "total_homes": 150,
@@ -295,16 +295,16 @@
       "hoa_meeting_schedule": null,
       "hoa_website": null,
       "hoa_dues_monthly": null,
-      "maintenance_urgency_score": 80,
-      "hvac_pct_due": 83,
+      "maintenance_urgency_score": 83,
+      "hvac_pct_due": 94,
       "roof_pct_due": 17,
       "water_heater_pct_due": 100,
       "paint_pct_due": 100,
       "pipeline_stage": "contacted",
       "pipeline_notes": null,
       "last_contacted": null,
-      "created_at": "2026-04-03 11:10:54",
-      "updated_at": "2026-04-03T11:11:31.374Z"
+      "created_at": "2026-04-03 11:17:15",
+      "updated_at": "2026-04-03T11:17:53.650Z"
     }
   ],
   "upcomingDeadlines": []
