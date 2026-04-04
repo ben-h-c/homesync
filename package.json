@@ -16,7 +16,7 @@
     "seed": "cd database && npx knex seed:run",
     "build": "npm run build --workspace=client"
   },
-  "dependencies": {
+  "devDependencies": {
     "puppeteer": "^24.40.0"
   }
 }
