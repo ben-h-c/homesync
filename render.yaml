@@ -3,7 +3,7 @@ services:
     name: homesync
     runtime: node
     plan: free
-    buildCommand: npm install --production=false && npm run build --workspace=client && cd database && if [ ! -f /opt/render/project/src/database/.seeded-v4 ]; then cp homesync.seed.db /opt/render/project/src/database/homesync.db && touch /opt/render/project/src/database/.seeded-v4 && echo "Seeded database from local snapshot"; fi && DATABASE_PATH=/opt/render/project/src/database/homesync.db npx knex migrate:latest --knexfile knexfile.js
+    buildCommand: npm install --production=false && npm run build --workspace=client && cd database && if [ ! -f /opt/render/project/src/database/.seeded-v5 ]; then cp homesync.seed.db /opt/render/project/src/database/homesync.db && touch /opt/render/project/src/database/.seeded-v5 && echo "Seeded database from local snapshot"; fi && DATABASE_PATH=/opt/render/project/src/database/homesync.db npx knex migrate:latest --knexfile knexfile.js
     startCommand: node server/index.js
     envVars:
       - key: NODE_ENV
