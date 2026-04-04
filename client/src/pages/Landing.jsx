@@ -101,7 +101,7 @@ export default function Landing() {
       </section>
 
       {/* ─── FEATURES ─── */}
-      <section id="features" className="py-16 md:py-24">
+      <section id="features" className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0F3460]">Everything you need to grow your business</h2>
@@ -129,7 +129,11 @@ export default function Landing() {
           </div>
 
           {/* Feature 2: Pipeline */}
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        </div>
+      </section>
+      <section className="py-16 md:py-20 bg-[#F8F9FA]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-medium mb-4">
                 <GitBranch size={12} /> Pipeline Management
@@ -149,7 +153,11 @@ export default function Landing() {
           </div>
 
           {/* Feature 3: Projects */}
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        </div>
+      </section>
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium mb-4">
                 <Briefcase size={12} /> Project Management
@@ -169,7 +177,11 @@ export default function Landing() {
           </div>
 
           {/* Feature 4: Invoicing */}
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        </div>
+      </section>
+      <section className="py-16 md:py-20 bg-[#F8F9FA]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-medium mb-4">
                 <Receipt size={12} /> Professional Invoicing
@@ -189,7 +201,11 @@ export default function Landing() {
           </div>
 
           {/* Feature 5: Marketing */}
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+        </div>
+      </section>
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-xs font-medium mb-4">
                 <Mail size={12} /> Marketing & Outreach
@@ -234,7 +250,7 @@ export default function Landing() {
       </section>
 
       {/* ─── HOW IT WORKS ─── */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0F3460] text-center mb-4">How it works</h2>
           <p className="text-gray-500 text-center mb-12 max-w-xl mx-auto">Three steps to more leads and better-managed projects</p>
@@ -287,7 +303,7 @@ export default function Landing() {
       </section>
 
       {/* ─── TESTIMONIALS ─── */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0F3460] text-center mb-12">Trusted by contractors everywhere</h2>
           <div className="grid md:grid-cols-3 gap-8">
