@@ -1,5 +1,6 @@
 node_modules/
 .env
 *.db
+!database/homesync.seed.db
 dist/
 .DS_Store
