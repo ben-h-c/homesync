@@ -464,7 +464,8 @@ function ExportTab() {
   const downloadExport = async (type) => {
     try {
       const token = localStorage.getItem('accessToken');
-      const res = await fetch(`http://localhost:3001/api/settings/export/${type}`, {
+      const apiBase = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '/api' : 'http://localhost:3001/api');
+      const res = await fetch(`${apiBase}/settings/export/${type}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const blob = await res.blob();

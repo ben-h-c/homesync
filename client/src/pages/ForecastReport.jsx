@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Printer, Download } from 'lucide-react';
 import { fetchAPI } from '../api/client';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '/api' : 'http://localhost:3001/api');
 
 export default function ForecastReport() {
   const { subId } = useParams();

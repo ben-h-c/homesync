@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '/api' : 'http://localhost:3001/api');
 
 const TIER_LEVELS = { starter: 1, pro: 2, enterprise: 3 };
 

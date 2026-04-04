@@ -98,7 +98,8 @@ export default function InvoiceDetail() {
           <button onClick={async () => {
               try {
                 const token = localStorage.getItem('accessToken');
-                const res = await fetch(`http://localhost:3001/api/invoices/${id}/pdf`, { headers: { Authorization: `Bearer ${token}` } });
+                const apiBase = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '/api' : 'http://localhost:3001/api');
+                const res = await fetch(`${apiBase}/invoices/${id}/pdf`, { headers: { Authorization: `Bearer ${token}` } });
                 const blob = await res.blob();
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
