@@ -50,6 +50,7 @@ const adminNav = [
   { to: '/contacts', icon: Users, label: 'Contacts' },
   { to: '/leads', icon: GitBranch, label: 'Pipeline' },
   { to: '/jobs', icon: Briefcase, label: 'Jobs' },
+  { to: '/messages', icon: MessageSquare, label: 'Messages', badge: 'messages' },
   { to: '/invoices', icon: Receipt, label: 'Invoices' },
   { to: '/proposals', icon: FileText, label: 'Proposals' },
   { to: '/contractors', icon: Wrench, label: 'Contractors' },
