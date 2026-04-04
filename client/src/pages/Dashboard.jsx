@@ -76,11 +76,11 @@ export default function Dashboard() {
       {/* Getting Started checklist — shown until all items are done */}
       {(() => {
         const checks = [
-          { done: stats.totalProperties > 0, label: 'Import your first property data', link: '/import' },
-          { done: stats.totalProperties > 0 && stats.hotSubdivisions.length > 0, label: 'Review your hottest subdivision', link: stats.hotSubdivisions[0] ? `/subdivisions/${stats.hotSubdivisions[0].id}` : '/subdivisions' },
-          { done: (stats.recentActivities || []).some((a) => a.contact_id), label: 'Add your first HOA contact', link: '/contacts/new' },
-          { done: (stats.recentActivities || []).some((a) => a.type === 'email_sent'), label: 'Send your first pitch email', link: '/email/compose' },
-          { done: stats.activeProjects > 0, label: 'Create your first project', link: '/projects/new' },
+          { done: stats.hotSubdivisions?.length > 0, label: 'Explore the map to find leads', link: '/opportunities' },
+          { done: stats.hotSubdivisions?.length > 0, label: 'Check out a high-urgency subdivision', link: stats.hotSubdivisions[0] ? `/subdivisions/${stats.hotSubdivisions[0].id}` : '/subdivisions' },
+          { done: stats.totalLeads > 0, label: 'Add your first lead to the pipeline', link: '/leads' },
+          { done: stats.activeProjects > 0, label: 'Create your first project', link: '/jobs/new' },
+          { done: stats.totalInvoices > 0, label: 'Send your first invoice', link: '/invoices/new' },
         ];
         const allDone = checks.every((c) => c.done);
         if (allDone) return null;
