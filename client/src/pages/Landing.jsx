@@ -26,7 +26,7 @@ export default function Landing() {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm' : 'bg-white/80 backdrop-blur-sm'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-bold"><span className="text-[#0F3460]">Home</span><span className="text-[#0E7C7B]">Sync</span></span>
+            <span className="text-xl font-bold"><span className="text-[#0F3460]">WeDone</span><span className="text-[#0E7C7B]">DoIt</span></span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <button onClick={() => scrollTo('features')} className="text-sm font-medium text-gray-600 hover:text-gray-900">Features</button>
@@ -62,7 +62,7 @@ export default function Landing() {
               The all-in-one platform to find leads, win jobs, and run your business
             </h1>
             <p className="mt-5 text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
-              HomeSync gives contractors the data, tools, and workflows to find opportunities, manage projects, send invoices, and grow — all from one dashboard.
+              WeDoneDoIt gives contractors the data, tools, and workflows to find opportunities, manage projects, send invoices, and grow — all from one dashboard.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/register" className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#0E7C7B] text-white font-semibold rounded-lg hover:bg-[#0E7C7B]/90 shadow-lg shadow-[#0E7C7B]/20 text-base">
@@ -77,7 +77,7 @@ export default function Landing() {
           {/* Real Dashboard Screenshot */}
           <div className="max-w-5xl mx-auto">
             <div className="rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-125 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
-              <img src="/screenshots/dashboard.png" alt="HomeSync contractor dashboard showing active projects, leads, revenue, and pipeline"
+              <img src="/screenshots/dashboard.png" alt="WeDoneDoIt contractor dashboard showing active projects, leads, revenue, and pipeline"
                 className="w-full" loading="lazy" />
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0F3460]">Everything you need to grow your business</h2>
-            <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">From finding leads to getting paid, HomeSync handles the entire contractor workflow.</p>
+            <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">From finding leads to getting paid, WeDoneDoIt handles the entire contractor workflow.</p>
           </div>
 
           {/* Feature 1: Leads & Map */}
@@ -308,7 +308,7 @@ export default function Landing() {
           <h2 className="text-3xl font-bold text-[#0F3460] text-center mb-12">Trusted by contractors everywhere</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { quote: 'HomeSync changed how we find work. Instead of cold-calling, we know exactly which neighborhoods need our services. We landed 3 new projects in the first month.', name: 'Marcus Thompson', co: 'Thompson Roofing', city: 'Georgia' },
+              { quote: 'WeDoneDoIt changed how we find work. Instead of cold-calling, we know exactly which neighborhoods need our services. We landed 3 new projects in the first month.', name: 'Marcus Thompson', co: 'Thompson Roofing', city: 'Georgia' },
               { quote: 'The invoicing and client portal save me hours every week. Clients love being able to see their project status and approve changes right from their phone.', name: 'Sarah Chen', co: 'Chen HVAC Services', city: 'Texas' },
               { quote: 'The pipeline view is a game-changer. I can see every lead, every quote, and every active job in one place. Nothing falls through the cracks anymore.', name: 'David Rodriguez', co: 'Rodriguez Painting', city: 'Florida' },
             ].map((t) => (
@@ -329,7 +329,7 @@ export default function Landing() {
       <section className="py-16 md:py-20 bg-[#0F3460]">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to grow your contracting business?</h2>
-          <p className="text-lg text-white/70 mb-8">Join thousands of contractors growing their business with HomeSync. Start your 14-day free trial today.</p>
+          <p className="text-lg text-white/70 mb-8">Join thousands of contractors growing their business with WeDoneDoIt. Start your 14-day free trial today.</p>
           <Link to="/register" className="inline-flex items-center gap-2 px-8 py-4 bg-[#0E7C7B] text-white font-semibold rounded-lg hover:bg-[#0E7C7B]/90 text-lg shadow-lg">
             Start Free Trial <ArrowRight size={20} />
           </Link>
@@ -364,7 +364,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="border-t border-white/10 pt-6 text-center text-xs">
-            <p>&copy; 2026 HomeSync. Smart tools for contractors who mean business.</p>
+            <p>&copy; 2026 WeDoneDoIt. Smart tools for contractors who mean business.</p>
           </div>
         </div>
       </footer>

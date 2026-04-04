@@ -41,7 +41,7 @@ export default function ClientProjects() {
       <header className="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold">
-            <span className="text-dark">Home</span><span className="text-primary">Sync</span>
+            <span className="text-dark">WeDone</span><span className="text-primary">DoIt</span>
           </h1>
           <p className="text-xs text-gray-500">Client Portal</p>
         </div>

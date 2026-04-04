@@ -46,7 +46,7 @@ async function createNotification({ userId, type, title, message, link, relatedJ
         subject: title,
         body_html: `<p>Hi ${user.first_name || 'there'},</p>
 <p>${message}</p>
-${link ? `<p><a href="${process.env.CLIENT_URL || 'http://localhost:5173'}/#${link}" class="btn">View in HomeSync</a></p>` : ''}
+${link ? `<p><a href="${process.env.CLIENT_URL || 'http://localhost:5173'}/#${link}" class="btn">View in WeDoneDoIt</a></p>` : ''}
 <p style="font-size:13px;color:#666">You can manage your notification preferences in Settings.</p>`,
         preheader: message,
       });

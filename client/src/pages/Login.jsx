@@ -44,7 +44,7 @@ export default function Login() {
         <div className="text-center mb-8">
           <Link to="/" className="inline-block">
             <h1 className="text-3xl font-bold">
-              <span className="text-dark">Home</span><span className="text-primary">Sync</span>
+              <span className="text-dark">WeDone</span><span className="text-primary">DoIt</span>
             </h1>
           </Link>
           <p className="text-gray-500 mt-1">Smart Tools for Contractors</p>

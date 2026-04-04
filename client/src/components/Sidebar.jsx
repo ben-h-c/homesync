@@ -95,7 +95,7 @@ export default function Sidebar({ open, onClose }) {
       <div className="px-5 py-6 border-b border-white/10 flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold tracking-tight">
-            <span className="text-primary">Home</span>Sync
+            <span className="text-primary">WeDone</span>DoIt
           </h1>
           <p className="text-xs text-white/50 mt-0.5">Contractor Platform</p>
         </div>

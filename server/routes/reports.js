@@ -83,7 +83,7 @@ router.get('/forecast/:subId/pdf', async (req, res) => {
     doc.pipe(res);
 
     // Page 1: Cover
-    doc.fontSize(12).fillColor('#0E7C7B').text('HomeSync', { align: 'center' });
+    doc.fontSize(12).fillColor('#0E7C7B').text('WeDoneDoIt', { align: 'center' });
     doc.fontSize(10).fillColor('#666').text('Contractor Intelligence', { align: 'center' });
     doc.moveDown(3);
     doc.fontSize(28).fillColor('#0F3460').text('Maintenance Opportunity Report', { align: 'center' });
@@ -170,7 +170,7 @@ router.get('/forecast/:subId/pdf', async (req, res) => {
     doc.text('• Track everything from lead to invoice in one place.');
 
     doc.moveDown(2);
-    doc.fontSize(12).fillColor('#0E7C7B').text(process.env.BUSINESS_NAME || 'HomeSync', { align: 'center' });
+    doc.fontSize(12).fillColor('#0E7C7B').text(process.env.BUSINESS_NAME || 'WeDoneDoIt', { align: 'center' });
     doc.fontSize(10).fillColor('#666');
     doc.text(process.env.OPERATOR_NAME || '', { align: 'center' });
     doc.text(process.env.OPERATOR_EMAIL || '', { align: 'center' });

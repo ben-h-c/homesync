@@ -21,7 +21,7 @@ services:
       - key: FROM_EMAIL
         value: hello@wedonedoit.com
       - key: FROM_NAME
-        value: HomeSync
+        value: WeDoneDoIt
       - key: STRIPE_SECRET_KEY
         sync: false  # Get from Stripe dashboard
       - key: STRIPE_WEBHOOK_SECRET

@@ -122,7 +122,7 @@ export default function InvoiceDetail() {
             <div className="grid grid-cols-2 gap-8 mb-8">
               <div>
                 <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">From</p>
-                <p className="font-bold text-gray-900">{user?.company_name || 'HomeSync'}</p>
+                <p className="font-bold text-gray-900">{user?.company_name || 'WeDoneDoIt'}</p>
                 <p className="text-xs text-gray-500">{user?.email}</p>
                 {user?.phone && <p className="text-xs text-gray-500">{user.phone}</p>}
               </div>

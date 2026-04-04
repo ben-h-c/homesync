@@ -191,7 +191,7 @@ router.get('/:token/invoices/:invoiceId/pdf', authenticatePortalToken, async (re
     res.setHeader('Content-Disposition', `inline; filename="${invoice.invoice_number}.pdf"`);
     doc.pipe(res);
 
-    doc.fontSize(22).fillColor('#0F3460').text(user.company_name || 'HomeSync', 50, 50);
+    doc.fontSize(22).fillColor('#0F3460').text(user.company_name || 'WeDoneDoIt', 50, 50);
     doc.fontSize(9).fillColor('#666');
     if (user.phone) doc.text(user.phone);
     if (user.email) doc.text(user.email);

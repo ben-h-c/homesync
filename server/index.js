@@ -44,7 +44,7 @@ const { authenticate, optionalAuth, requireTier, requireAdmin, checkSubdivisionV
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
-    message: 'HomeSync API running',
+    message: 'WeDoneDoIt API running',
     version: '2.0.0',
     timestamp: new Date().toISOString()
   });
@@ -89,5 +89,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`HomeSync server running on http://localhost:${PORT}`);
+  console.log(`WeDoneDoIt server running on http://localhost:${PORT}`);
 });

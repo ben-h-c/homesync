@@ -42,13 +42,13 @@ ${preheader ? `<span style="display:none;max-height:0;overflow:hidden;mso-hide:a
 <div class="email-wrapper">
   <div class="email-body">
     <div class="email-header">
-      <h1>HomeSync</h1>
+      <h1>WeDoneDoIt</h1>
     </div>
     <div class="email-content">
       ${bodyContent}
     </div>
     <div class="email-footer">
-      ${footerText || 'Sent via HomeSync &mdash; Smart tools for contractors who mean business.'}
+      ${footerText || 'Sent via WeDoneDoIt &mdash; Smart tools for contractors who mean business.'}
     </div>
   </div>
 </div>
@@ -106,7 +106,7 @@ async function sendEmail({
   }
 
   const fromEmail = process.env.FROM_EMAIL || 'hello@wedonedoit.com';
-  const fromName = process.env.FROM_NAME || 'HomeSync';
+  const fromName = process.env.FROM_NAME || 'WeDoneDoIt';
 
   let status = 'draft';
   let resendId = null;

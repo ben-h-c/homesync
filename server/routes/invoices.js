@@ -161,7 +161,7 @@ router.post('/:id/send', async (req, res) => {
           total: invoice.total?.toLocaleString() || '0.00',
           due_date: invoice.due_date || 'Upon receipt',
           payment_terms: invoice.payment_terms || '',
-          company_name: user.company_name || 'HomeSync',
+          company_name: user.company_name || 'WeDoneDoIt',
           phone: user.phone || '',
         }, { to_email: invoice.customer_email, to_name: invoice.customer_name });
       } catch { /* email sending is best-effort */ }
@@ -235,7 +235,7 @@ router.get('/:id/pdf', async (req, res) => {
     doc.pipe(res);
 
     // ── Header ──
-    doc.fontSize(22).fillColor('#0F3460').text(user.company_name || 'HomeSync', 50, 50);
+    doc.fontSize(22).fillColor('#0F3460').text(user.company_name || 'WeDoneDoIt', 50, 50);
     doc.fontSize(9).fillColor('#666');
     if (user.phone) doc.text(user.phone, 50, 76);
     if (user.email) doc.text(user.email, 50, 88);
@@ -337,7 +337,7 @@ router.get('/:id/pdf', async (req, res) => {
     // ── Footer ──
     const footY = 720;
     doc.fontSize(9).fillColor('#0E7C7B').text('Thank you for your business!', 50, footY, { align: 'center', width: 510 });
-    doc.fontSize(8).fillColor('#999').text(`${user.company_name || 'HomeSync'} • ${user.email || ''} • ${user.phone || ''}`, 50, footY + 14, { align: 'center', width: 510 });
+    doc.fontSize(8).fillColor('#999').text(`${user.company_name || 'WeDoneDoIt'} • ${user.email || ''} • ${user.phone || ''}`, 50, footY + 14, { align: 'center', width: 510 });
 
     doc.end();
   } catch (err) { res.status(500).json({ error: err.message }); }

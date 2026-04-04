@@ -80,7 +80,7 @@ export default function EmailCompose() {
     const vars = {
       your_name: 'Your Name',
       your_phone: '(770) 555-0123',
-      business_name: 'HomeSync',
+      business_name: 'WeDoneDoIt',
       contact_first_name: form.to_name?.split(' ')[0] || '',
     };
 

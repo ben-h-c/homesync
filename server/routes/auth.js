@@ -31,7 +31,7 @@ router.post('/register', async (req, res) => {
     if (zip_code) {
       try {
         const geoRes = await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${encodeURIComponent(zip_code)}&country=US&format=json&limit=1`, {
-          headers: { 'User-Agent': 'HomeSync/1.0' },
+          headers: { 'User-Agent': 'WeDoneDoIt/1.0' },
         });
         const geoData = await geoRes.json();
         if (geoData[0]) { userLat = parseFloat(geoData[0].lat); userLng = parseFloat(geoData[0].lon); }
@@ -200,7 +200,7 @@ router.put('/me', authenticate, async (req, res) => {
     if (update.zip_code) {
       try {
         const geoRes = await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${encodeURIComponent(update.zip_code)}&country=US&format=json&limit=1`, {
-          headers: { 'User-Agent': 'HomeSync/1.0' },
+          headers: { 'User-Agent': 'WeDoneDoIt/1.0' },
         });
         const geoData = await geoRes.json();
         if (geoData[0]) {

@@ -58,7 +58,7 @@ export async function fetchAPI(endpoint, options = {}) {
     return response.json();
   } catch (err) {
     if (err.upgradeRequired) throw err;
-    console.warn(`[HomeSync] API failed (${API_BASE}${endpoint}):`, err.message, '→ using demo data');
+    console.warn(`[WeDoneDoIt] API failed (${API_BASE}${endpoint}):`, err.message, '→ using demo data');
     setDemoMode(true);
     return getDemoData(endpoint, options);
   }

@@ -52,7 +52,7 @@ export default function PortalLayout() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-20">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <div>
-            <p className="font-bold text-gray-900">{contractor?.company || 'HomeSync'}</p>
+            <p className="font-bold text-gray-900">{contractor?.company || 'WeDoneDoIt'}</p>
             <p className="text-xs text-gray-500">Client Portal</p>
           </div>
           <div className="text-right">
@@ -85,7 +85,7 @@ export default function PortalLayout() {
       {/* Footer */}
       <footer className="max-w-5xl mx-auto px-4 py-6 mt-8 border-t border-gray-200 text-center">
         <p className="text-xs text-gray-400">
-          Powered by HomeSync &middot; {contractor?.company} &middot; {contractor?.phone}
+          Powered by WeDoneDoIt &middot; {contractor?.company} &middot; {contractor?.phone}
         </p>
       </footer>
     </div>

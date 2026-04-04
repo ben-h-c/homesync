@@ -59,7 +59,7 @@ router.post('/generate-email', checkAICredits, async (req, res) => {
       serviceType: service_type || user.trade_category || 'home maintenance',
       tone: tone || 'professional',
       contractorName: `${user.first_name} ${user.last_name || ''}`.trim(),
-      companyName: user.company_name || 'HomeSync',
+      companyName: user.company_name || 'WeDoneDoIt',
     });
 
     // Increment AI credits

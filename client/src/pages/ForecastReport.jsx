@@ -49,7 +49,7 @@ export default function ForecastReport() {
       <div className="bg-white rounded-lg shadow-sm print:shadow-none print:rounded-none">
         {/* Page 1: Cover */}
         <div className="p-10 text-center border-b border-gray-200 print:border-0 print:break-after-page">
-          <div className="text-primary font-bold text-xl">HomeSync</div>
+          <div className="text-primary font-bold text-xl">WeDoneDoIt</div>
           <div className="text-gray-500 text-sm mb-10">Contractor Intelligence</div>
           <h2 className="text-3xl font-bold text-navy mb-2">Maintenance Opportunity Report</h2>
           <h3 className="text-2xl text-gray-700 mb-4">{sub.name}</h3>
@@ -144,7 +144,7 @@ export default function ForecastReport() {
           </ul>
 
           <div className="text-center pt-8 border-t border-gray-200">
-            <div className="text-primary font-bold text-lg">HomeSync</div>
+            <div className="text-primary font-bold text-lg">WeDoneDoIt</div>
             <div className="text-gray-500 text-sm">Smart Tools for Contractors</div>
           </div>
         </div>

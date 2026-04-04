@@ -187,7 +187,7 @@ export default function Layout() {
           <button onClick={() => setSidebarOpen(true)} className="md:hidden text-white shrink-0">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
           </button>
-          <span className="md:hidden font-bold text-white shrink-0"><span className="text-primary">Home</span>Sync</span>
+          <span className="md:hidden font-bold text-white shrink-0"><span className="text-primary">WeDone</span>DoIt</span>
 
           {/* Global search */}
           <div className="flex-1 flex justify-center">
