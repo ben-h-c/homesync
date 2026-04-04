@@ -23,14 +23,15 @@ export default function Messages() {
     return () => { if (pollRef.current) clearInterval(pollRef.current); };
   }, []);
 
-  // Auto-select job from URL param
+  // Auto-select job from URL param (only on initial load)
+  const initialJobRef = useRef(searchParams.get('job'));
   useEffect(() => {
-    const jobParam = searchParams.get('job');
-    if (jobParam && conversations.length > 0) {
-      const conv = conversations.find((c) => String(c.job_id) === jobParam);
+    if (initialJobRef.current && conversations.length > 0) {
+      const conv = conversations.find((c) => String(c.job_id) === initialJobRef.current);
       if (conv) selectConversation(conv);
+      initialJobRef.current = null;
     }
-  }, [conversations, searchParams]);
+  }, [conversations]);
 
   const loadConversations = async () => {
     try {
@@ -43,7 +44,7 @@ export default function Messages() {
   const selectConversation = async (conv) => {
     setSelectedJob(conv);
     setMsgLoading(true);
-    setSearchParams({ job: conv.job_id });
+    setSearchParams({ job: conv.job_id }, { replace: true });
     try {
       const data = await fetchAPI(`/jobs/${conv.job_id}/messages`);
       setMessages(Array.isArray(data) ? data : []);
