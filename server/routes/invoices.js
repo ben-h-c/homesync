@@ -161,7 +161,7 @@ router.post('/:id/send', async (req, res) => {
           total: invoice.total?.toLocaleString() || '0.00',
           due_date: invoice.due_date || 'Upon receipt',
           payment_terms: invoice.payment_terms || '',
-          company_name: user.company_name || 'ContractorHub',
+          company_name: user.company_name || 'HomeSync',
           phone: user.phone || '',
         }, { to_email: invoice.customer_email, to_name: invoice.customer_name });
       } catch { /* email sending is best-effort */ }

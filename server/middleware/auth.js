@@ -24,7 +24,7 @@ async function authenticate(req, res, next) {
         if (currentUser.trial_ends_at && new Date(currentUser.trial_ends_at) < new Date()) {
           return res.status(403).json({
             error: 'trial_expired',
-            message: 'Your free trial has expired. Please subscribe to continue using ContractorHub.',
+            message: 'Your free trial has expired. Please subscribe to continue using HomeSync.',
           });
         }
       }

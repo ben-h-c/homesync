@@ -47,7 +47,7 @@ export default function Login() {
               <span className="text-dark">Home</span><span className="text-primary">Sync</span>
             </h1>
           </Link>
-          <p className="text-gray-500 mt-1">Predictive Maintenance Intelligence</p>
+          <p className="text-gray-500 mt-1">Smart Tools for Contractors</p>
         </div>
 
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">

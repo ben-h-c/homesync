@@ -46,7 +46,7 @@ export default function MaintenanceBar({ system }) {
         </span>
         {total_savings_potential > 0 && (
           <span>
-            Potential savings: <strong className="text-primary">${total_savings_potential.toLocaleString()}</strong> at group rates
+            Revenue opportunity: <strong className="text-primary">${total_savings_potential.toLocaleString()}</strong>
           </span>
         )}
       </div>

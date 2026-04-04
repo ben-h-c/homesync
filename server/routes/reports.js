@@ -84,9 +84,9 @@ router.get('/forecast/:subId/pdf', async (req, res) => {
 
     // Page 1: Cover
     doc.fontSize(12).fillColor('#0E7C7B').text('HomeSync', { align: 'center' });
-    doc.fontSize(10).fillColor('#666').text('Predictive Neighborhood Maintenance', { align: 'center' });
+    doc.fontSize(10).fillColor('#666').text('Contractor Intelligence', { align: 'center' });
     doc.moveDown(3);
-    doc.fontSize(28).fillColor('#0F3460').text('Neighborhood Maintenance Forecast', { align: 'center' });
+    doc.fontSize(28).fillColor('#0F3460').text('Maintenance Opportunity Report', { align: 'center' });
     doc.moveDown(1);
     doc.fontSize(22).text(sub.name, { align: 'center' });
     doc.moveDown(0.5);
@@ -94,7 +94,7 @@ router.get('/forecast/:subId/pdf', async (req, res) => {
     doc.moveDown(3);
 
     doc.fontSize(11).fillColor('#333').text(
-      `Based on public property records, the ${sub.total_homes} homes in ${sub.name} (built ${sub.year_built_min}–${sub.year_built_max}, primarily ${sub.year_built_mode}) are approaching key maintenance milestones. This forecast identifies which systems need attention and how group-rate coordination can save your homeowners money.`,
+      `Based on public property records, the ${sub.total_homes} homes in ${sub.name} (built ${sub.year_built_min}–${sub.year_built_max}, primarily ${sub.year_built_mode}) are approaching key maintenance milestones. This report identifies which systems need attention, estimated job volumes, and potential revenue for your business.`,
       { align: 'left', lineGap: 4 }
     );
     doc.moveDown(1);
@@ -145,16 +145,15 @@ router.get('/forecast/:subId/pdf', async (req, res) => {
 
     // Page 3: How it works
     doc.addPage();
-    doc.fontSize(18).fillColor('#0F3460').text('How HomeSync Works', { underline: true });
+    doc.fontSize(18).fillColor('#0F3460').text('How to Use This Report', { underline: true });
     doc.moveDown(1);
     doc.fontSize(11).fillColor('#333');
 
     const steps = [
-      '1. We analyze public property records to identify maintenance milestones for your neighborhood.',
-      '2. We pre-negotiate group rates with licensed, insured contractors (25-40% below retail).',
-      '3. Homeowners opt in — no obligation, no cost to the HOA.',
-      '4. We coordinate scheduling, quality assurance, and completion tracking.',
-      '5. Homeowners save money. The neighborhood stays well-maintained.',
+      '1. Identify which systems have the highest demand in this neighborhood.',
+      '2. Use the data to craft targeted outreach — homeowners respond to specifics, not generic pitches.',
+      '3. Reach out to homeowners or the HOA board with a data-backed proposal.',
+      '4. Add this subdivision to your pipeline and track your progress through to close.',
     ];
     for (const step of steps) {
       doc.text(step, { lineGap: 4 });
@@ -165,10 +164,10 @@ router.get('/forecast/:subId/pdf', async (req, res) => {
     doc.fontSize(14).fillColor('#0F3460').text('Next Steps');
     doc.moveDown(0.5);
     doc.fontSize(11).fillColor('#333');
-    doc.text('• Review this forecast with your HOA board');
-    doc.text('• We present at your next board meeting (15 minutes)');
-    doc.text('• Board approves — we handle everything from there');
-    doc.text('• No cost to the HOA. Homeowners pay only if they opt in.');
+    doc.text('• Add this subdivision as a lead in your pipeline');
+    doc.text('• Use the Marketing Hub to send a targeted email campaign');
+    doc.text('• Create a project when you win the work');
+    doc.text('• Track everything from lead to invoice in one place.');
 
     doc.moveDown(2);
     doc.fontSize(12).fillColor('#0E7C7B').text(process.env.BUSINESS_NAME || 'HomeSync', { align: 'center' });

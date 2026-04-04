@@ -146,7 +146,7 @@ router.post('/plans/generate', async (req, res) => {
         quarter: 'Q1 (Jan-Mar)', focus: 'Spring prep campaigns',
         actions: [
           { type: 'campaign', description: `Send "Spring Maintenance Check" email to ${Math.min(hotSubs.length, 5)} top subdivisions`, priority: 'high' },
-          { type: 'outreach', description: 'Contact 3 HOA boards for spring service presentations', priority: 'high' },
+          { type: 'outreach', description: 'Reach out to 3 high-urgency subdivisions with targeted proposals', priority: 'high' },
           { type: 'content', description: 'Create seasonal maintenance checklist to share with prospects', priority: 'medium' },
         ],
         target_subdivisions: hotSubs.slice(0, 3).map(s => ({ name: s.name, homes: s.total_homes, urgency: s.maintenance_urgency_score })),
@@ -155,7 +155,7 @@ router.post('/plans/generate', async (req, res) => {
         quarter: 'Q2 (Apr-Jun)', focus: 'Peak season execution',
         actions: [
           { type: 'campaign', description: 'Launch "Summer Ready" campaign to all leads in pipeline', priority: 'high' },
-          { type: 'outreach', description: `Follow up on Q1 contacts, send proposals to interested HOAs`, priority: 'high' },
+          { type: 'outreach', description: 'Follow up on Q1 contacts, send proposals to warm leads', priority: 'high' },
           { type: 'referral', description: 'Send referral request to completed project clients', priority: 'medium' },
           { type: 'content', description: 'Share before/after photos from recent projects on email and social', priority: 'low' },
         ],
@@ -165,7 +165,7 @@ router.post('/plans/generate', async (req, res) => {
         quarter: 'Q3 (Jul-Sep)', focus: 'Mid-year push and reviews',
         actions: [
           { type: 'campaign', description: `Send "Fall Prep" campaign — ${services.join(', ')} services highlighted`, priority: 'high' },
-          { type: 'outreach', description: 'Attend 1-2 HOA board meetings to present group rate proposals', priority: 'medium' },
+          { type: 'outreach', description: 'Door-knock or direct mail top 2 subdivisions with aging homes', priority: 'medium' },
           { type: 'review', description: 'Request Google/Yelp reviews from satisfied clients', priority: 'medium' },
         ],
         target_subdivisions: hotSubs.slice(6, 9).map(s => ({ name: s.name, homes: s.total_homes, urgency: s.maintenance_urgency_score })),
@@ -174,7 +174,7 @@ router.post('/plans/generate', async (req, res) => {
         quarter: 'Q4 (Oct-Dec)', focus: 'Year-end close and planning',
         actions: [
           { type: 'campaign', description: 'Send "End of Year" promotion with early-bird pricing for next year', priority: 'high' },
-          { type: 'outreach', description: 'Schedule Q1 HOA presentations while boards set budgets', priority: 'high' },
+          { type: 'outreach', description: 'Reach out to past clients for repeat work and referrals', priority: 'high' },
           { type: 'content', description: 'Create year-in-review email showcasing completed projects and savings', priority: 'medium' },
           { type: 'planning', description: 'Review pipeline, set revenue targets for next year', priority: 'medium' },
         ],

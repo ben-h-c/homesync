@@ -195,7 +195,7 @@ router.post('/:id/portal/enable', async (req, res) => {
       const user = await db('users').where('id', req.user.id).first();
       await sendTemplatedEmail('portal_invite', {
         client_name: job.client_name || 'there',
-        company_name: user.company_name || 'ContractorHub',
+        company_name: user.company_name || 'HomeSync',
         project_title: job.title || 'your project',
         service_type: job.service_type || 'Project',
         portal_url: portalUrl,

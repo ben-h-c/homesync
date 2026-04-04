@@ -364,7 +364,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="border-t border-white/10 pt-6 text-center text-xs">
-            <p>&copy; 2026 HomeSync. Predictive Maintenance Intelligence for Contractors.</p>
+            <p>&copy; 2026 HomeSync. Smart tools for contractors who mean business.</p>
           </div>
         </div>
       </footer>

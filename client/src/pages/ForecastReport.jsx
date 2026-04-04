@@ -50,16 +50,16 @@ export default function ForecastReport() {
         {/* Page 1: Cover */}
         <div className="p-10 text-center border-b border-gray-200 print:border-0 print:break-after-page">
           <div className="text-primary font-bold text-xl">HomeSync</div>
-          <div className="text-gray-500 text-sm mb-10">Predictive Neighborhood Maintenance</div>
-          <h2 className="text-3xl font-bold text-navy mb-2">Neighborhood Maintenance Forecast</h2>
+          <div className="text-gray-500 text-sm mb-10">Contractor Intelligence</div>
+          <h2 className="text-3xl font-bold text-navy mb-2">Maintenance Opportunity Report</h2>
           <h3 className="text-2xl text-gray-700 mb-4">{sub.name}</h3>
           <div className="text-gray-500 mb-10">Prepared {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
 
           <div className="max-w-xl mx-auto text-left text-gray-600 leading-relaxed">
             <p>
               Based on public property records, the {sub.total_homes} homes in {sub.name} (built {sub.year_built_min}–{sub.year_built_max},
-              primarily {sub.year_built_mode}) are approaching key maintenance milestones. This forecast identifies which systems need
-              attention and how group-rate coordination can save your homeowners money.
+              primarily {sub.year_built_mode}) are approaching key maintenance milestones. This report identifies which systems need
+              attention, estimated job volumes, and potential revenue for your business.
             </p>
           </div>
 
@@ -87,9 +87,8 @@ export default function ForecastReport() {
               </div>
               <div className="text-sm">
                 <strong>{sys.estimated_homes_needing_service}</strong> homes need service ·
-                Retail: <strong>${sys.avg_cost_retail.toLocaleString()}</strong> ·
-                Group: <strong className="text-primary">${sys.avg_cost_group.toLocaleString()}</strong> ·
-                Savings: <strong className="text-primary">${sys.total_savings_potential.toLocaleString()}</strong>
+                Avg job value: <strong>${sys.avg_cost_retail.toLocaleString()}</strong> ·
+                Total opportunity: <strong className="text-primary">${(sys.estimated_homes_needing_service * sys.avg_cost_retail).toLocaleString()}</strong>
               </div>
             </div>
           ))}
@@ -101,9 +100,9 @@ export default function ForecastReport() {
               <tr className="bg-gray-50">
                 <th className="px-4 py-2 text-left border-b">System</th>
                 <th className="px-4 py-2 text-right border-b">Homes</th>
-                <th className="px-4 py-2 text-right border-b">Retail Cost</th>
-                <th className="px-4 py-2 text-right border-b">Group Cost</th>
-                <th className="px-4 py-2 text-right border-b">Total Savings</th>
+                <th className="px-4 py-2 text-right border-b">Avg Job Value</th>
+                <th className="px-4 py-2 text-right border-b">Total Opportunity</th>
+                <th className="px-4 py-2 text-right border-b">Potential Revenue</th>
               </tr>
             </thead>
             <tbody>
@@ -112,14 +111,14 @@ export default function ForecastReport() {
                   <td className="px-4 py-2">{sys.display_name}</td>
                   <td className="px-4 py-2 text-right">{sys.estimated_homes_needing_service}</td>
                   <td className="px-4 py-2 text-right">${sys.avg_cost_retail.toLocaleString()}</td>
-                  <td className="px-4 py-2 text-right">${sys.avg_cost_group.toLocaleString()}</td>
+                  <td className="px-4 py-2 text-right">${(sys.estimated_homes_needing_service * sys.avg_cost_retail).toLocaleString()}</td>
                   <td className="px-4 py-2 text-right font-semibold text-primary">${sys.total_savings_potential.toLocaleString()}</td>
                 </tr>
               ))}
             </tbody>
             <tfoot>
               <tr className="bg-teal-tint font-bold">
-                <td className="px-4 py-2" colSpan={4}>Total Estimated Savings</td>
+                <td className="px-4 py-2" colSpan={4}>Total Revenue Opportunity</td>
                 <td className="px-4 py-2 text-right text-primary">${forecast.estimated_total_savings.toLocaleString()}</td>
               </tr>
             </tfoot>
@@ -128,26 +127,25 @@ export default function ForecastReport() {
 
         {/* Page 3: How it works */}
         <div className="p-10">
-          <h2 className="text-2xl font-bold text-navy mb-6">How HomeSync Works</h2>
+          <h2 className="text-2xl font-bold text-navy mb-6">How to Use This Report</h2>
           <ol className="space-y-3 text-gray-600 mb-8">
-            <li><strong>1.</strong> We analyze public property records to identify maintenance milestones for your neighborhood.</li>
-            <li><strong>2.</strong> We pre-negotiate group rates with licensed, insured contractors (25–40% below retail).</li>
-            <li><strong>3.</strong> Homeowners opt in — no obligation, no cost to the HOA.</li>
-            <li><strong>4.</strong> We coordinate scheduling, quality assurance, and completion tracking.</li>
-            <li><strong>5.</strong> Homeowners save money. The neighborhood stays well-maintained.</li>
+            <li><strong>1.</strong> Identify which systems have the highest demand in this neighborhood.</li>
+            <li><strong>2.</strong> Use the data to craft targeted outreach — homeowners respond to specifics, not generic pitches.</li>
+            <li><strong>3.</strong> Reach out to the HOA board or individual homeowners with a data-backed proposal.</li>
+            <li><strong>4.</strong> Add this subdivision to your pipeline and track your progress through to close.</li>
           </ol>
 
           <h3 className="text-lg font-semibold mb-3">Next Steps</h3>
           <ul className="space-y-2 text-gray-600 mb-10">
-            <li>• Review this forecast with your HOA board</li>
-            <li>• We present at your next board meeting (15 minutes)</li>
-            <li>• Board approves — we handle everything from there</li>
-            <li>• <strong>No cost to the HOA. Homeowners pay only if they opt in.</strong></li>
+            <li>• Add this subdivision as a lead in your pipeline</li>
+            <li>• Use the Marketing Hub to send a targeted email campaign</li>
+            <li>• Create a project when you win the work</li>
+            <li>• <strong>Track everything from lead to invoice in one place.</strong></li>
           </ul>
 
           <div className="text-center pt-8 border-t border-gray-200">
             <div className="text-primary font-bold text-lg">HomeSync</div>
-            <div className="text-gray-500 text-sm">Predictive Neighborhood Maintenance</div>
+            <div className="text-gray-500 text-sm">Smart Tools for Contractors</div>
           </div>
         </div>
       </div>

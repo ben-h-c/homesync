@@ -30,7 +30,7 @@ router.post('/team/invite', async (req, res) => {
       const registerUrl = `${process.env.CLIENT_URL || 'http://localhost:5173'}/#/register`;
       await sendTemplatedEmail('team_invite', {
         inviter_name: user.first_name || 'Your team lead',
-        company_name: user.company_name || 'ContractorHub',
+        company_name: user.company_name || 'HomeSync',
         role: role || 'technician',
         register_url: registerUrl,
       }, { to_email: email });

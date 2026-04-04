@@ -187,9 +187,9 @@ export default function ContactForm() {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs text-gray-500 mb-1">Group Rate Discount (e.g. 0.30 = 30%)</label>
-                    <input type="number" min="0" max="1" step="0.05" value={form.contractor_group_rate_discount} onChange={(e) => set('contractor_group_rate_discount', e.target.value)}
-                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm" />
+                    <label className="block text-xs text-gray-500 mb-1">Rating (1-5)</label>
+                    <input type="number" min="1" max="5" step="0.1" value={form.contractor_rating} onChange={(e) => set('contractor_rating', e.target.value)}
+                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm" placeholder="4.5" />
                   </div>
                   <div className="flex items-center pt-5">
                     <label className="flex items-center gap-2 text-sm cursor-pointer">

@@ -3,7 +3,7 @@ import { Plus, Save, X } from 'lucide-react';
 import { fetchAPI } from '../api/client';
 import EmailNav from '../components/EmailNav';
 
-const CATEGORIES = ['hoa', 'homeowner', 'contractor', 'follow_up'];
+const CATEGORIES = ['transactional', 'marketing', 'outreach', 'follow_up'];
 
 export default function EmailTemplates() {
   const [templates, setTemplates] = useState([]);
@@ -64,7 +64,7 @@ export default function EmailTemplates() {
               <div>
                 <label className="block text-xs text-gray-500 mb-1">Name (slug)</label>
                 <input type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  placeholder="e.g. hoa_intro_pitch" className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm" />
+                  placeholder="e.g. cold_outreach" className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm" />
               </div>
               <div>
                 <label className="block text-xs text-gray-500 mb-1">Category</label>

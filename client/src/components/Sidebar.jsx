@@ -96,7 +96,7 @@ export default function Sidebar({ open, onClose }) {
           <h1 className="text-xl font-bold tracking-tight">
             <span className="text-primary">Home</span>Sync
           </h1>
-          <p className="text-xs text-white/50 mt-0.5">Predictive Maintenance</p>
+          <p className="text-xs text-white/50 mt-0.5">Contractor Platform</p>
         </div>
         <button onClick={onClose} className="md:hidden text-white/50 hover:text-white">
           <X size={20} />

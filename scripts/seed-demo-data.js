@@ -36,7 +36,7 @@ async function seed() {
   if (existingLeads < 5 && subs.length > 0) {
     console.log('Creating leads...');
     const leads = [
-      { subdivision_id: subs[0]?.id, service_type: 'Roofing', stage: 'new', estimated_value: 48000, estimated_homes: 40, notes: 'Interested in group rate for 40+ homes. Board meeting next month.' },
+      { subdivision_id: subs[0]?.id, service_type: 'Roofing', stage: 'new', estimated_value: 48000, estimated_homes: 40, notes: 'High-urgency neighborhood. 40+ homes with 20-year-old roofs. Great opportunity for door-to-door outreach.' },
       { subdivision_id: subs[1]?.id, service_type: 'HVAC', stage: 'contacted', estimated_value: 8500, estimated_homes: 1, notes: 'Has 15-year-old Carrier system. Wants quote for replacement.' },
       { subdivision_id: subs[2]?.id, service_type: 'Painting', stage: 'quoted', estimated_value: 6800, estimated_homes: 1, notes: 'Exterior repaint, 3200 sqft colonial. Sent quote $6,800.' },
       { subdivision_id: subs[3]?.id, service_type: 'Plumbing', stage: 'negotiating', estimated_value: 12000, estimated_homes: 1, notes: 'Whole-house repipe. Comparing with 2 other contractors.' },
@@ -65,7 +65,7 @@ async function seed() {
       { title: 'Park Residence — Full HVAC Replacement', status: 'in_progress', service_type: 'HVAC', client_name: 'Jennifer Park', client_email: 'jpark@email.com', client_phone: '(770) 555-1005', description: 'Replace 15-year Trane system with new Carrier Infinity 2-stage. Include ductwork inspection.', estimated_cost: 12500, start_date: '2026-03-20', end_date: '2026-03-25' },
       { title: 'Rodriguez Home — Exterior Paint', status: 'pending', service_type: 'Painting', client_name: 'Maria Rodriguez', client_email: 'maria.r@email.com', client_phone: '(770) 555-1003', description: 'Full exterior repaint. Sherwin-Williams Duration. Pressure wash, scrape, prime, 2 coats.', estimated_cost: 6800, start_date: '2026-04-10', end_date: '2026-04-18' },
       { title: 'Thompson Residence — Whole House Repipe', status: 'pending', service_type: 'Plumbing', client_name: 'David Thompson', client_email: 'dthompson@email.com', client_phone: '(770) 555-1004', description: 'Replace all polybutylene piping with PEX. 2800 sqft, 3.5 bath home.', estimated_cost: 12000, start_date: '2026-04-15', end_date: '2026-04-22' },
-      { title: 'Windermere HOA — Roof Inspections', status: 'completed', service_type: 'Roofing', client_name: 'Jennifer Park', client_email: 'jpark@email.com', client_phone: '(770) 555-1005', description: 'Free roof inspections for 8 homes. Generated 6 paid contracts.', estimated_cost: 0, start_date: '2026-02-01', end_date: '2026-02-15' },
+      { title: 'Windermere — Roof Inspections', status: 'completed', service_type: 'Roofing', client_name: 'Jennifer Park', client_email: 'jpark@email.com', client_phone: '(770) 555-1005', description: 'Free roof inspections for 8 homes. Generated 6 paid contracts.', estimated_cost: 0, start_date: '2026-02-01', end_date: '2026-02-15' },
       { title: 'Foster Home — Dual Zone HVAC Install', status: 'completed', service_type: 'HVAC', client_name: 'Amanda Foster', client_email: 'afoster@email.com', client_phone: '(770) 555-1009', description: 'New Lennox dual zone system. 2 condensers, variable speed handlers.', estimated_cost: 14200, start_date: '2026-01-10', end_date: '2026-01-18' },
       { title: 'Bethany Oaks — Gutter Replacement', status: 'in_progress', service_type: 'General Contractor', client_name: 'Lisa Anderson', client_email: 'lisa.a@email.com', client_phone: '(770) 555-1007', description: 'Seamless aluminum gutters for 10 homes. Include leaf guards.', estimated_cost: 35000, start_date: '2026-03-25', end_date: '2026-04-15' },
     ];
@@ -133,7 +133,7 @@ async function seed() {
       await db('client_messages').insert([
         { job_id: msgJob.id, sender_type: 'client', sender_name: 'Sarah Mitchell', message: 'Hi! Just wanted to check — are we still on track for starting next Monday?', created_at: daysAgo(3) },
         { job_id: msgJob.id, sender_type: 'contractor', sender_name: 'Cody Home Services', message: 'Absolutely! The crew will be there at 8am Monday. We\'ll start with the first 4 homes on Lanier Springs Dr.', created_at: daysAgo(3, 2) },
-        { job_id: msgJob.id, sender_type: 'client', sender_name: 'Sarah Mitchell', message: 'Perfect. A few homeowners asked if you could avoid parking on the grass. The HOA is strict about that.', created_at: daysAgo(2) },
+        { job_id: msgJob.id, sender_type: 'client', sender_name: 'Sarah Mitchell', message: 'Perfect. A few neighbors asked if you could avoid parking on the grass. The community is pretty particular about that.', created_at: daysAgo(2) },
         { job_id: msgJob.id, sender_type: 'contractor', sender_name: 'Cody Home Services', message: 'Of course — we always park on driveways and street. I\'ll remind the crew. Also, I sent over change order CO-02 for the impact-resistant shingle upgrade. Let me know if you have questions.', created_at: daysAgo(2, 1) },
         { job_id: msgJob.id, sender_type: 'client', sender_name: 'Sarah Mitchell', message: 'Got it, I\'ll review and get back to you by end of day. Thanks for being so responsive!', created_at: daysAgo(1) },
       ]);

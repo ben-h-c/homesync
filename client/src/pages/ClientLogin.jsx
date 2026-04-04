@@ -46,7 +46,7 @@ export default function ClientLogin() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold">
-            <span className="text-dark">Contractor</span><span className="text-primary">Hub</span>
+            <span className="text-dark">Home</span><span className="text-primary">Sync</span>
           </h1>
           <p className="text-gray-500 mt-1">Client Portal</p>
         </div>

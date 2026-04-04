@@ -6,9 +6,9 @@ export async function seed(knex) {
       name: 'welcome',
       category: 'transactional',
       description: 'Welcome email sent after registration',
-      subject_template: 'Welcome to ContractorHub, {{first_name}}!',
+      subject_template: 'Welcome to HomeSync, {{first_name}}!',
       body_html_template: `<p>Hi {{first_name}},</p>
-<p>Welcome to ContractorHub! You now have access to the smartest lead-finding and business management tools built specifically for contractors.</p>
+<p>Welcome to HomeSync! You now have access to the smartest lead-finding and business management tools built specifically for contractors.</p>
 <p>Here's what you can do right away:</p>
 <ul>
 <li><strong>Explore the Map</strong> — Find neighborhoods where homes need your services</li>
@@ -18,20 +18,20 @@ export async function seed(knex) {
 <p>Your 14-day free trial is active. No credit card needed.</p>
 <p style="text-align:center;margin:28px 0"><a href="{{app_url}}/#/dashboard" class="btn">Go to My Dashboard</a></p>
 <p>Questions? Just reply to this email — we read every message.</p>
-<p>— The ContractorHub Team</p>`,
-      body_text_template: `Hi {{first_name}},\n\nWelcome to ContractorHub! Your 14-day free trial is active.\n\nExplore the Map — Find neighborhoods where homes need your services\nAdd Leads — Start building your pipeline\nSend Invoices — Get paid faster\n\nGo to your dashboard: {{app_url}}/#/dashboard\n\nQuestions? Reply to this email.\n\n— The ContractorHub Team`,
+<p>— The HomeSync Team</p>`,
+      body_text_template: `Hi {{first_name}},\n\nWelcome to HomeSync! Your 14-day free trial is active.\n\nExplore the Map — Find neighborhoods where homes need your services\nAdd Leads — Start building your pipeline\nSend Invoices — Get paid faster\n\nGo to your dashboard: {{app_url}}/#/dashboard\n\nQuestions? Reply to this email.\n\n— The HomeSync Team`,
     },
     {
       name: 'password_reset',
       category: 'transactional',
       description: 'Password reset link',
-      subject_template: 'Reset your ContractorHub password',
+      subject_template: 'Reset your HomeSync password',
       body_html_template: `<p>Hi {{first_name}},</p>
 <p>We received a request to reset your password. Click the button below to create a new one:</p>
 <p style="text-align:center;margin:28px 0"><a href="{{reset_url}}" class="btn">Reset My Password</a></p>
 <p>This link expires in 1 hour. If you didn't request this, you can safely ignore this email — your password won't change.</p>
-<p>— ContractorHub</p>`,
-      body_text_template: `Hi {{first_name}},\n\nWe received a request to reset your password. Visit this link to create a new one:\n\n{{reset_url}}\n\nThis link expires in 1 hour. If you didn't request this, ignore this email.\n\n— ContractorHub`,
+<p>— HomeSync</p>`,
+      body_text_template: `Hi {{first_name}},\n\nWe received a request to reset your password. Visit this link to create a new one:\n\n{{reset_url}}\n\nThis link expires in 1 hour. If you didn't request this, ignore this email.\n\n— HomeSync`,
     },
     {
       name: 'invoice_sent',
@@ -86,13 +86,13 @@ export async function seed(knex) {
       name: 'team_invite',
       category: 'transactional',
       description: 'Team member invitation',
-      subject_template: "You're invited to join {{company_name}} on ContractorHub",
+      subject_template: "You're invited to join {{company_name}} on HomeSync",
       body_html_template: `<p>Hi there,</p>
-<p><strong>{{inviter_name}}</strong> has invited you to join their team on ContractorHub as a <strong>{{role}}</strong>.</p>
-<p>ContractorHub helps contractors find leads, manage projects, and grow their business. As a team member, you'll have access to shared projects and tools.</p>
+<p><strong>{{inviter_name}}</strong> has invited you to join their team on HomeSync as a <strong>{{role}}</strong>.</p>
+<p>HomeSync helps contractors find leads, manage projects, and grow their business. As a team member, you'll have access to shared projects and tools.</p>
 <p style="text-align:center;margin:28px 0"><a href="{{register_url}}" class="btn">Accept Invitation</a></p>
-<p>— ContractorHub</p>`,
-      body_text_template: `Hi,\n\n{{inviter_name}} has invited you to join their team on ContractorHub as a {{role}}.\n\nAccept the invitation: {{register_url}}\n\n— ContractorHub`,
+<p>— HomeSync</p>`,
+      body_text_template: `Hi,\n\n{{inviter_name}} has invited you to join their team on HomeSync as a {{role}}.\n\nAccept the invitation: {{register_url}}\n\n— HomeSync`,
     },
 
     // ── Marketing / Outreach ──

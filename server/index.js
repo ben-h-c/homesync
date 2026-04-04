@@ -44,7 +44,7 @@ const { authenticate, optionalAuth, requireTier, requireAdmin, checkSubdivisionV
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
-    message: 'HomeSync API is running',
+    message: 'HomeSync API running',
     version: '2.0.0',
     timestamp: new Date().toISOString()
   });

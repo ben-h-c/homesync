@@ -116,7 +116,7 @@ export default function SubdivisionDetail() {
           <button
             onClick={() => {
               const hoaContact = subContacts.find((c) => c.type === 'hoa_board');
-              const params = new URLSearchParams({ subdivision_id: id, template: 'hoa_intro_pitch' });
+              const params = new URLSearchParams({ subdivision_id: id, template: 'cold_outreach' });
               if (hoaContact) params.set('contact_id', hoaContact.id);
               navigate(`/email/compose?${params.toString()}`);
             }}
@@ -138,7 +138,7 @@ export default function SubdivisionDetail() {
                   <button onClick={() => {
                     setQuickActionsOpen(false);
                     const hoaContact = subContacts.find((c) => c.type === 'hoa_board');
-                    setActivityPreFill({ type: 'phone_call', subject: `Call with ${sub.name} HOA` });
+                    setActivityPreFill({ type: 'phone_call', subject: `Call about ${sub.name}` });
                     setShowLogModal(true);
                   }} className="w-full px-4 py-2 text-left text-sm hover:bg-teal-tint flex items-center gap-2">
                     <Phone size={14} className="text-green-500" /> Log a Phone Call
@@ -283,9 +283,9 @@ export default function SubdivisionDetail() {
           <h3 className="text-base font-bold text-primary mb-2">TOP OPPORTUNITY: {forecast.top_system_display}</h3>
           <p className="text-sm text-gray-700 mb-3">
             {forecast.top_system_homes} of {forecast.total_homes} homes ({Math.round(forecast.top_system_homes / forecast.total_homes * 100)}%) have {forecast.top_system_display?.toLowerCase()} systems at or past end-of-life.
-            At group rates, each homeowner saves ~${forecast.top_system_savings_per_home.toLocaleString()}.
+            Average job value: ~${forecast.top_system_savings_per_home.toLocaleString()} per home.
             <br />
-            <strong>Total savings potential: ${forecast.top_system_savings.toLocaleString()}</strong>
+            <strong>Total revenue opportunity: ${forecast.top_system_savings.toLocaleString()}</strong>
           </p>
           <button
             onClick={() => navigate(`/projects/new?subdivision_id=${id}&service=${forecast.top_system || ''}`)}
@@ -299,7 +299,7 @@ export default function SubdivisionDetail() {
       {/* Contacts section */}
       <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-lg font-semibold flex items-center gap-2"><Users size={18} /> HOA Contacts</h2>
+          <h2 className="text-lg font-semibold flex items-center gap-2"><Users size={18} /> Contacts</h2>
           <button onClick={() => navigate(`/contacts/new?subdivision=${encodeURIComponent(sub.name)}`)} className="flex items-center gap-1 px-3 py-1.5 border border-gray-300 rounded text-sm hover:bg-gray-50"><Plus size={12} /> Add Contact</button>
         </div>
         {subContacts.length === 0 ? (

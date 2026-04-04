@@ -19,7 +19,7 @@ async function discoverSubdivisions(zipCodes, jobId) {
 
       // Search for residential areas/neighborhoods in this ZIP
       const url = `https://nominatim.openstreetmap.org/search?postalcode=${encodeURIComponent(zip)}&country=US&format=json&limit=20&addressdetails=1`;
-      const res = await fetch(url, { headers: { 'User-Agent': 'ContractorHub/1.0 (data-discovery)' } });
+      const res = await fetch(url, { headers: { 'User-Agent': 'HomeSync/1.0 (data-discovery)' } });
       const data = await res.json();
 
       for (const place of data) {
@@ -43,7 +43,7 @@ async function discoverSubdivisions(zipCodes, jobId) {
       // Also search for specific subdivision/residential area features
       await new Promise(r => setTimeout(r, 1100));
       const url2 = `https://nominatim.openstreetmap.org/search?q=subdivision+${encodeURIComponent(zip)}&country=US&format=json&limit=15&addressdetails=1`;
-      const res2 = await fetch(url2, { headers: { 'User-Agent': 'ContractorHub/1.0 (data-discovery)' } });
+      const res2 = await fetch(url2, { headers: { 'User-Agent': 'HomeSync/1.0 (data-discovery)' } });
       const data2 = await res2.json();
 
       for (const place of data2) {

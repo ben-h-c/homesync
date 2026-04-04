@@ -42,7 +42,7 @@ export default function ForgotPassword() {
         <div className="text-center mb-8">
           <Link to="/" className="inline-block">
             <h1 className="text-3xl font-bold">
-              <span className="text-dark">Contractor</span><span className="text-primary">Hub</span>
+              <span className="text-dark">Home</span><span className="text-primary">Sync</span>
             </h1>
           </Link>
         </div>
