@@ -30,6 +30,53 @@ router.get('/', async (req, res) => {
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 
+// GET /api/jobs/conversations/list — all message threads for contractor
+// MUST be before /:id route to avoid Express matching "conversations" as an ID
+router.get('/conversations/list', async (req, res) => {
+  try {
+    const jobs = await db('contractor_jobs')
+      .where('contractor_jobs.user_id', req.user.id)
+      .whereExists(function () {
+        this.select('id').from('client_messages').whereRaw('client_messages.job_id = contractor_jobs.id');
+      })
+      .select('contractor_jobs.id', 'contractor_jobs.title', 'contractor_jobs.client_name',
+        'contractor_jobs.client_email', 'contractor_jobs.status', 'contractor_jobs.service_type',
+        'contractor_jobs.portal_enabled');
+
+    const conversations = [];
+    for (const job of jobs) {
+      const [{ unread }] = await db('client_messages')
+        .where({ job_id: job.id, sender_type: 'client' }).whereNull('read_at').count('* as unread');
+      const lastMsg = await db('client_messages').where('job_id', job.id).orderBy('created_at', 'desc').first();
+      const [{ total }] = await db('client_messages').where('job_id', job.id).count('* as total');
+      conversations.push({
+        job_id: job.id, title: job.title, client_name: job.client_name,
+        client_email: job.client_email, status: job.status, service_type: job.service_type,
+        portal_enabled: job.portal_enabled, unread_count: unread, total_messages: total,
+        last_message: lastMsg ? { message: lastMsg.message, sender_type: lastMsg.sender_type, sender_name: lastMsg.sender_name, created_at: lastMsg.created_at } : null,
+      });
+    }
+    conversations.sort((a, b) => {
+      if (a.unread_count > 0 && b.unread_count === 0) return -1;
+      if (b.unread_count > 0 && a.unread_count === 0) return 1;
+      return (b.last_message?.created_at || '').localeCompare(a.last_message?.created_at || '');
+    });
+    res.json(conversations);
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// GET /api/jobs/messages/unread-count — total unread for sidebar badge
+router.get('/messages/unread-count', async (req, res) => {
+  try {
+    const jobs = await db('contractor_jobs').where('user_id', req.user.id).select('id');
+    const jobIds = jobs.map((j) => j.id);
+    if (jobIds.length === 0) return res.json({ count: 0 });
+    const [{ count }] = await db('client_messages')
+      .whereIn('job_id', jobIds).where('sender_type', 'client').whereNull('read_at').count('* as count');
+    res.json({ count });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
 // GET /api/jobs/:id — detail with activities, change orders, invoices
 router.get('/:id', async (req, res) => {
   try {
@@ -233,80 +280,6 @@ router.get('/:id/portal/status', async (req, res) => {
       expires_at: activeToken?.expires_at || null,
       unread_messages: unreadMessages?.c || 0,
     });
-  } catch (err) { res.status(500).json({ error: err.message }); }
-});
-
-// GET /api/jobs/conversations — all message threads for contractor
-router.get('/conversations/list', async (req, res) => {
-  try {
-    // Get all jobs that have portal enabled or messages
-    const jobs = await db('contractor_jobs')
-      .where('contractor_jobs.user_id', req.user.id)
-      .whereExists(function () {
-        this.select('id').from('client_messages').whereRaw('client_messages.job_id = contractor_jobs.id');
-      })
-      .select('contractor_jobs.id', 'contractor_jobs.title', 'contractor_jobs.client_name',
-        'contractor_jobs.client_email', 'contractor_jobs.status', 'contractor_jobs.service_type',
-        'contractor_jobs.portal_enabled');
-
-    // For each job, get unread count and last message
-    const conversations = [];
-    for (const job of jobs) {
-      const [{ unread }] = await db('client_messages')
-        .where({ job_id: job.id, sender_type: 'client' })
-        .whereNull('read_at')
-        .count('* as unread');
-      const lastMsg = await db('client_messages')
-        .where('job_id', job.id)
-        .orderBy('created_at', 'desc')
-        .first();
-      const [{ total }] = await db('client_messages')
-        .where('job_id', job.id)
-        .count('* as total');
-      conversations.push({
-        job_id: job.id,
-        title: job.title,
-        client_name: job.client_name,
-        client_email: job.client_email,
-        status: job.status,
-        service_type: job.service_type,
-        portal_enabled: job.portal_enabled,
-        unread_count: unread,
-        total_messages: total,
-        last_message: lastMsg ? {
-          message: lastMsg.message,
-          sender_type: lastMsg.sender_type,
-          sender_name: lastMsg.sender_name,
-          created_at: lastMsg.created_at,
-        } : null,
-      });
-    }
-
-    // Sort by unread first, then by last message time
-    conversations.sort((a, b) => {
-      if (a.unread_count > 0 && b.unread_count === 0) return -1;
-      if (b.unread_count > 0 && a.unread_count === 0) return 1;
-      const aTime = a.last_message?.created_at || '';
-      const bTime = b.last_message?.created_at || '';
-      return bTime.localeCompare(aTime);
-    });
-
-    res.json(conversations);
-  } catch (err) { res.status(500).json({ error: err.message }); }
-});
-
-// GET /api/jobs/unread-messages — total unread count for sidebar badge
-router.get('/messages/unread-count', async (req, res) => {
-  try {
-    const jobs = await db('contractor_jobs').where('user_id', req.user.id).select('id');
-    const jobIds = jobs.map((j) => j.id);
-    if (jobIds.length === 0) return res.json({ count: 0 });
-    const [{ count }] = await db('client_messages')
-      .whereIn('job_id', jobIds)
-      .where('sender_type', 'client')
-      .whereNull('read_at')
-      .count('* as count');
-    res.json({ count });
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 
