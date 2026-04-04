@@ -76,7 +76,7 @@ export default function Landing() {
 
           {/* Real Dashboard Screenshot */}
           <div className="max-w-5xl mx-auto">
-            <div className="rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
+            <div className="rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-125 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
               <img src="/screenshots/dashboard.png" alt="HomeSync contractor dashboard showing active projects, leads, revenue, and pipeline"
                 className="w-full" loading="lazy" />
             </div>
@@ -122,7 +122,7 @@ export default function Landing() {
                 <li className="flex items-center gap-2"><Check size={16} className="text-[#0E7C7B] shrink-0" /> Add subdivisions to your pipeline with one click</li>
               </ul>
             </div>
-            <div className="rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
+            <div className="rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-125 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
               <img src="/screenshots/leads-map.png" alt="Interactive map showing subdivision opportunities in your area"
                 className="w-full" loading="lazy" />
             </div>
@@ -142,7 +142,7 @@ export default function Landing() {
                 <li className="flex items-center gap-2"><Check size={16} className="text-[#0E7C7B] shrink-0" /> Click any card for details, quick actions, and notes</li>
               </ul>
             </div>
-            <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
+            <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-125 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
               <img src="/screenshots/pipeline.png" alt="Kanban pipeline tracking leads through stages"
                 className="w-full" loading="lazy" />
             </div>
@@ -162,7 +162,7 @@ export default function Landing() {
                 <li className="flex items-center gap-2"><Check size={16} className="text-[#0E7C7B] shrink-0" /> Client portal with messaging, invoices, and status updates</li>
               </ul>
             </div>
-            <div className="rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
+            <div className="rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-125 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
               <img src="/screenshots/subdivision.png" alt="Project detail view with maintenance data and forecasts"
                 className="w-full" loading="lazy" />
             </div>
@@ -182,7 +182,7 @@ export default function Landing() {
                 <li className="flex items-center gap-2"><Check size={16} className="text-[#0E7C7B] shrink-0" /> Revenue tracking and payment status history</li>
               </ul>
             </div>
-            <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
+            <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-125 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
               <img src="/screenshots/invoice-detail.png" alt="Professional invoice with line items and payment tracking"
                 className="w-full" loading="lazy" />
             </div>
@@ -202,7 +202,7 @@ export default function Landing() {
                 <li className="flex items-center gap-2"><Check size={16} className="text-[#0E7C7B] shrink-0" /> Quarterly marketing plan generator with actionable checklist</li>
               </ul>
             </div>
-            <div className="rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
+            <div className="rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-125 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
               <img src="/screenshots/marketing.png" alt="Marketing hub with email templates and campaign builder"
                 className="w-full" loading="lazy" />
             </div>
