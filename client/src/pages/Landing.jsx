@@ -142,7 +142,7 @@ export default function Landing() {
                 <li className="flex items-center gap-2"><Check size={16} className="text-[#0E7C7B] shrink-0" /> Click any card for details, quick actions, and notes</li>
               </ul>
             </div>
-            <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+            <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
               <img src="/screenshots/pipeline.png" alt="Kanban pipeline tracking leads through stages"
                 className="w-full" loading="lazy" />
             </div>
@@ -182,7 +182,7 @@ export default function Landing() {
                 <li className="flex items-center gap-2"><Check size={16} className="text-[#0E7C7B] shrink-0" /> Revenue tracking and payment status history</li>
               </ul>
             </div>
-            <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+            <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:z-10 relative cursor-pointer">
               <img src="/screenshots/invoice-detail.png" alt="Professional invoice with line items and payment tracking"
                 className="w-full" loading="lazy" />
             </div>
