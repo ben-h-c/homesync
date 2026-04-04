@@ -17,8 +17,8 @@ async function main() {
   // Go to login page and log in via form
   console.log('Logging in via form...');
   await page.goto(`${BASE}/#/login`, { waitUntil: 'networkidle0', timeout: 15000 });
-  await page.type('input[type="email"]', 'admin@homesync.io');
-  await page.type('input[type="password"]', 'demo1234');
+  await page.type('input[type="email"]', 'benjaminharriscody@gmail.com');
+  await page.type('input[type="password"]', 'Fentoozler1!');
   await page.click('button[type="submit"]');
   await page.waitForNavigation({ waitUntil: 'networkidle0', timeout: 15000 }).catch(() => {});
   await new Promise(r => setTimeout(r, 2000));
