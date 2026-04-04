@@ -508,9 +508,198 @@ function ExportTab() {
   );
 }
 
+// ── Admin Users Tab ──
+function UsersTab() {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [showCreate, setShowCreate] = useState(false);
+  const [form, setForm] = useState({ email: '', password: '', first_name: '', last_name: '', company_name: '', phone: '', role: 'subscriber', subscription_tier: 'starter' });
+  const [creating, setCreating] = useState(false);
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+
+  useEffect(() => { loadUsers(); }, []);
+
+  const loadUsers = async () => {
+    try {
+      const data = await fetchAPI('/admin/users');
+      setUsers(Array.isArray(data) ? data : []);
+    } catch {} finally { setLoading(false); }
+  };
+
+  const handleCreate = async (e) => {
+    e.preventDefault();
+    setError(''); setSuccess(''); setCreating(true);
+    try {
+      await fetchAPI('/admin/users', { method: 'POST', body: JSON.stringify(form) });
+      setSuccess(`User ${form.email} created successfully`);
+      setForm({ email: '', password: '', first_name: '', last_name: '', company_name: '', phone: '', role: 'subscriber', subscription_tier: 'starter' });
+      setShowCreate(false);
+      loadUsers();
+    } catch (err) { setError(err.message || 'Failed to create user'); }
+    finally { setCreating(false); }
+  };
+
+  const handleUpdateTier = async (userId, tier) => {
+    await fetchAPI(`/admin/users/${userId}`, { method: 'PUT', body: JSON.stringify({ subscription_tier: tier }) });
+    loadUsers();
+  };
+
+  const handleUpdateRole = async (userId, role) => {
+    await fetchAPI(`/admin/users/${userId}`, { method: 'PUT', body: JSON.stringify({ role }) });
+    loadUsers();
+  };
+
+  const TIER_COLORS = { starter: 'bg-gray-100 text-gray-600', pro: 'bg-blue-100 text-blue-700', enterprise: 'bg-purple-100 text-purple-700' };
+  const ROLE_COLORS = { admin: 'bg-red-100 text-red-700', subscriber: 'bg-green-100 text-green-700' };
+
+  if (loading) return <div className="text-gray-400 text-sm">Loading users...</div>;
+
+  return (
+    <div className="space-y-6">
+      {error && <div className="p-3 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm">{error}</div>}
+      {success && <div className="p-3 bg-green-50 border border-green-200 text-green-700 rounded-lg text-sm">{success}</div>}
+
+      {/* Create user button + form */}
+      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">Manage Users</h2>
+          <button onClick={() => setShowCreate(!showCreate)}
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary/90">
+            <Plus size={14} /> Create User
+          </button>
+        </div>
+
+        {showCreate && (
+          <form onSubmit={handleCreate} className="border border-gray-200 rounded-lg p-4 mb-4 bg-gray-50 space-y-3">
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-xs text-gray-500 mb-1">First Name *</label>
+                <input value={form.first_name} onChange={(e) => setForm({ ...form, first_name: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" required />
+              </div>
+              <div>
+                <label className="block text-xs text-gray-500 mb-1">Last Name</label>
+                <input value={form.last_name} onChange={(e) => setForm({ ...form, last_name: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-xs text-gray-500 mb-1">Email *</label>
+                <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" required />
+              </div>
+              <div>
+                <label className="block text-xs text-gray-500 mb-1">Password *</label>
+                <input type="password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" required minLength={8} placeholder="Min 8 characters" />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-xs text-gray-500 mb-1">Company</label>
+                <input value={form.company_name} onChange={(e) => setForm({ ...form, company_name: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" />
+              </div>
+              <div>
+                <label className="block text-xs text-gray-500 mb-1">Phone</label>
+                <input value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-xs text-gray-500 mb-1">Role</label>
+                <select value={form.role} onChange={(e) => setForm({ ...form, role: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white">
+                  <option value="subscriber">Subscriber</option>
+                  <option value="admin">Admin</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-xs text-gray-500 mb-1">Tier</label>
+                <select value={form.subscription_tier} onChange={(e) => setForm({ ...form, subscription_tier: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white">
+                  <option value="starter">Starter</option>
+                  <option value="pro">Pro</option>
+                  <option value="enterprise">Enterprise</option>
+                </select>
+              </div>
+            </div>
+            <div className="flex gap-2 pt-1">
+              <button type="submit" disabled={creating}
+                className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary/90 disabled:opacity-50">
+                {creating ? 'Creating...' : 'Create User'}
+              </button>
+              <button type="button" onClick={() => setShowCreate(false)}
+                className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200">
+                Cancel
+              </button>
+            </div>
+          </form>
+        )}
+
+        {/* User list */}
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-gray-200">
+                <th className="text-left py-2 text-xs text-gray-500 font-medium">User</th>
+                <th className="text-left py-2 text-xs text-gray-500 font-medium">Company</th>
+                <th className="text-left py-2 text-xs text-gray-500 font-medium">Role</th>
+                <th className="text-left py-2 text-xs text-gray-500 font-medium">Tier</th>
+                <th className="text-left py-2 text-xs text-gray-500 font-medium">Status</th>
+                <th className="text-left py-2 text-xs text-gray-500 font-medium">Joined</th>
+              </tr>
+            </thead>
+            <tbody>
+              {users.map((u) => (
+                <tr key={u.id} className="border-b border-gray-50 hover:bg-gray-50">
+                  <td className="py-2.5">
+                    <div className="font-medium text-gray-900">{u.first_name} {u.last_name || ''}</div>
+                    <div className="text-xs text-gray-500">{u.email}</div>
+                  </td>
+                  <td className="py-2.5 text-gray-600">{u.company_name || '—'}</td>
+                  <td className="py-2.5">
+                    <select value={u.role} onChange={(e) => handleUpdateRole(u.id, e.target.value)}
+                      className={`px-2 py-0.5 rounded-full text-xs font-medium border-0 cursor-pointer ${ROLE_COLORS[u.role] || 'bg-gray-100'}`}>
+                      <option value="subscriber">Subscriber</option>
+                      <option value="admin">Admin</option>
+                    </select>
+                  </td>
+                  <td className="py-2.5">
+                    <select value={u.subscription_tier} onChange={(e) => handleUpdateTier(u.id, e.target.value)}
+                      className={`px-2 py-0.5 rounded-full text-xs font-medium border-0 cursor-pointer ${TIER_COLORS[u.subscription_tier] || 'bg-gray-100'}`}>
+                      <option value="starter">Starter</option>
+                      <option value="pro">Pro</option>
+                      <option value="enterprise">Enterprise</option>
+                    </select>
+                  </td>
+                  <td className="py-2.5">
+                    <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${u.subscription_status === 'active' ? 'bg-green-100 text-green-700' : u.subscription_status === 'trialing' ? 'bg-amber-100 text-amber-700' : 'bg-gray-100 text-gray-600'}`}>
+                      {u.subscription_status || 'unknown'}
+                    </span>
+                  </td>
+                  <td className="py-2.5 text-xs text-gray-500">{u.created_at ? new Date(u.created_at).toLocaleDateString() : '—'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ── Main Settings Page ──
 export default function Settings() {
   const [tab, setTab] = useState('profile');
+  const user = useAuthStore((s) => s.user);
+  const isAdmin = user?.role === 'admin';
+
+  const tabs = [...TABS];
+  if (isAdmin) tabs.push({ key: 'users', label: 'Users', icon: Shield });
 
   return (
     <div>
@@ -518,7 +707,7 @@ export default function Settings() {
 
       {/* Tab bar */}
       <div className="flex gap-1 mb-6 bg-gray-100 rounded-lg p-1 max-w-fit">
-        {TABS.map((t) => (
+        {tabs.map((t) => (
           <button key={t.key} onClick={() => setTab(t.key)}
             className={`flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-medium transition-colors ${tab === t.key ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500 hover:text-gray-700'}`}>
             <t.icon size={14} /> {t.label}
@@ -531,6 +720,7 @@ export default function Settings() {
       {tab === 'team' && <TeamTab />}
       {tab === 'notifications' && <NotificationsTab />}
       {tab === 'export' && <ExportTab />}
+      {tab === 'users' && isAdmin && <UsersTab />}
     </div>
   );
 }

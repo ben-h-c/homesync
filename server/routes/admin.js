@@ -31,6 +31,38 @@ router.get('/users/:id', async (req, res) => {
   }
 });
 
+// POST /api/admin/users — create a new user
+router.post('/users', async (req, res) => {
+  try {
+    const { email, password, first_name, last_name, company_name, phone, role, subscription_tier } = req.body;
+    if (!email || !password || !first_name) {
+      return res.status(400).json({ error: 'Email, password, and first name are required' });
+    }
+    if (password.length < 8) {
+      return res.status(400).json({ error: 'Password must be at least 8 characters' });
+    }
+    const existing = await db('users').where('email', email.toLowerCase()).first();
+    if (existing) return res.status(409).json({ error: 'An account with this email already exists' });
+
+    const bcrypt = require('bcryptjs');
+    const password_hash = await bcrypt.hash(password, 12);
+    const trialEnds = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString();
+
+    const [id] = await db('users').insert({
+      email: email.toLowerCase(), password_hash, first_name,
+      last_name: last_name || null, company_name: company_name || null, phone: phone || null,
+      role: role || 'subscriber', subscription_tier: subscription_tier || 'starter',
+      subscription_status: 'trialing', trial_ends_at: trialEnds,
+    });
+
+    const user = await db('users').where('id', id).first();
+    const { password_hash: _, ...safe } = user;
+    res.status(201).json(safe);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // PUT /api/admin/users/:id
 router.put('/users/:id', async (req, res) => {
   try {
