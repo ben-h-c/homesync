@@ -66,8 +66,9 @@ router.post('/users', async (req, res) => {
 // PUT /api/admin/users/:id
 router.put('/users/:id', async (req, res) => {
   try {
-    const allowed = ['role', 'subscription_tier', 'subscription_status', 'trial_ends_at',
-      'subscription_started_at', 'subscription_ends_at', 'metro_areas'];
+    const allowed = ['first_name', 'last_name', 'email', 'company_name', 'phone',
+      'role', 'subscription_tier', 'subscription_status', 'trial_ends_at',
+      'subscription_started_at', 'subscription_ends_at', 'metro_areas', 'trade_category', 'zip_code'];
     const update = {};
     for (const key of allowed) {
       if (req.body[key] !== undefined) update[key] = req.body[key];
