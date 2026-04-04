@@ -59,7 +59,7 @@ export default function SubdivisionList() {
 
   const SortIcon = ({ field }) => {
     if (sort !== field) return <span className="text-gray-300 ml-1">&#x21C5;</span>;
-    return <span className="text-primary ml-1">{order === 'asc' ? '&#x25B2;' : '&#x25BC;'}</span>;
+    return <span className="text-primary ml-1">{order === 'asc' ? '▲' : '▼'}</span>;
   };
 
   const cols = [

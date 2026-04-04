@@ -54,29 +54,37 @@ export default function Pipeline() {
     }
 
     const oldStage = dragItem.pipeline_stage || 'research';
+    const movedItem = dragItem;
 
     // Optimistic update
     setSubdivisions((prev) =>
-      prev.map((s) => s.id === dragItem.id ? { ...s, pipeline_stage: stage } : s)
+      prev.map((s) => s.id === movedItem.id ? { ...s, pipeline_stage: stage } : s)
     );
     setDragItem(null);
 
-    // API update
-    await fetchAPI(`/subdivisions/${dragItem.id}`, {
-      method: 'PUT',
-      body: JSON.stringify({ pipeline_stage: stage }),
-    });
+    try {
+      // API update
+      await fetchAPI(`/subdivisions/${movedItem.id}`, {
+        method: 'PUT',
+        body: JSON.stringify({ pipeline_stage: stage }),
+      });
 
-    // Auto-log status_change activity
-    await fetchAPI('/activities', {
-      method: 'POST',
-      body: JSON.stringify({
-        subdivision_id: dragItem.id,
-        type: 'status_change',
-        subject: `Pipeline: ${oldStage.replace(/_/g, ' ')} → ${stage.replace(/_/g, ' ')}`,
-        description: `${dragItem.name} moved from "${oldStage.replace(/_/g, ' ')}" to "${stage.replace(/_/g, ' ')}"`,
-      }),
-    });
+      // Auto-log status_change activity
+      await fetchAPI('/activities', {
+        method: 'POST',
+        body: JSON.stringify({
+          subdivision_id: movedItem.id,
+          type: 'status_change',
+          subject: `Pipeline: ${oldStage.replace(/_/g, ' ')} → ${stage.replace(/_/g, ' ')}`,
+          description: `${movedItem.name} moved from "${oldStage.replace(/_/g, ' ')}" to "${stage.replace(/_/g, ' ')}"`,
+        }),
+      });
+    } catch {
+      // Revert optimistic update on failure
+      setSubdivisions((prev) =>
+        prev.map((s) => s.id === movedItem.id ? { ...s, pipeline_stage: oldStage } : s)
+      );
+    }
   };
 
   const allStages = [...STAGES, DECLINED_STAGE];

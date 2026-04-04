@@ -20,6 +20,7 @@ export default function PropertyList() {
 
   // Filter state
   const [search, setSearch] = useState(searchParams.get('search') || '');
+  const [committedSearch, setCommittedSearch] = useState(searchParams.get('search') || '');
   const [subdivision, setSubdivision] = useState(searchParams.get('subdivision') || '');
   const [zip, setZip] = useState(searchParams.get('zip') || '');
   const [yearMin, setYearMin] = useState(searchParams.get('year_built_min') || '');
@@ -45,7 +46,7 @@ export default function PropertyList() {
 
   useEffect(() => {
     loadData();
-  }, [page, sort, order, subdivision, zip, yearMin, yearMax]);
+  }, [page, sort, order, committedSearch, subdivision, zip, yearMin, yearMax]);
 
   const loadData = async () => {
     setLoading(true);
@@ -54,7 +55,7 @@ export default function PropertyList() {
     params.set('limit', PAGE_SIZE);
     params.set('sort', sort);
     params.set('order', order);
-    if (search) params.set('search', search);
+    if (committedSearch) params.set('search', committedSearch);
     if (subdivision) params.set('subdivision', subdivision);
     if (zip) params.set('zip', zip);
     if (yearMin) params.set('year_built_min', yearMin);
@@ -75,8 +76,8 @@ export default function PropertyList() {
 
   const handleSearch = (e) => {
     e.preventDefault();
+    setCommittedSearch(search);
     setPage(1);
-    loadData();
   };
 
   const handleSort = (field) => {
@@ -126,7 +127,7 @@ export default function PropertyList() {
 
   const SortIcon = ({ field }) => {
     if (sort !== field) return <span className="text-gray-300 ml-1">&#x21C5;</span>;
-    return <span className="text-primary ml-1">{order === 'asc' ? '&#x25B2;' : '&#x25BC;'}</span>;
+    return <span className="text-primary ml-1">{order === 'asc' ? '▲' : '▼'}</span>;
   };
 
   return (

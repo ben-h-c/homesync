@@ -300,7 +300,7 @@ export default function SubdivisionDetail() {
       <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-lg font-semibold flex items-center gap-2"><Users size={18} /> HOA Contacts</h2>
-          <button onClick={() => navigate('/contacts/new')} className="flex items-center gap-1 px-3 py-1.5 border border-gray-300 rounded text-sm hover:bg-gray-50"><Plus size={12} /> Add Contact</button>
+          <button onClick={() => navigate(`/contacts/new?subdivision=${encodeURIComponent(sub.name)}`)} className="flex items-center gap-1 px-3 py-1.5 border border-gray-300 rounded text-sm hover:bg-gray-50"><Plus size={12} /> Add Contact</button>
         </div>
         {subContacts.length === 0 ? (
           <p className="text-sm text-gray-400">No contacts linked to this subdivision yet.</p>

@@ -1,5 +1,11 @@
 export default function UrgencyBadge({ score, size = 'md' }) {
-  const s = score ?? 0;
+  if (score == null) {
+    const sizeClass = size === 'sm'
+      ? 'inline-block w-10 text-center px-2 py-0.5 rounded-full text-xs font-bold'
+      : 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-bold';
+    return <span className={`${sizeClass} bg-gray-200 text-gray-500`}>{size === 'sm' ? '—' : <>— <span className="font-medium text-xs opacity-80">N/A</span></>}</span>;
+  }
+  const s = score;
   let color = 'bg-green-500 text-white';
   let label = 'OK';
   if (s >= 80) { color = 'bg-red-600 text-white'; label = 'CRITICAL'; }

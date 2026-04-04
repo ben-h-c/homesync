@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Plus, Save, X } from 'lucide-react';
 import { fetchAPI } from '../api/client';
+import EmailNav from '../components/EmailNav';
 
 const CATEGORIES = ['hoa', 'homeowner', 'contractor', 'follow_up'];
 
@@ -44,6 +45,7 @@ export default function EmailTemplates() {
 
   return (
     <div>
+      <EmailNav />
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold">Email Templates</h1>
         <button onClick={handleCreate} className="flex items-center gap-1.5 px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90">

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Send, Eye, Loader2 } from 'lucide-react';
 import { fetchAPI } from '../api/client';
+import EmailNav from '../components/EmailNav';
 
 export default function EmailCompose() {
   const [searchParams] = useSearchParams();
@@ -136,7 +137,7 @@ export default function EmailCompose() {
 
   if (sent) return (
     <div>
-      <h1 className="text-2xl font-bold mb-6">Compose Email</h1>
+      <EmailNav />
       <div className="bg-white rounded-lg shadow-sm p-8 text-center">
         <div className="text-4xl mb-3">✓</div>
         <h2 className="text-lg font-semibold text-success mb-2">Email Sent</h2>
@@ -149,7 +150,7 @@ export default function EmailCompose() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-6">Compose Email</h1>
+      <EmailNav />
 
       <div className="bg-white rounded-lg shadow-sm p-6 max-w-3xl">
         <div className="space-y-4">

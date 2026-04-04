@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import { Download } from 'lucide-react';
 import { fetchAPI } from '../api/client';
+import EmailNav from '../components/EmailNav';
 
 export default function EmailSent() {
   const [emails, setEmails] = useState([]);
@@ -22,6 +23,7 @@ export default function EmailSent() {
 
   return (
     <div>
+      <EmailNav />
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold">Sent Emails</h1>
         <button onClick={exportCSV} className="flex items-center gap-1.5 px-3 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-50">
@@ -46,8 +48,8 @@ export default function EmailSent() {
             ) : emails.length === 0 ? (
               <tr><td colSpan={5} className="px-4 py-12 text-center text-gray-500">No emails sent yet.</td></tr>
             ) : emails.map((e, i) => (
-              <>
-                <tr key={e.id} className={`border-b border-gray-100 cursor-pointer hover:bg-teal-tint ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}
+              <Fragment key={e.id}>
+                <tr className={`border-b border-gray-100 cursor-pointer hover:bg-teal-tint ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}
                   onClick={() => setExpanded(expanded === e.id ? null : e.id)}>
                   <td className="px-4 py-2.5">{e.to_name || e.to_email}</td>
                   <td className="px-4 py-2.5 font-medium">{e.subject}</td>
@@ -58,11 +60,11 @@ export default function EmailSent() {
                   <td className="px-4 py-2.5 text-gray-500 text-xs">{formatDate(e.sent_at)}</td>
                 </tr>
                 {expanded === e.id && (
-                  <tr key={`exp-${e.id}`}><td colSpan={5} className="px-4 py-4 bg-gray-50 border-b">
+                  <tr><td colSpan={5} className="px-4 py-4 bg-gray-50 border-b">
                     <div className="prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: e.body_html }} />
                   </td></tr>
                 )}
-              </>
+              </Fragment>
             ))}
           </tbody>
         </table>

@@ -18,11 +18,12 @@ export default function ContactForm() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const editId = searchParams.get('edit');
+  const preFillSubdivision = searchParams.get('subdivision') || '';
 
   const [form, setForm] = useState({
     type: 'hoa_board',
     first_name: '', last_name: '', email: '', phone: '',
-    company: '', title: '', subdivision: '', address: '',
+    company: '', title: '', subdivision: preFillSubdivision, address: '',
     source: 'manual', notes: '',
     contractor_services: [],
     contractor_license_number: '',

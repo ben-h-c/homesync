@@ -23,14 +23,42 @@ function setDemoMode(val) {
 
 export async function fetchAPI(endpoint, options = {}) {
   try {
-    const response = await fetch(`${API_BASE}${endpoint}`, {
-      headers: { 'Content-Type': 'application/json', ...options.headers },
-      ...options
-    });
+    const url = `${API_BASE}${endpoint}`;
+
+    // Attach auth token if available
+    const headers = { 'Content-Type': 'application/json', ...options.headers };
+    const token = localStorage.getItem('accessToken');
+    if (token) headers['Authorization'] = `Bearer ${token}`;
+
+    const response = await fetch(url, { headers, ...options });
+
+    // Handle 401 — session expired, redirect to login
+    if (response.status === 401 && token) {
+      localStorage.removeItem('accessToken');
+      localStorage.removeItem('user');
+      window.location.hash = '#/login';
+      throw new Error('Session expired');
+    }
+
+    // Handle 403 upgrade_required — let caller handle it
+    if (response.status === 403) {
+      const data = await response.json();
+      if (data.error === 'upgrade_required' || data.error === 'view_limit_reached') {
+        const err = new Error(data.message || 'Upgrade required');
+        err.upgradeRequired = true;
+        err.requiredTier = data.required_tier;
+        err.currentTier = data.current_tier;
+        throw err;
+      }
+      throw new Error(data.error || 'Forbidden');
+    }
+
     if (!response.ok) throw new Error(`API error: ${response.status}`);
     setDemoMode(false);
     return response.json();
-  } catch {
+  } catch (err) {
+    if (err.upgradeRequired) throw err;
+    console.warn(`[HomeSync] API failed (${API_BASE}${endpoint}):`, err.message, '→ using demo data');
     setDemoMode(true);
     return getDemoData(endpoint, options);
   }
@@ -38,6 +66,31 @@ export async function fetchAPI(endpoint, options = {}) {
 
 function getDemoData(endpoint, options = {}) {
   const method = options.method || 'GET';
+
+  // Handle email preview in demo mode (POST that should return rendered content)
+  if (endpoint === '/emails/preview' && method === 'POST') {
+    try {
+      const body = JSON.parse(options.body || '{}');
+      const vars = body.variables || {};
+      const templateId = body.template_id;
+      const demoTemplates = [
+        { id: 1, name: 'cold_outreach', subject_template: '{{home_count}} homes in {{subdivision_name}} may need {{service_type}} service', body_html_template: '<p>Hi {{name}},</p><p>I specialize in {{service_type}} in the {{area}} area. {{subdivision_name}} has homes built around {{year_built}} that may benefit from service soon.</p><p>Best,<br/>{{contractor_name}}<br/>{{company_name}}</p>' },
+        { id: 2, name: 'quote_follow_up', subject_template: 'Following up on your {{service_type}} quote', body_html_template: '<p>Hi {{name}},</p><p>Following up on the {{service_type}} quote I sent over. Happy to answer questions.</p><p>Best,<br/>{{contractor_name}}<br/>{{company_name}}</p>' },
+      ];
+      const t = demoTemplates.find((x) => x.id === templateId);
+      if (t) {
+        let subject = t.subject_template;
+        let body_html = t.body_html_template;
+        for (const [key, val] of Object.entries(vars)) {
+          const re = new RegExp(`\\{\\{${key}\\}\\}`, 'g');
+          subject = subject.replace(re, val ?? '');
+          body_html = body_html.replace(re, val ?? '');
+        }
+        return { subject, body_html };
+      }
+    } catch {}
+    return { subject: '', body_html: '' };
+  }
 
   // Only serve demo data for GET requests
   if (method !== 'GET') return { success: true, message: 'Demo mode — changes not saved' };
@@ -149,8 +202,11 @@ function getDemoData(endpoint, options = {}) {
   // Emails
   if (endpoint === '/emails/templates') {
     return [
-      { id: 1, name: 'hoa_intro_pitch', category: 'hoa', description: 'Initial outreach to HOA board', subject_template: 'Free Maintenance Forecast for {{subdivision_name}}', body_html_template: '<p>Hi {{contact_first_name}},</p><p>Demo template content.</p>' },
-      { id: 2, name: 'hoa_follow_up', category: 'hoa', description: 'Follow-up after no response', subject_template: 'Following up — {{subdivision_name}}', body_html_template: '<p>Hi {{contact_first_name}},</p><p>Following up on the forecast.</p>' },
+      { id: 1, name: 'cold_outreach', category: 'marketing', description: 'First contact to a potential lead', subject_template: '{{home_count}} homes in {{subdivision_name}} may need {{service_type}} service', body_html_template: '<p>Hi {{name}},</p><p>I specialize in {{service_type}} in the {{area}} area.</p>' },
+      { id: 2, name: 'quote_follow_up', category: 'marketing', description: 'Follow-up after sending a quote', subject_template: 'Following up on your {{service_type}} quote', body_html_template: '<p>Hi {{name}},</p><p>Following up on the quote I sent.</p>' },
+      { id: 3, name: 'seasonal_reminder', category: 'marketing', description: 'Seasonal maintenance reminder', subject_template: '{{season}} is here — time for {{service_type}} maintenance', body_html_template: '<p>Hi {{name}},</p><p>{{season}} is here — time for maintenance.</p>' },
+      { id: 4, name: 'project_thank_you', category: 'marketing', description: 'Thank you after project completion', subject_template: 'Thank you for choosing {{company_name}}!', body_html_template: '<p>Hi {{name}},</p><p>Thank you for trusting us!</p>' },
+      { id: 5, name: 'referral_request', category: 'marketing', description: 'Ask for referrals', subject_template: 'Know someone who needs a great {{service_type}} contractor?', body_html_template: '<p>Hi {{name}},</p><p>Would you refer us?</p>' },
     ];
   }
   if (endpoint.startsWith('/emails/sent')) return { data: [], pagination: { page: 1, limit: 50, total: 0 } };

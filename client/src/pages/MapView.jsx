@@ -77,6 +77,48 @@ const SUBDIVISION_COORDS = {
   // Hall
   'Sterling on the Lake': [34.185, -83.920],
   'Traditions of Braselton': [34.105, -83.810],
+  // ── Phase 2: Forsyth 30041 (remaining) ──
+  'Creekstone Estates': [34.185, -84.095],
+  'Blackstock Mill': [34.200, -84.055],
+  'Bridlewood': [34.172, -84.055],
+  'Brookside': [34.190, -84.050],
+  'Avalon': [34.168, -84.040],
+  'Shiloh Manor': [34.185, -84.025],
+  'Estates at Big Creek': [34.148, -84.070],
+  'Barrett Landing': [34.158, -84.095],
+  'Abbey Glen': [34.202, -84.125],
+  // ── Phase 2: Cobb County ──
+  'Lost Mountain Estates': [33.960, -84.680],
+  'Kennesley': [33.970, -84.670],
+  'Harrison Park': [33.950, -84.600],
+  'Chestnut Springs': [33.990, -84.530],
+  'Lassiter Landing': [34.030, -84.470],
+  'Indian Hills Country Club': [33.980, -84.420],
+  'Walton High Estates': [34.010, -84.440],
+  'Marietta Country Club': [33.955, -84.610],
+  'Walkers Ridge': [33.945, -84.580],
+  'Bells Ferry Crossing': [34.000, -84.540],
+  'Piedmont Oaks': [33.985, -84.510],
+  // ── Phase 2: Gwinnett ──
+  'Hamilton Mill': [34.000, -83.880],
+  'Archer Ridge': [34.010, -83.890],
+  'Peachtree Corners South': [33.970, -84.220],
+  'Berkeley Hills': [33.960, -84.230],
+  'Amberfield': [33.975, -84.210],
+  // ── Phase 2: Cherokee ──
+  'Governors Preserve': [34.220, -84.470],
+  'Highland Gate': [34.100, -84.500],
+  'Woodstock Downtown District': [34.095, -84.520],
+  // ── Phase 2: North Fulton ──
+  'Crabapple Station': [34.070, -84.360],
+  'Cogburn Crossing': [34.080, -84.320],
+  'Cambridge High District': [34.090, -84.300],
+  'Crooked Creek': [34.075, -84.280],
+  'Country Club of the South': [34.100, -84.255],
+  'Concord Hall': [34.088, -84.265],
+  // ── Phase 2: DeKalb County ──
+  'Smoke Rise': [33.810, -84.140],
+  'Briarlake Forest': [33.800, -84.320],
 };
 
 function getUrgencyColor(score) {

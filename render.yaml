@@ -10,6 +10,30 @@ services:
         value: production
       - key: DATABASE_PATH
         value: /opt/render/project/src/database/homesync.db
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        value: https://homesynctoday.com
+      - key: CLIENT_URL
+        value: https://homesynctoday.com
+      - key: RESEND_API_KEY
+        sync: false  # Get from resend.com dashboard
+      - key: FROM_EMAIL
+        value: hello@homesynctoday.com
+      - key: FROM_NAME
+        value: HomeSync
+      - key: STRIPE_SECRET_KEY
+        sync: false  # Get from Stripe dashboard
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false  # Get from Stripe webhook settings
+      - key: STRIPE_PRICE_STARTER
+        sync: false
+      - key: STRIPE_PRICE_PRO
+        sync: false
+      - key: STRIPE_PRICE_ENTERPRISE
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false  # Get from console.anthropic.com
     disk:
       name: homesync-db
       mountPath: /opt/render/project/src/database
