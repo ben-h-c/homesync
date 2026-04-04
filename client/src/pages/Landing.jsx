@@ -57,22 +57,22 @@ export default function Landing() {
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Floating gradient blobs */}
-          <div className="absolute -top-20 -left-20 w-96 h-96 bg-[#0E7C7B]/[0.08] rounded-full blur-3xl animate-[float_20s_ease-in-out_infinite]" />
-          <div className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-[#0F3460]/[0.06] rounded-full blur-3xl animate-[float_25s_ease-in-out_infinite_reverse]" />
-          <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-[#0E7C7B]/[0.07] rounded-full blur-3xl animate-[float_18s_ease-in-out_infinite_2s]" />
+          <div className="absolute -top-20 -left-20 w-96 h-96 bg-[#0E7C7B]/[0.15] rounded-full blur-3xl animate-[float_20s_ease-in-out_infinite]" />
+          <div className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-[#0F3460]/[0.12] rounded-full blur-3xl animate-[float_25s_ease-in-out_infinite_reverse]" />
+          <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-[#0E7C7B]/[0.12] rounded-full blur-3xl animate-[float_18s_ease-in-out_infinite_2s]" />
 
           {/* Floating grid of subtle icons */}
           {[
-            { Icon: MapPin, x: '8%', y: '15%', delay: '0s', dur: '22s', size: 28, opacity: 0.12 },
-            { Icon: Briefcase, x: '85%', y: '10%', delay: '3s', dur: '20s', size: 32, opacity: 0.10 },
-            { Icon: Receipt, x: '75%', y: '65%', delay: '1s', dur: '24s', size: 26, opacity: 0.10 },
-            { Icon: Map, x: '12%', y: '70%', delay: '5s', dur: '19s', size: 30, opacity: 0.12 },
-            { Icon: GitBranch, x: '50%', y: '8%', delay: '2s', dur: '21s', size: 24, opacity: 0.08 },
-            { Icon: BarChart3, x: '92%', y: '40%', delay: '4s', dur: '23s', size: 28, opacity: 0.10 },
-            { Icon: Shield, x: '30%', y: '80%', delay: '6s', dur: '18s', size: 22, opacity: 0.08 },
-            { Icon: Target, x: '65%', y: '25%', delay: '1.5s', dur: '26s', size: 20, opacity: 0.08 },
-            { Icon: Zap, x: '20%', y: '45%', delay: '3.5s', dur: '17s', size: 24, opacity: 0.10 },
-            { Icon: Mail, x: '42%', y: '75%', delay: '7s', dur: '22s', size: 26, opacity: 0.08 },
+            { Icon: MapPin, x: '8%', y: '15%', delay: '0s', dur: '22s', size: 28, opacity: 0.20 },
+            { Icon: Briefcase, x: '85%', y: '10%', delay: '3s', dur: '20s', size: 36, opacity: 0.18 },
+            { Icon: Receipt, x: '75%', y: '65%', delay: '1s', dur: '24s', size: 30, opacity: 0.18 },
+            { Icon: Map, x: '12%', y: '70%', delay: '5s', dur: '19s', size: 34, opacity: 0.20 },
+            { Icon: GitBranch, x: '50%', y: '8%', delay: '2s', dur: '21s', size: 28, opacity: 0.15 },
+            { Icon: BarChart3, x: '92%', y: '40%', delay: '4s', dur: '23s', size: 32, opacity: 0.18 },
+            { Icon: Shield, x: '30%', y: '80%', delay: '6s', dur: '18s', size: 26, opacity: 0.15 },
+            { Icon: Target, x: '65%', y: '25%', delay: '1.5s', dur: '26s', size: 24, opacity: 0.15 },
+            { Icon: Zap, x: '20%', y: '45%', delay: '3.5s', dur: '17s', size: 28, opacity: 0.18 },
+            { Icon: Mail, x: '42%', y: '75%', delay: '7s', dur: '22s', size: 30, opacity: 0.15 },
           ].map(({ Icon, x, y, delay, dur, size, opacity }, i) => (
             <div key={i} className="absolute" style={{
               left: x, top: y,
@@ -84,7 +84,7 @@ export default function Landing() {
           ))}
 
           {/* Subtle grid pattern */}
-          <svg className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
+          <svg className="absolute inset-0 w-full h-full opacity-[0.07]" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
                 <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#0F3460" strokeWidth="1"/>
