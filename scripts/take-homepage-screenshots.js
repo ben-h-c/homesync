@@ -36,29 +36,16 @@ async function main() {
   const hideUI = async () => {
     await page.evaluate(() => {
       // Hide sidebar user/logout section at bottom
-      const aside = document.querySelector('aside');
-      if (aside) {
-        const lastChild = aside.querySelector('.border-t');
-        if (lastChild) lastChild.style.display = 'none';
-      }
+      document.querySelectorAll('aside .border-t').forEach(el => {
+        el.style.display = 'none';
+      });
 
-      // Hide admin "View As" tier switcher buttons in top header bar
-      const topBar = document.querySelector('.bg-navy');
-      if (topBar) {
-        const flexContainers = topBar.querySelectorAll('.shrink-0');
-        flexContainers.forEach(el => {
-          const buttons = el.querySelectorAll('button');
-          if (buttons.length >= 3) {
-            el.style.display = 'none';
-          }
-        });
-      }
-
-      // Also hide notification bell for cleaner screenshots
-      const bellButtons = document.querySelectorAll('.relative button');
-      bellButtons.forEach(btn => {
-        if (btn.querySelector('svg') && btn.closest('.relative')?.querySelector('[class*="bg-red"]')) {
-          btn.closest('.relative').style.display = 'none';
+      // Hide admin "View As" tier switcher — find all elements in the top bar
+      // that have multiple small buttons (the tier switcher has 4 buttons)
+      document.querySelectorAll('div.shrink-0').forEach(el => {
+        const buttons = el.querySelectorAll('button');
+        if (buttons.length >= 3) {
+          el.style.display = 'none';
         }
       });
     });
