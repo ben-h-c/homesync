@@ -78,7 +78,7 @@ export default function Landing() {
           <div className="max-w-5xl mx-auto">
             <div className="rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
               <img src="/screenshots/dashboard.png" alt="HomeSync contractor dashboard showing active projects, leads, revenue, and pipeline"
-                className="w-full" loading="lazy" />
+                className="w-full transition-transform duration-300 hover:scale-105 cursor-zoom-in" loading="lazy" />
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function Landing() {
             </div>
             <div className="rounded-xl shadow-lg border border-gray-200 overflow-hidden">
               <img src="/screenshots/leads-map.png" alt="Interactive map showing subdivision opportunities in your area"
-                className="w-full" loading="lazy" />
+                className="w-full transition-transform duration-300 hover:scale-105 cursor-zoom-in" loading="lazy" />
             </div>
           </div>
 
@@ -144,7 +144,7 @@ export default function Landing() {
             </div>
             <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden">
               <img src="/screenshots/pipeline.png" alt="Kanban pipeline tracking leads through stages"
-                className="w-full" loading="lazy" />
+                className="w-full transition-transform duration-300 hover:scale-105 cursor-zoom-in" loading="lazy" />
             </div>
           </div>
 
@@ -164,7 +164,7 @@ export default function Landing() {
             </div>
             <div className="rounded-xl shadow-lg border border-gray-200 overflow-hidden">
               <img src="/screenshots/subdivision.png" alt="Project detail view with maintenance data and forecasts"
-                className="w-full" loading="lazy" />
+                className="w-full transition-transform duration-300 hover:scale-105 cursor-zoom-in" loading="lazy" />
             </div>
           </div>
 
@@ -184,7 +184,7 @@ export default function Landing() {
             </div>
             <div className="md:order-1 rounded-xl shadow-lg border border-gray-200 overflow-hidden">
               <img src="/screenshots/invoice-detail.png" alt="Professional invoice with line items and payment tracking"
-                className="w-full" loading="lazy" />
+                className="w-full transition-transform duration-300 hover:scale-105 cursor-zoom-in" loading="lazy" />
             </div>
           </div>
 
@@ -204,7 +204,7 @@ export default function Landing() {
             </div>
             <div className="rounded-xl shadow-lg border border-gray-200 overflow-hidden">
               <img src="/screenshots/marketing.png" alt="Marketing hub with email templates and campaign builder"
-                className="w-full" loading="lazy" />
+                className="w-full transition-transform duration-300 hover:scale-105 cursor-zoom-in" loading="lazy" />
             </div>
           </div>
         </div>
