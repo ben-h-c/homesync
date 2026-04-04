@@ -173,14 +173,6 @@ export default function Layout() {
           </div>
         )}
 
-        {/* Demo banner */}
-        {demo && !dismissed && (
-          <div className="bg-amber/90 text-white text-sm px-4 py-2 flex items-center justify-between shrink-0">
-            <span>Demo Mode — sample data shown. Run the server locally for full functionality.</span>
-            <button onClick={() => setDismissed(true)}><X size={16} /></button>
-          </div>
-        )}
-
         {/* Top header with search */}
         <div className="bg-navy px-4 py-2.5 flex items-center gap-3 shrink-0">
           {/* Mobile hamburger */}
