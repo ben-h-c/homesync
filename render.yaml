@@ -13,13 +13,13 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: CORS_ORIGIN
-        value: https://homesynctoday.com
+        value: https://wedonedoit.com
       - key: CLIENT_URL
-        value: https://homesynctoday.com
+        value: https://wedonedoit.com
       - key: RESEND_API_KEY
         sync: false  # Get from resend.com dashboard
       - key: FROM_EMAIL
-        value: hello@homesynctoday.com
+        value: hello@wedonedoit.com
       - key: FROM_NAME
         value: HomeSync
       - key: STRIPE_SECRET_KEY

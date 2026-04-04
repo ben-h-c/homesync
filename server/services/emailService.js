@@ -105,7 +105,7 @@ async function sendEmail({
     htmlContent = wrapHtml(htmlContent, { preheader, footerText });
   }
 
-  const fromEmail = process.env.FROM_EMAIL || 'hello@homesynctoday.com';
+  const fromEmail = process.env.FROM_EMAIL || 'hello@wedonedoit.com';
   const fromName = process.env.FROM_NAME || 'HomeSync';
 
   let status = 'draft';

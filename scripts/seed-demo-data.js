@@ -14,7 +14,7 @@ async function seed() {
   if (!user) {
     const bcrypt = require('bcryptjs');
     const [id] = await db('users').insert({
-      email: 'demo@homesynctoday.com', password_hash: bcrypt.hashSync('demo1234', 12),
+      email: 'demo@wedonedoit.com', password_hash: bcrypt.hashSync('demo1234', 12),
       first_name: 'Ben', last_name: 'Cody', company_name: 'Cody Home Services',
       phone: '(770) 555-0142', role: 'admin', subscription_tier: 'enterprise',
       subscription_status: 'active', trade_category: 'General Contractor',
